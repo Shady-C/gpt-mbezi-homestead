@@ -1,4 +1,4 @@
-# House Mbezi: estimated metres and kanga redesign
+# House Mbezi: estimated metres and signboard redesign
 
 Date: 2026-11-11 · Branch: `metre-estimates` · Repo: Shady-C/gpt-mbezi-homestead
 Status: design approved in chat; this spec awaits owner review.
@@ -6,7 +6,7 @@ Status: design approved in chat; this spec awaits owner review.
 ## Goal
 
 1. Replace the arbitrary drawing units with the owner's estimated sizes in metres, with walls balanced so every room's clear size matches the estimate table, while the room arrangement stays exactly as the owner's sketch has it.
-2. Redesign the viewer's interface for family members on phones in a kanga-cloth visual world.
+2. Redesign the viewer's interface for family members on phones in a hand-painted duka-signboard visual world.
 
 `main` and the live site are untouched. The work ends as a pull request into `main`; nobody merges it without the owner.
 
@@ -85,17 +85,17 @@ DATA.doors = [{ from: "living", to: "kitchen", kind: "open portal" }, …]; // d
 
 Room ids, labels and every other `DATA` key keep their names. The UI must render with or without `estimate` (falls back to no size line).
 
-## Part 2: Kanga redesign (impeccable new-work, Operate mode; taste-skill app-screen rules)
+## Part 2: Signboard redesign (impeccable new-work, Operate mode; taste-skill app-screen rules)
 
 ### Direction contract
 
-- **World: a kanga.** A printed cotton cloth in three parts: the *pindo* (border) frames the screen, the *mji* (central field) holds the house, and the *jina* (message line) carries the one sentence the family needs. Flat printed colour, two or three inks per colourway, bold repeating border motif, a lettered message line. Colour comes from real kanga colourways, not the cream/terracotta default. The motif is drawn in code (SVG/CSS) from simple geometric repeats derived from the house itself (tile diagonals, window grilles), never a copied commercial print.
-- **First viewport (phone, 390 × 844):** the 3D house fills the mji; a thin printed pindo frames it; the jina line reads "Estimated sizes from 68 photos and the sketch". Room names with sizes sit on the drawing as small printed tags. The four views are one tap away.
-- **Visitor path:** tap a room (in 3D, on the plan, or from the room list in the pindo) → a board rises from the bottom: room name, size and confidence, the basis in one sentence, the photos as a strip of numbered cells (tap to open full size), and "Doors from here" listing the connected rooms, each tapping straight to that room.
-- **Signature interaction:** the doors-from-here walk: moving room to room through the board the way you would walk the house, with the 3D view easing to the room you entered.
-- **Cross-surface reach:** the same world styles the plan and site tabs (the pindo frames the drawing, scale bar in the border), the connections view, the lightbox, the share card and the icons.
-- **Raises kept from the weighed challengers:** doors listed as the choices ahead (airport wayfinding); photos as small numbered cells keyed to positions on the plan (event catalogue); every drawing at one fixed scale so rooms compare honestly (botanical folio); size as the dominant figure on the board (type specimen's hierarchy by scale).
-- **Honest risk:** a textile skin can read as costume. The kanga structure must do work (frame, field, message), and pattern stays in the border.
+- **World: hand-painted duka signboards.** The flat, bright boards painted by signwriters on the shops, salons and kiosks around Mbezi: solid fields of enamel colour, a bold hand-lettered sans, a painted white or contrasting panel border, words and pictures sharing one board. Colour is flat and confident (no gradients, no glow); a small set of signwriter colours, each kind of space with its own painted field, set on a plain ground so the boards read as boards. Lettering is a sturdy display sans with signwriter character (self-hosted, OFL) for names and sizes, a plain readable sans for running text. Any painted pictograms are drawn in code, simple and flat, never copied from a real shop.
+- **First viewport (phone, 390 × 844):** the 3D house fills the screen; each room carries a small painted sign with its name and size ("Bedroom 2 · 5.0 × 4.0 m"). A single signboard header names the house and carries the one notice ("Estimated sizes from 68 photos and the sketch"). The four views are one tap away.
+- **Visitor path:** tap a room (in 3D, on the plan, or from the room list) → a board rises from the bottom like a sign being hung: room name, size large, confidence, the basis in one sentence, the photos pasted beside it as a strip of numbered cells (tap to open full size), and "Doors from here" with arrows to the connected rooms ("Corridor →", "En-suite →"), each tapping straight to that room.
+- **Signature interaction:** the doors-from-here walk: moving room to room through the boards the way you would walk the house, with the 3D view easing to the room you entered.
+- **Cross-surface reach:** the same signboard world styles the plan and site tabs (painted room fields, size signs, scale bar painted on the board edge), the connections view, the lightbox, the share card and the icons.
+- **Raises kept from the weighed challengers:** doors listed as the choices ahead (airport wayfinding); photos as small numbered cells keyed to positions on the plan (event catalogue); every drawing at one fixed scale so rooms compare honestly (botanical folio); size as the dominant figure on each board (type specimen's hierarchy by scale).
+- **Honest risk:** it can get loud. Colour stays on rooms, signs and the one action; the ground stays quiet, and no more than one painted field competes on any screen.
 
 ### Keep
 
