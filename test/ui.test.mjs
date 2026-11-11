@@ -71,3 +71,81 @@ test('the DATA line is the only one the geometry stream owns', () => {
   const lines = html().split('\n').filter((l) => l.startsWith('const DATA='));
   assert.equal(lines.length, 1);
 });
+
+// ---- U2: the room board and the doors walk ----
+const boardText = (v) => v.el('board').textContent;
+test('board shows size, confidence and basis', () => {
+  const f = fixture();
+  const v = loadViewer({ data: f });
+  v.select('bedroom-suite');
+  const t = boardText(v);
+  assert.match(t, /5\.0 × 4\.0 m/);
+  assert.match(t, /medium/i);
+  assert.ok(t.includes(f.rooms.find((r) => r.id === 'bedroom-suite').estimate.basis));
+  assert.equal(v.$('#board .size').textContent, '5.0 × 4.0 m');
+});
+test('a space without an estimate shows no size line', () => {
+  for (const id of ['court', 'porch', 'side-passages']) {
+    const v = loadViewer({ data: fixture() });
+    v.select(id);
+    assert.equal(v.$('#board .size'), null, id);
+    assert.doesNotMatch(boardText(v), /undefined|NaN/, id);
+  }
+  const plain = loadViewer();
+  plain.select('bedroom-suite');
+  assert.equal(plain.$('#board .size'), null, 'no estimate in the data, no size line');
+  assert.doesNotMatch(boardText(plain), /undefined|NaN/);
+});
+test('doors from here list the connected rooms', () => {
+  const f = fixture();
+  const v = loadViewer({ data: f });
+  v.select('living');
+  const doors = v.$$('#board .door');
+  const expected = f.doors.filter((d) => d.from === 'living' || d.to === 'living').map((d) => (d.from === 'living' ? d.to : d.from));
+  assert.deepEqual(doors.map((b) => b.dataset.room).sort(), expected.sort());
+  doors.find((b) => /Kitchen/.test(b.textContent)).click();
+  assert.equal(v.state().selected, 'kitchen');
+  assert.match(v.$('#board h2').textContent, /Kitchen/);
+});
+test('a wall or a view is not offered as a door', () => {
+  const v = loadViewer({ data: fixture() });
+  v.select('kitchen');
+  assert.ok(!v.$$('#board .door').some((b) => b.dataset.room === 'wc-outside'), 'the outside WC is not entered from the kitchen');
+});
+test('photo cells are numbered and survive a failed load', () => {
+  const v = loadViewer({ data: fixture() });
+  v.select('living');
+  const cells = v.$$('#board .cell');
+  assert.equal(cells.length, 11);
+  assert.deepEqual(cells.map((c) => c.querySelector('.no').textContent), Array.from({ length: 11 }, (_, i) => String(i + 1)));
+  const third = cells[2];
+  third.querySelector('img').fire('error');
+  assert.ok(third.classList.contains('failed'));
+  assert.equal(third.querySelector('.no').textContent, '3');
+  assert.equal(third.tagName, 'BUTTON');
+  const before = third.querySelector('img').src;
+  third.click();
+  assert.ok(!third.classList.contains('failed'), 'tapping a failed cell retries it');
+  assert.ok(third.querySelector('img').src.startsWith(before), 'the same photo is asked for again');
+});
+test('choosing a site space on the plan tab does not throw', () => {
+  const v = loadViewer({ data: fixture() });
+  v.setMode('plan');
+  assert.doesNotThrow(() => v.select('court'));
+  assert.equal(v.state().selected, 'court');
+  assert.ok(v.el('board').classList.contains('open'));
+});
+test('walkTo selects the room and opens its board', () => {
+  const v = loadViewer({ data: fixture() });
+  v.walk('wc-suite');
+  assert.equal(v.state().selected, 'wc-suite');
+  assert.ok(v.el('board').classList.contains('open'));
+  assert.match(v.$('#board h2').textContent, /En-suite/);
+});
+test('the board closes with its button', () => {
+  const v = loadViewer({ data: fixture() });
+  v.select('kitchen');
+  v.$('#board .close').click();
+  assert.ok(!v.el('board').classList.contains('open'));
+  assert.equal(v.state().selected, null);
+});
