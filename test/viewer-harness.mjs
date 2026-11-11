@@ -100,7 +100,7 @@ export function loadViewer({ width = 339, height = 470, coarse = true, data = nu
   const texts = [];
   const ctx = new Proxy({}, {
     get(t, k) {
-      if (k === 'measureText') return (str) => ({ width: String(str).length * parseFloat(font) * 0.56 });
+      if (k === 'measureText') return (str) => ({ width: String(str).length * parseFloat(font.match(/([\d.]+)px/)[1]) * 0.56 });
       if (k === 'fillText') return (str) => texts.push(String(str));
       if (k in t) return t[k];
       return () => {};

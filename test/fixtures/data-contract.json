@@ -1,38 +1,27 @@
 {
   "units": "m",
-  "estimateNote": "Estimated from 68 photos and the owner’s sketch, ±10–15 %. Not a survey.",
+  "estimateNote": "Estimated from 68 photos and the owner's sketch, ±10–15 %. Not a survey.",
   "rooms": [
     {
-      "id": "bedroom-suite",
+      "id": "kitchen",
       "estimate": {
         "w": 5,
-        "d": 4,
-        "text": "5.0 × 4.0 m",
-        "area": 20,
+        "d": 3,
+        "text": "5.0 × 3.0 m",
+        "area": 15,
+        "confidence": "low",
+        "basis": "Full house width per sketch; depth from counter + walkway (3491–3494)"
+      }
+    },
+    {
+      "id": "living",
+      "estimate": {
+        "w": 5,
+        "d": 4.8,
+        "text": "5.0 × 4.8 m",
+        "area": 24,
         "confidence": "medium",
-        "basis": "Front wall ≈ 3× window width; ~5 diagonal 600 mm tile diagonals along the front wall (3474, 3467)"
-      }
-    },
-    {
-      "id": "wc-suite",
-      "estimate": {
-        "w": 2.2,
-        "d": 2,
-        "text": "2.2 × 2.0 m",
-        "area": 4.4,
-        "confidence": "low",
-        "basis": "Fits WC + shower + basin with 0.75 m door (3470–3472); width set so en-suite + shared WC = Bedroom 1 width"
-      }
-    },
-    {
-      "id": "wc-common",
-      "estimate": {
-        "w": 1.2,
-        "d": 2,
-        "text": "1.2 × 2.0 m",
-        "area": 2.4,
-        "confidence": "low",
-        "basis": "Narrow: door + squat pan + shower in one line (3478–3479)"
+        "basis": "~4 wood-look 600×1200 tiles across, tray ceiling (3456, 3486–3489)"
       }
     },
     {
@@ -58,25 +47,36 @@
       }
     },
     {
-      "id": "living",
+      "id": "wc-suite",
       "estimate": {
-        "w": 5,
-        "d": 4.8,
-        "text": "5.0 × 4.8 m",
-        "area": 24,
-        "confidence": "medium",
-        "basis": "~4 wood-look 600×1200 tiles across, tray ceiling (3456, 3486–3489)"
+        "w": 2.2,
+        "d": 2,
+        "text": "2.2 × 2.0 m",
+        "area": 4.4,
+        "confidence": "low",
+        "basis": "Fits WC + shower + basin with 0.75 m door (3470–3472); width set so en-suite + shared WC = Bedroom 1 width"
       }
     },
     {
-      "id": "kitchen",
+      "id": "wc-common",
+      "estimate": {
+        "w": 1.2,
+        "d": 2,
+        "text": "1.2 × 2.0 m",
+        "area": 2.4,
+        "confidence": "low",
+        "basis": "Narrow: door + squat pan + shower in one line (3478–3479)"
+      }
+    },
+    {
+      "id": "bedroom-suite",
       "estimate": {
         "w": 5,
-        "d": 3,
-        "text": "5.0 × 3.0 m",
-        "area": 15,
-        "confidence": "low",
-        "basis": "Full house width per sketch; depth from counter + walkway (3491–3494)"
+        "d": 4,
+        "text": "5.0 × 4.0 m",
+        "area": 20,
+        "confidence": "medium",
+        "basis": "Front wall ≈ 3× window width; ~5 diagonal 600 mm tile diagonals along the front wall (3474, 3467)"
       }
     },
     {
@@ -112,39 +112,39 @@
     },
     "parts": [
       {
-        "id": "left-passage",
+        "id": "porch-side-passage",
         "label": "Left passage",
         "text": "2.2 m wide",
         "confidence": "low",
-        "basis": "Paver count across the passage in the photos"
+        "basis": "Paver rows plus the porch strip; 0.1 m less than the 2.3 m estimate so the larger house fits the plot"
       },
       {
-        "id": "right-walkway",
+        "id": "opposite-side-passage",
         "label": "Right walkway",
         "text": "1.0 m wide",
         "confidence": "medium",
-        "basis": "Paver count across the walkway in the photos"
+        "basis": "About 5 herringbone paver widths; 0.1 m less than the 1.1 m estimate so the larger house fits the plot"
       },
       {
         "id": "porch",
         "label": "Porch",
         "text": "1.2 m deep",
         "confidence": "low",
-        "basis": "Paver and column spacing in the porch photos"
+        "basis": "Covered, raised tiled strip with pillars along the living room's left wall, inside the left passage"
       },
       {
-        "id": "back-strip",
+        "id": "rear-service-strip",
         "label": "Back strip",
         "text": "1.5 m deep",
         "confidence": "low",
-        "basis": "Fits the outside WC against the compound wall"
+        "basis": "Paver rows and AC units behind the kitchen (3508); deep enough for the outside WC against the compound wall"
       },
       {
-        "id": "parking",
+        "id": "parking-court",
         "label": "Parking",
         "text": "6.9 m deep",
         "confidence": "low",
-        "basis": "Paver count from the house to the boundary; takes up the remainder"
+        "basis": "Paver count; the yard is about as deep as the plot is wide, and takes up the remainder of the plot (estimate 7.1 m)"
       }
     ]
   },

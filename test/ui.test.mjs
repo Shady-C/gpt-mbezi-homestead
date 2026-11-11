@@ -111,6 +111,10 @@ test('a wall or a view is not offered as a door', () => {
   const v = loadViewer({ data: fixture() });
   v.select('kitchen');
   assert.ok(!v.$$('#board .door').some((b) => b.dataset.room === 'wc-outside'), 'the outside WC is not entered from the kitchen');
+  const doorsOf = (id) => { v.select(id); return v.$$('#board .door').map((b) => b.dataset.room).sort(); };
+  assert.deepEqual(doorsOf('bedroom-suite'), ['hall', 'wc-suite'], 'the parking window is not a door');
+  assert.deepEqual(doorsOf('court'), ['side-passages']);
+  assert.deepEqual(doorsOf('wc-outside'), ['side-passages'], 'the outside WC is entered from outside');
 });
 test('photo cells are numbered and survive a failed load', () => {
   const v = loadViewer({ data: fixture() });
@@ -142,6 +146,53 @@ test('walkTo selects the room and opens its board', () => {
   assert.ok(v.el('board').classList.contains('open'));
   assert.match(v.$('#board h2').textContent, /En-suite/);
 });
+// ---- U3: signs on the drawings ----
+test('3D labels carry the size', () => {
+  const v = loadViewer({ width: 900, height: 700, coarse: false, data: fixture() });
+  const t = v.drawnTexts();
+  assert.ok(t.includes('Bedroom 2'), 'name');
+  assert.ok(t.includes('5.0 × 4.0 m'), 'size');
+  const l = v.labels().find((x) => x.text === 'Bedroom 2');
+  assert.equal(l.sub, '5.0 × 4.0 m');
+});
+test('3D labels without an estimate carry the name only', () => {
+  const v = loadViewer({ width: 900, height: 700, coarse: false });
+  const t = v.drawnTexts();
+  assert.ok(t.includes('Bedroom 2'));
+  assert.ok(!t.some((x) => /undefined|NaN/.test(x)));
+});
+test('plan tab draws a scale bar', () => {
+  const v = loadViewer({ width: 900, height: 700, coarse: false, data: fixture() });
+  v.setMode('plan');
+  const t = v.drawnTexts();
+  assert.ok(t.includes('0') && t.includes('2 m'), 'scale bar 0 … 2 m');
+  assert.ok(t.includes('5.0 × 4.0 m'), 'sizes lettered in the room fields');
+});
+test('the plan has no scale bar while the drawing is not in metres', () => {
+  const v = loadViewer({ width: 900, height: 700, coarse: false });
+  v.setMode('plan');
+  assert.ok(!v.drawnTexts().includes('2 m'));
+});
+test('site tab letters the site sizes and a scale bar', () => {
+  const v = loadViewer({ width: 900, height: 900, coarse: false, data: fixture() });
+  v.setMode('site');
+  const t = v.drawnTexts();
+  assert.ok(t.includes('2 m'));
+  assert.ok(t.some((x) => x.includes('6.9 m deep')), 'parking depth');
+  assert.ok(t.some((x) => x.includes('2.2 m wide')), 'left passage width');
+});
+test('connections view draws every space as a sign', () => {
+  const v = loadViewer({ width: 900, height: 700, coarse: false, data: fixture() });
+  v.setMode('graph');
+  const t = v.drawnTexts();
+  for (const n of ['Living / dining', 'Kitchen', 'Corridor', 'Bedroom 1', 'Bedroom 2', 'Shared WC', 'En-suite', 'Porch', 'Outside WC', 'Parking court', 'Side passages']) assert.ok(t.includes(n), n);
+});
+test('the icon is a painted signboard', () => {
+  const svg = readFileSync(join(root, 'favicon.svg'), 'utf8');
+  assert.match(svg, /#F2BE1A/i, 'yellow field');
+  assert.match(svg, /#161513/i, 'ink edge');
+});
+
 test('the board closes with its button', () => {
   const v = loadViewer({ data: fixture() });
   v.select('kitchen');
