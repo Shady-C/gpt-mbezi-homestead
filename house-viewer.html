@@ -18,10 +18,10 @@
 @font-face{font-family:"Atkinson Hyperlegible";src:url(fonts/AtkinsonHyperlegible-Bold.woff2) format("woff2");font-weight:700;font-display:swap}
 :root{
   --wall:#E7E9E4;--scene:#F4F5F1;--ink:#161513;--ink-soft:#45443F;--key:#FFFFFF;
-  --day:#F2BE1A;--bed:#1D4E9E;--wet:#12704A;--pass:#FAFAF6;--out:#1B1B19;--out-letter:#F2BE1A;--act:#C8202B;
+  --day:#F2BE1A;--bed:#1D4E9E;--wet:#12704A;--pass:#FCFCFC;--out:#1B1B19;--out-letter:#F2BE1A;--act:#C8202B;
   --display:"Lilita One","Atkinson Hyperlegible",system-ui,sans-serif;
   --text:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --m:12px;--gap:8px;--edge:3px;
+  --m:16px;--gap:8px;--edge:3px;
   color-scheme:light;
 }
 *{box-sizing:border-box}
@@ -54,7 +54,7 @@ button.board:disabled{cursor:not-allowed;color:var(--ink-soft);--k:var(--ink-sof
 .note{grid-column:1 / -1;margin:2px 0 0;font-size:16px;line-height:1.3;text-wrap:pretty}
 
 /* Views */
-.layout{margin:0 var(--m)}
+main{display:block;margin:0 var(--m)}
 .stage{padding-top:var(--gap)}
 .tabs{display:flex;gap:6px}
 button.tab{flex:1 1 auto;min-height:48px;padding:6px 10px;font:18px/1 var(--display);letter-spacing:.01em}
@@ -63,9 +63,9 @@ button.tab{flex:1 1 auto;min-height:48px;padding:6px 10px;font:18px/1 var(--disp
 .scene canvas{display:block;width:100%;height:100%;touch-action:none;outline:none}
 .scene canvas:focus-visible{outline:3px solid var(--act);outline-offset:-6px}
 .scene-tag{position:absolute;top:10px;left:12px;margin:0;font-size:14px;font-weight:700;pointer-events:none;color:var(--ink-soft)}
-.hint{position:absolute;bottom:8px;left:12px;right:12px;margin:0;font-size:14px;pointer-events:none;color:var(--ink-soft)}
+.hint{position:absolute;bottom:8px;left:12px;right:12px;margin:0;font-size:14px;text-wrap:balance;pointer-events:none;color:var(--ink-soft)}
 .tools{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:var(--gap)}
-.tools .board{font-size:15px;font-weight:700;padding:6px 8px;line-height:1.1}
+.tools .board{font-size:16px;font-weight:700;padding:6px 8px;line-height:1.1}
 
 /* Room list */
 section.block{margin-top:40px}
@@ -73,8 +73,8 @@ section.block > h2{font-size:26px;line-height:1.05;margin-bottom:12px}
 .block-lead{margin:-4px 0 14px;max-width:62ch}
 .room-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(136px,1fr));gap:var(--gap)}
 .room-list button{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;text-align:left;min-height:64px;padding:10px 12px}
-.room-list .rn{font:19px/1.05 var(--display);letter-spacing:.01em}
-.room-list .rs{font-size:15px;font-weight:700;margin-top:3px}
+.room-list .rn{font:18px/1.05 var(--display);letter-spacing:.01em}
+.room-list .rs{font-size:16px;font-weight:700;margin-top:3px}
 .room-list button[aria-pressed="true"]{outline:3px solid var(--act);outline-offset:3px}
 
 /* Room board */
@@ -82,8 +82,8 @@ section.block > h2{font-size:26px;line-height:1.05;margin-bottom:12px}
 .handle{display:none}
 .bhead::after{content:"";position:absolute;inset:2px;border:2px solid var(--k);pointer-events:none}
 .bhead{position:relative;background:var(--f);color:var(--l);display:flex;align-items:center;gap:10px;padding:12px 10px 12px 16px;border-bottom:var(--edge) solid var(--ink)}
-.bhead h2{flex:1;font-size:28px;line-height:1.02;outline:none}
-button.close{flex:none;gap:6px;font-weight:700;font-size:15px;padding:6px 10px}
+.bhead h2{flex:1;font-size:26px;line-height:1.02;outline:none}
+button.close{flex:none;gap:6px;font-weight:700;font-size:16px;padding:6px 10px}
 .close svg{width:16px;height:16px}
 .bbody{padding:16px 16px 20px}
 .size{font:40px/1 var(--display);margin:0;letter-spacing:.01em;font-variant-numeric:tabular-nums}
@@ -93,17 +93,17 @@ button.close{flex:none;gap:6px;font-weight:700;font-size:15px;padding:6px 10px}
 .site-sizes{margin:10px 0 0;padding-left:20px}
 .site-sizes li{margin-bottom:4px}
 .alias{margin:2px 0 0;color:var(--ink-soft)}
-.bbody h3{font-size:21px;line-height:1.1;margin:24px 0 10px}
+.bbody h3{font-size:22px;line-height:1.1;margin:24px 0 10px}
 .doors{list-style:none;margin:0;padding:0;display:grid;gap:var(--gap)}
 button.door{width:100%;display:flex;justify-content:space-between;gap:12px;text-align:left;min-height:56px;padding:8px 8px 8px 14px}
-.door .to{font:20px/1.05 var(--display);letter-spacing:.01em;display:block}
-.door .kind{display:block;font-size:15px;font-weight:700;margin-top:2px}
+.door .to{font:22px/1.05 var(--display);letter-spacing:.01em;display:block}
+.door .kind{display:block;font-size:16px;font-weight:700;margin-top:2px}
 .door .go{flex:none;width:38px;height:38px;background:var(--act);border:2px solid var(--ink);display:grid;place-items:center}
 .door .go svg{width:22px;height:22px}
 .cells{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
 .cell{position:relative;padding:0;border:var(--edge) solid var(--ink);background:var(--ink);aspect-ratio:4/3;overflow:hidden;min-height:44px}
 .cell img{display:block;width:100%;height:100%;object-fit:cover}
-.cell .no{position:absolute;left:0;top:0;min-width:28px;height:28px;padding:0 5px;background:var(--ink);color:var(--key);font:17px/28px var(--display);text-align:center}
+.cell .no{position:absolute;left:0;top:0;min-width:28px;height:28px;padding:0 5px;background:var(--ink);color:var(--key);font:16px/28px var(--display);text-align:center}
 .cell .retry{position:absolute;inset:0;display:none;align-items:flex-end;justify-content:flex-start;padding:6px;color:var(--key);font-size:14px;font-weight:700;text-align:left}
 .cell.failed img{visibility:hidden}
 .cell.failed .retry{display:flex}
@@ -126,14 +126,14 @@ button.door{width:100%;display:flex;justify-content:space-between;gap:12px;text-
 .files a span{font-weight:400;color:var(--ink-soft)}
 footer{margin:48px var(--m) 24px;padding-top:16px;border-top:var(--edge) solid var(--ink)}
 footer p{margin:0 0 6px}
-footer .credit{color:var(--ink-soft);font-size:15px}
+footer .credit{color:var(--ink-soft);font-size:16px}
 
 /* Lightbox: a black board with a yellow keyline */
 dialog{border:var(--edge) solid var(--out-letter);outline:3px solid var(--out);background:var(--out);color:var(--key);padding:12px;width:min(960px,calc(100vw - 24px));max-width:none;max-height:calc(100svh - 24px)}
 dialog::backdrop{background:rgba(22,21,19,.82)}
 .lbbar{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
 .lbbar p{margin:0}
-#large-photo{display:block;max-height:calc(100svh - 190px);max-width:100%;margin:auto}
+#photo-frame img{display:block;max-height:calc(100svh - 190px);max-width:100%;margin:auto}
 .lbnav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px}
 .lbnav span{font:18px var(--display)}
 
@@ -145,10 +145,11 @@ dialog::backdrop{background:rgba(22,21,19,.82)}
   .handle::before{content:"";width:48px;height:6px;background:currentColor}
   .bhead{padding-top:4px}
 }
+@media (max-width:479px){.tools .board{font-size:14px;padding:4px 6px}}
+@media (max-width:899px){body.sheet-open .scene-tag{visibility:hidden}}
 @media (max-width:359px){
   .tools{grid-template-columns:repeat(2,1fr)}
   button.tab{font-size:16px;padding:6px 6px}
-  .sign h1{font-size:24px}
 }
 @media (min-width:900px){
   :root{--m:24px}
@@ -157,10 +158,15 @@ dialog::backdrop{background:rgba(22,21,19,.82)}
   .sign h1{font-size:32px}
   .note{grid-column:auto;margin:0;justify-self:end;text-align:right;max-width:52ch}
   .layout{display:grid;grid-template-columns:minmax(0,1fr) 420px;column-gap:24px;align-items:start}
-  .stage,section.block{grid-column:1}
-  .board-col{grid-column:2;grid-row:1 / span 4;position:sticky;top:0;padding-top:var(--gap);max-height:100vh;overflow:auto;overscroll-behavior:contain}
+  .layout{grid-template-rows:auto 1fr}
+  .stage{grid-column:1;grid-row:1 / span 2;position:sticky;top:0;align-self:start}
+  section.block{grid-column:1 / -1}
+  .board-col{grid-column:2;grid-row:1;padding-top:var(--gap)}
+  #rooms{grid-column:2;grid-row:2;margin-top:20px}
+  #rooms .room-list{grid-template-columns:repeat(3,minmax(0,1fr))}
+  #rooms .block-lead{display:none}
   .scene{height:max(520px,calc(100vh - 236px))}
-  button.tab{flex:0 0 auto;min-width:120px;font-size:19px}
+  button.tab{flex:0 0 auto;min-width:120px;font-size:18px}
   .tools{display:flex;flex-wrap:wrap}
   .about-grid{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:start;gap:24px}
   .scrim{display:none}
@@ -174,20 +180,20 @@ dialog::backdrop{background:rgba(22,21,19,.82)}
 <h1>House Mbezi</h1>
 <p class="note" id="estimate-note">Rough layout from 68 photos and the owner’s sketch. Not a survey.</p>
 </header>
-<main class="layout">
+<main><div class="layout">
 <section class="stage" aria-label="House views">
 <div class="tabs" role="tablist" aria-label="House views"><button class="tab board" data-mode="model" role="tab" aria-selected="true">3D</button><button class="tab board" data-mode="plan" role="tab" aria-selected="false">Plan</button><button class="tab board" data-mode="site" role="tab" aria-selected="false">Site</button><button class="tab board" data-mode="graph" role="tab" aria-selected="false">Connections</button></div>
 <div class="scene board"><canvas id="scene" tabindex="0" aria-label="Interactive house model. Drag to orbit, scroll or pinch to zoom, tap a room to open its board. Every room is also in the room list below."></canvas><p class="scene-tag" id="scene-tag">Roof off · schematic materials</p><p class="hint" id="hint"></p></div>
-<div class="tools"><button class="board k-pass" id="context" aria-pressed="true">Hide site</button><button class="board k-pass" id="walls" aria-pressed="false">Full walls</button><button class="board k-pass" id="reset">Reset view</button><button class="board k-pass" id="save">Save image</button></div>
+<div class="tools"><button class="board k-pass" id="context" aria-pressed="true">Hide site</button><button class="board k-pass" id="walls" aria-pressed="false">Full walls</button><button class="board k-pass" id="reset" aria-label="Reset view">Reset</button><button class="board k-pass" id="save" aria-label="Save image">Save</button></div>
 </section>
 <div class="board-col"><section class="room-board intro" id="board" aria-label="Room board"></section></div>
-<section class="block" id="rooms" aria-labelledby="rooms-title"><h2 id="rooms-title">Rooms and spaces</h2><p class="block-lead">Every room and outside space, painted by kind. Tap one to open its board.</p><div class="room-list" id="room-list"></div></section>
+<section class="block" id="rooms" aria-labelledby="rooms-title"><h2 id="rooms-title">Rooms and spaces</h2><p class="block-lead">Every room and outside space, painted by kind. Tap one to open its board.</p><div class="room-list" id="room-list"></div></section></div>
 <section class="block" aria-labelledby="about-title"><h2 id="about-title">How this was drawn</h2><div class="about-grid"><figure class="sketch"><a href="owner-layout-sketch.jpg" target="_blank"><img src="owner-layout-sketch.jpg" loading="lazy" alt="Owner hand sketch: kitchen top, parking bottom, porch and gate left, corridor right"></a><figcaption>The owner’s sketch decides the layout</figcaption></figure><div class="about-text"><p>Layout follows the owner’s sketch: full-width kitchen at the top, porch and gate on the left, corridor on the right, Bedroom 2 beside parking. Single storey, no stairs.</p><p>The 68 photos establish what each room holds. Sizes, opening positions and wall heights are estimates from the photos and the sketch, each with its confidence. No roof geometry or north direction has been established, and none is shown.</p></div></div></section>
 <section class="block" aria-labelledby="files-title"><h2 id="files-title">Downloads and evidence</h2><ul class="files"><li><a class="board k-pass" href="floor-plan.svg" target="_blank">Floor plan <span>SVG</span></a></li><li><a class="board k-pass" href="site-plan.svg" target="_blank">Site plan <span>SVG</span></a></li><li><a class="board k-pass" href="exterior-photo-matches.jpg" target="_blank">Photo matches <span>JPG</span></a></li><li><a class="board k-pass" href="house-model.glb" download>3D model <span>GLB</span></a></li><li><a class="board k-pass" href="house-layout.json" download>Editable layout <span>JSON</span></a></li><li><a class="board k-pass" href="house-viewer-offline.html" download>Offline copy <span>5 MB</span></a></li><li><a class="board k-pass" href="https://github.com/Shady-C/gpt-mbezi-homestead#readme" target="_blank" rel="noopener">Evidence &amp; next measurements <span>README</span></a></li></ul></section>
 </main>
 <footer><p><strong>House Mbezi · Draft 03.</strong> Drawn from 68 photographs and the owner’s hand sketch.</p><p class="credit">Lettering in Lilita One by Juan Montoreano; text in Atkinson Hyperlegible by the Braille Institute. Both under the SIL Open Font License.</p></footer>
 <div class="scrim" id="scrim" hidden></div>
-<dialog id="lightbox" aria-labelledby="photo-caption"><div class="lbbar"><p id="photo-caption"></p><button class="board k-pass close" id="close">Close</button></div><img id="large-photo" alt="House evidence photograph"><div class="lbnav"><button class="board k-pass" id="prev">Previous</button><span id="photo-count"></span><button class="board k-pass" id="next">Next</button></div></dialog>
+<dialog id="lightbox" aria-labelledby="photo-caption"><div class="lbbar"><p id="photo-caption"></p><button class="board k-pass close" id="close">Close</button></div><div id="photo-frame"></div><div class="lbnav"><button class="board k-pass" id="prev">Previous</button><span id="photo-count"></span><button class="board k-pass" id="next">Next</button></div></dialog>
 <script>
 // @helpers-start
 function placeLabels(items,W,H,pad,dropOverlaps=true){const kept=[];const box=a=>[a.x-a.w/2,a.y-a.h,a.x+a.w/2,a.y];const order=items.map((it,i)=>({...it,i})).sort((a,b)=>b.priority-a.priority||a.i-b.i);for(const it of order){if(it.x<-it.w/2||it.x>W+it.w/2||it.y<0||it.y>H+it.h)continue;const l={...it};l.x=Math.max(pad+l.w/2,Math.min(W-pad-l.w/2,l.x));l.y=Math.max(pad+l.h,Math.min(H-pad,l.y));const [x0,y0,x1,y1]=box(l);if(dropOverlaps&&kept.some(k=>{const [a0,b0,a1,b1]=box(k);return x0<a1&&x1>a0&&y0<b1&&y1>b0}))continue;kept.push(l)}return kept.sort((a,b)=>a.i-b.i).map(({i,...r})=>r)}
@@ -206,7 +212,7 @@ const COARSE=matchMedia('(pointer: coarse)').matches,REDUCED=matchMedia('(prefer
 // The signboard world: one painted field per kind of space, one action colour.
 const NAME={living:'Living / dining',kitchen:'Kitchen',hall:'Corridor','bedroom-small':'Bedroom 1','bedroom-suite':'Bedroom 2','wc-common':'Shared WC','wc-suite':'En-suite',porch:'Porch','wc-outside':'Outside WC',court:'Parking court','side-passages':'Side passages'};
 const KIND={living:'day',kitchen:'day','bedroom-small':'bed','bedroom-suite':'bed','wc-suite':'wet','wc-common':'wet','wc-outside':'wet',hall:'pass',porch:'pass',court:'out','side-passages':'out'};
-const PAINT={day:['#F2BE1A','#161513','#FFFFFF'],bed:['#1D4E9E','#FFFFFF','#FFFFFF'],wet:['#12704A','#FFFFFF','#FFFFFF'],pass:['#FAFAF6','#161513','#161513'],out:['#1B1B19','#F2BE1A','#F2BE1A'],act:['#C8202B','#FFFFFF','#FFFFFF']};
+const PAINT={day:['#F2BE1A','#161513','#FFFFFF'],bed:['#1D4E9E','#FFFFFF','#FFFFFF'],wet:['#12704A','#FFFFFF','#FFFFFF'],pass:['#FCFCFC','#161513','#161513'],out:['#1B1B19','#F2BE1A','#F2BE1A'],act:['#C8202B','#FFFFFF','#FFFFFF']};
 const C={wall:'#E7E9E4',scene:'#F4F5F1',ink:'#161513',soft:'#45443F',act:'#C8202B',paving:'#CFCBBF'};
 const FD='"Lilita One","Atkinson Hyperlegible",sans-serif',FT='"Atkinson Hyperlegible",system-ui,sans-serif';
 const nameOf=id=>NAME[id]||(spaces[id]||rooms[id]||{label:id}).label;
@@ -241,7 +247,7 @@ function paintSign(l,kind){const [f,t,k]=PAINT[kind]||PAINT.pass,x=l.x-l.w/2,y=l
 function model(){let faces=[];hit=[];const geom=DATA.boxes;for(const b of geom){if(b.site&&!siteContext)continue;let [x,y,z]=b.p,[w,d,h]=b.s;if(b.site&&['site-boundary','site-pier','site-gate','site-gate-detail'].includes(b.kind)){h=Math.min(h,full?1.1:.5);}if(!full&&['wall','frame','grille','glass','door','column','fixture'].includes(b.kind)){if(z>.88)continue;h=Math.min(h,.88-z);if(h<=0)continue;}let v=[[x,y,z],[x+w,y,z],[x+w,y+d,z],[x,y+d,z],[x,y,z+h],[x+w,y,z+h],[x+w,y+d,z+h],[x,y+d,z+h]].map(p=>projection(...p));let col=DATA.palette[b.mat];let fs=[[[0,3,2,1],.65],[[4,5,6,7],1.08],[[0,1,5,4],.83],[[3,7,6,2],.94],[[0,4,7,3],.78],[[1,2,6,5],1]];for(let [ix,light] of fs){let p=ix.map(i=>v[i]);faces.push({p,depth:p.reduce((s,q)=>s+q[2],0)/4,fill:tint(col,light),room:b.room,kind:b.kind});}}
 faces.sort((a,b)=>a.depth-b.depth);for(let f of faces){poly(f.p,f.fill,['tile','grille'].includes(f.kind)?null:'#a0aaa13a',.5);if(['floor','site-floor'].includes(f.kind))hit.push({id:f.room,p:f.p})}
 // room focus and signs, laid directly over floor centres
-let labels=[];for(let r of DATA.rooms){let p=[[r.x+.12,r.y+.12,.03],[r.x+r.w-.12,r.y+.12,.03],[r.x+r.w-.12,r.y+r.d-.12,.03],[r.x+.12,r.y+r.d-.12,.03]].map(v=>projection(...v));if(r.id===selected)poly(p,'rgba(200,32,43,.16)',C.act,2.5);let c=projection(r.x+r.w/2,r.y+r.d/2,.12),size=labelSize(W,r.w<1.7),e=estimateOf(r.id),sub=e?e.text:'',m=measureSign(nameOf(r.id),sub,size,W<500?5:7);labels.push({text:nameOf(r.id),sub,x:c[0],y:c[1]+m.h/2,w:m.w,h:m.h,size,priority:labelPriority(r.id,selected),kind:kindOf(r.id),id:r.id});hit.push({id:r.id,p});}
+let labels=[];for(let r of DATA.rooms){let p=[[r.x+.12,r.y+.12,.03],[r.x+r.w-.12,r.y+.12,.03],[r.x+r.w-.12,r.y+r.d-.12,.03],[r.x+.12,r.y+r.d-.12,.03]].map(v=>projection(...v));if(r.id===selected)poly(p,'rgba(200,32,43,.16)',C.act,2.5);let c=projection(r.x+r.w/2,r.y+r.d/2,.12),size=Math.round(labelSize(W,r.w<1.7)*(W>1100?1.15:1)),e=estimateOf(r.id),sub=e?e.text:'',m=measureSign(nameOf(r.id),sub,size,W<500?5:7);labels.push({text:nameOf(r.id),sub,x:c[0],y:c[1]+m.h/2,w:m.w,h:m.h,size,priority:labelPriority(r.id,selected),kind:kindOf(r.id),id:r.id});hit.push({id:r.id,p});}
 if(siteContext){const pk=DATA.site.find(x=>x.id==='parking-court');if(pk){const c=projection(pk.x+pk.w/2,pk.y+pk.d/2,0),sub=siteSize('parking-court').text,m=measureSign('Parking',sub,11,6);labels.push({text:'Parking',sub,x:c[0],y:c[1]+m.h/2,w:m.w,h:m.h,size:11,priority:labelPriority('court',selected),site:true,kind:'out',id:'court'})}const g=DATA.boundaries.find(s=>s.id==='gate');if(g){let q=projection((g.a[0]+g.b[0])/2-.8,(g.a[1]+g.b[1])/2,0),m=measureSign('GATE','',10,5);labels.push({text:'GATE',x:q[0],y:q[1]+m.h/2,w:m.w,h:m.h,size:10,priority:labelPriority('court',selected),site:true,kind:'out',id:'court'});}}
 for(const l of placeLabels(labels,W,H,4,W<500))paintSign(l,l.id===selected?'act':l.kind)}
 
@@ -297,14 +303,14 @@ body.append(make('h3',null,'Seen in the photos'));const ul=make('ul','features')
 board.replaceChildren(handle,boardHead(nameOf(id),kind,true),body);board.scrollTop=0}
 // Pull the sheet's handle down to put it away.
 function dragToClose(h){let y0=null;h.onpointerdown=e=>{y0=e.clientY;try{h.setPointerCapture(e.pointerId)}catch(_){}board.style.transition='none'};h.onpointermove=e=>{if(y0!=null)board.style.transform='translateY('+Math.max(0,e.clientY-y0)+'px)'};h.onpointerup=h.onpointercancel=e=>{if(y0==null)return;const dy=e.clientY-y0;y0=null;board.style.transition='';board.style.transform='';if(dy>70)closeBoard()}}
-function openBoard(){board.classList.remove('intro');board.classList.add('open');}
-function closeBoard(){board.classList.remove('open');selected=null;renderBoard();syncList();ease({ay:.53});draw();if(invoker&&invoker.focus)invoker.focus({preventScroll:true});invoker=null}
+function openBoard(){board.classList.remove('intro');board.classList.add('open');document.body.classList.add('sheet-open')}
+function closeBoard(){board.classList.remove('open');document.body.classList.remove('sheet-open');selected=null;renderBoard();syncList();ease({ay:.53});draw();if(invoker&&invoker.focus)invoker.focus({preventScroll:true});invoker=null}
 function choose(id){if(!spaces[id])return;selected=id;renderBoard();openBoard();syncList();draw()}
 // ---- the doors-from-here walk: select, then ease the 3D view to the room entered ----
 function spotOf(id){const r=rooms[id]||DATA.site.find(x=>x.id===(id==='court'?'parking-court':'porch-side-passage'));return r?{cx:r.x+r.w/2,cy:r.y+r.d/2}:null}
-function sheetAnchor(){if(!phone())return .53;const h=board.offsetHeight,c=canvas.getBoundingClientRect();if(!(h>0)||!(c.height>0))return .53;const covered=Math.max(0,c.bottom-((window.innerHeight||c.bottom)-h));return Math.max(.2,Math.min(.53,(c.height-covered)*.5/c.height))}
+function sheetAnchor(){if(!phone())return .53;const h=board.offsetHeight,c=canvas.getBoundingClientRect(),vh=window.innerHeight||0;if(!(h>0)||!(c.height>0)||!(vh>0))return .53;const visible=Math.max(60,Math.min(c.height,vh-h));return Math.max(.12,Math.min(.53,visible*.5/c.height))}
 function ease(t){const v=viewBox('model'),f0=focus||{cx:v.cx,cy:v.cy},from={cx:f0.cx,cy:f0.cy,z:zoom,ay},to={cx:t.cx??from.cx,cy:t.cy??from.cy,z:t.z??from.z,ay:t.ay??from.ay};const set=k=>{if(t.cx!=null||focus)focus={cx:from.cx+(to.cx-from.cx)*k,cy:from.cy+(to.cy-from.cy)*k};zoom=from.z+(to.z-from.z)*k;ay=from.ay+(to.ay-from.ay)*k;draw()};if(anim&&window.cancelAnimationFrame)cancelAnimationFrame(anim);anim=null;if(REDUCED.matches||!window.requestAnimationFrame||mode!=='model')return set(1);const t0=performance.now();const step=now=>{const k=Math.min(1,(now-t0)/380);set(1-Math.pow(1-k,3));anim=k<1?requestAnimationFrame(step):null};anim=requestAnimationFrame(step)}
-function walkTo(id){if(!spaces[id])return;choose(id);const c=spotOf(id);if(c)ease({cx:c.cx,cy:c.cy,z:Math.max(zoom,phone()?1.45:1.25),ay:sheetAnchor()})}
+function walkTo(id){if(!spaces[id])return;choose(id);if(phone()&&mode==='model'){const sc=canvas.parentNode;if(sc&&sc.scrollIntoView)sc.scrollIntoView({block:'start',behavior:REDUCED.matches?'auto':'smooth'})}const c=spotOf(id);if(c)ease({cx:c.cx,cy:c.cy,z:Math.max(zoom,phone()?1.45:1.25),ay:sheetAnchor()})}
 scrim.onclick=closeBoard;
 
 // ---- the room list: every space, without the 3D view ----
@@ -313,7 +319,7 @@ function syncList(){$('room-list').querySelectorAll('button').forEach(b=>b.setAt
 
 // ---- lightbox ----
 let shown={id:null,i:0};
-function openPhoto(id,i){const ps=spaces[id].photos;i=(i+ps.length)%ps.length;shown={id,i};const n=ps[i];$('large-photo').src=DATA.photos[n];$('large-photo').alt=nameOf(id)+', photo '+(i+1)+' of '+ps.length;$('photo-caption').textContent=(DATA.annotations.find(a=>a.photo.includes('IMG_'+n))||{}).caption||nameOf(id)+' · IMG_'+n;$('photo-count').textContent=nameOf(id)+' · '+(i+1)+' of '+ps.length;const lb=$('lightbox');if(!lb.open)lb.showModal()}
+function openPhoto(id,i){const ps=spaces[id].photos;i=(i+ps.length)%ps.length;shown={id,i};const n=ps[i];let big=$('large-photo');if(!big||big.tagName!=='IMG'){big=new Image();big.id='large-photo';$('photo-frame').replaceChildren(big)}big.src=DATA.photos[n];big.alt=nameOf(id)+', photo '+(i+1)+' of '+ps.length;$('photo-caption').textContent=(DATA.annotations.find(a=>a.photo.includes('IMG_'+n))||{}).caption||nameOf(id)+' · IMG_'+n;$('photo-count').textContent=nameOf(id)+' · '+(i+1)+' of '+ps.length;const lb=$('lightbox');if(!lb.open)lb.showModal()}
 $('close').onclick=()=>$('lightbox').close();$('prev').onclick=()=>openPhoto(shown.id,shown.i-1);$('next').onclick=()=>openPhoto(shown.id,shown.i+1);
 $('lightbox').onkeydown=e=>{if(e.key==='ArrowLeft')openPhoto(shown.id,shown.i-1);if(e.key==='ArrowRight')openPhoto(shown.id,shown.i+1)};
 

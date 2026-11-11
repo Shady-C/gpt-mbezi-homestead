@@ -10,37 +10,52 @@ colors:
   field-day: "#F2BE1A"
   field-bed: "#1D4E9E"
   field-wet: "#12704A"
-  field-pass: "#FAFAF6"
+  field-pass: "#FCFCFC"
   field-out: "#1B1B19"
   letter-out: "#F2BE1A"
   action: "#C8202B"
 typography:
   display:
     fontFamily: "Lilita One, Atkinson Hyperlegible, sans-serif"
-    fontSize: "clamp(1.625rem, 4vw, 2rem)"
+    fontSize: "32px"
     fontWeight: 400
     lineHeight: 1
     letterSpacing: "0.01em"
+  heading:
+    fontFamily: "Lilita One, sans-serif"
+    fontSize: "26px"
+    fontWeight: 400
+    lineHeight: 1.05
+  heading-small:
+    fontFamily: "Lilita One, sans-serif"
+    fontSize: "22px"
+    fontWeight: 400
+    lineHeight: 1.05
   size-figure:
     fontFamily: "Lilita One, sans-serif"
-    fontSize: "2.5rem"
+    fontSize: "40px"
     fontWeight: 400
     lineHeight: 1
   sign:
     fontFamily: "Lilita One, sans-serif"
-    fontSize: "1.125rem"
+    fontSize: "18px"
     fontWeight: 400
-    lineHeight: 1.1
+    lineHeight: 1.05
   body:
     fontFamily: "Atkinson Hyperlegible, system-ui, sans-serif"
-    fontSize: "1rem"
+    fontSize: "16px"
     fontWeight: 400
     lineHeight: 1.45
   body-strong:
     fontFamily: "Atkinson Hyperlegible, system-ui, sans-serif"
-    fontSize: "1rem"
+    fontSize: "16px"
     fontWeight: 700
     lineHeight: 1.45
+  meta:
+    fontFamily: "Atkinson Hyperlegible, system-ui, sans-serif"
+    fontSize: "14px"
+    fontWeight: 700
+    lineHeight: 1.3
 rounded:
   board: "0px"
 spacing:
@@ -107,7 +122,7 @@ Strategy: full palette with a quiet ground. Each kind of space owns one painted 
 - **Day rooms, yellow `#F2BE1A`** with ink letters: living / dining, kitchen.
 - **Bedrooms, cobalt `#1D4E9E`** with white letters: Bedroom 1, Bedroom 2.
 - **Washrooms, green `#12704A`** with white letters: en-suite, shared WC, outside WC.
-- **Passages, white board `#FAFAF6`** with ink letters: corridor, porch.
+- **Passages, white board `#FCFCFC`** with ink letters: corridor, porch.
 - **Outside, black board `#1B1B19`** with yellow letters: parking court, side passages, the gate.
 
 ### Action
@@ -129,17 +144,19 @@ Strategy: full palette with a quiet ground. Each kind of space owns one painted 
 - **Atkinson Hyperlegible** (OFL, self-hosted): every sentence, list and caption, 16px minimum for running text, chosen because the family includes older readers on small phones.
 
 ### Hierarchy
+One ramp: 14 / 16 / 18 / 22 / 26 / 32 / 40 px.
 - House name 26px phone / 32px desktop, Lilita.
 - Size figure on a room board 40px, Lilita: the largest figure on any board.
-- Room name on a board 28px, Lilita. Signs in the list 18px, Lilita.
-- Body 16px / 1.45, Atkinson; confidence and door kinds 15px bold Atkinson.
-- Canvas signs: name in Lilita at 11–13px, size line in Atkinson bold one step smaller (never under 10px).
+- Room name on a board and section headings 26px; board subheadings and door names 22px; tabs and room-list names 18px, all Lilita.
+- Body 16px / 1.45, Atkinson; confidence, door kinds and sizes in the list 16px bold.
+- Meta 14px bold Atkinson: the scene tag, the hint, tool labels on small phones, "Tap to retry".
+- Canvas signs: name in Lilita at 10–13px (×1.15 on scenes wider than 1100px), size line in Atkinson bold one step smaller, never under 10px.
 
 ## Layout
 
-- Phone first. Outer margin 12px on phones, 24px from 900px.
-- Phone (390 × 844): header board, tab row (48px), the drawing filling the rest of the first screen above a 52px tool strip; room list, how-it-was-drawn and downloads below. The room board is a bottom sheet over the drawing.
-- Desktop (≥ 900px): the same header and tabs; the drawing on the left, the room board as a 420px sticky side panel on the right.
+- Phone first. Outer margin 16px below 900px, 24px from 900px.
+- Phone (390 × 844): header board, tab row (48px), the drawing filling the rest of the first screen above a tool strip; room list, how-it-was-drawn and downloads below. The room board is a bottom sheet (at most 60svh, no dimming) over the drawing; opening it scrolls the drawing to the top of the screen and eases the room into the band above the sheet.
+- Desktop (≥ 900px): the same header and tabs; the drawing on the left, sticky while the right column scrolls; the right column (420px) holds the room board and, under it, the room list. How-it-was-drawn and downloads run full width below.
 - No horizontal page scroll at 320px.
 
 ## Elevation & Depth
