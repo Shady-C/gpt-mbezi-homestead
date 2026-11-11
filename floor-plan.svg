@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+<rect width="1200" height="1200" fill="#f7f6f1"/>
+<style>text{font-family:Arial,sans-serif;fill:#263738}.small{font-size:14px}.label{font-size:17px;font-weight:600}.muted{fill:#647474}</style>
+<text x="70" y="65" font-size="32">House Mbezi</text>
+<text x="70" y="98" font-size="20">Unmeasured layout hypothesis · draft 03</text>
+<text x="70" y="129" class="small muted">Owner-sketch arrangement. Rough proportions only; all numeric dimensions are unmeasured.</text>
+<rect x="105" y="260" width="300.8" height="108.1" fill="#e9eee8"/>
+<rect x="105" y="368.1" width="300.8" height="202.1" fill="#e9eee8"/>
+<rect x="105" y="570.2" width="220.9" height="122.2" fill="#e9eee8"/>
+<rect x="325.9" y="570.2" width="79.89999999999999" height="211.5" fill="#e9eee8"/>
+<rect x="105" y="692.4" width="103.4" height="89.3" fill="#e7dfd1"/>
+<rect x="208.4" y="692.4" width="117.5" height="89.3" fill="#e7dfd1"/>
+<rect x="105" y="781.6999999999999" width="300.8" height="126.9" fill="#e9eee8"/>
+<rect x="74.45" y="368.1" width="30.55" height="202.1" fill="#e9eee8"/>
+<rect x="43.9" y="198.9" width="94.0" height="61.1" fill="#e7dfd1"/>
+<line x1="105" y1="260" x2="405.8" y2="260" stroke="#394647" stroke-width="5"/>
+<line x1="105" y1="368.1" x2="405.8" y2="368.1" stroke="#394647" stroke-width="5"/>
+<line x1="203.7" y1="368.1" x2="330.6" y2="368.1" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="105" y1="260" x2="105" y2="368.1" stroke="#394647" stroke-width="5"/>
+<line x1="105" y1="292.9" x2="105" y2="344.6" stroke="#91adb4" stroke-width="6"/>
+<line x1="105" y1="292.9" x2="105" y2="344.6" stroke="#52767e" stroke-width="1.5"/>
+<line x1="405.8" y1="260" x2="405.8" y2="368.1" stroke="#394647" stroke-width="5"/>
+<line x1="405.8" y1="285.85" x2="405.8" y2="351.65" stroke="#91adb4" stroke-width="6"/>
+<line x1="405.8" y1="285.85" x2="405.8" y2="351.65" stroke="#52767e" stroke-width="1.5"/>
+<line x1="105" y1="570.2" x2="405.8" y2="570.2" stroke="#394647" stroke-width="5"/>
+<line x1="325.9" y1="570.2" x2="405.8" y2="570.2" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="105" y1="368.1" x2="105" y2="570.2" stroke="#394647" stroke-width="5"/>
+<line x1="105" y1="377.5" x2="105" y2="424.5" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="105" y1="457.4" x2="105" y2="537.3" stroke="#91adb4" stroke-width="6"/>
+<line x1="105" y1="457.4" x2="105" y2="537.3" stroke="#52767e" stroke-width="1.5"/>
+<line x1="405.8" y1="368.1" x2="405.8" y2="570.2" stroke="#394647" stroke-width="5"/>
+<line x1="405.8" y1="415.1" x2="405.8" y2="518.5" stroke="#91adb4" stroke-width="6"/>
+<line x1="405.8" y1="415.1" x2="405.8" y2="518.5" stroke="#52767e" stroke-width="1.5"/>
+<line x1="105" y1="570.2" x2="325.9" y2="570.2" stroke="#394647" stroke-width="5"/>
+<line x1="105" y1="692.4" x2="325.9" y2="692.4" stroke="#394647" stroke-width="5"/>
+<line x1="105" y1="570.2" x2="105" y2="692.4" stroke="#394647" stroke-width="5"/>
+<line x1="105" y1="593.7" x2="105" y2="664.2" stroke="#91adb4" stroke-width="6"/>
+<line x1="105" y1="593.7" x2="105" y2="664.2" stroke="#52767e" stroke-width="1.5"/>
+<line x1="325.9" y1="570.2" x2="325.9" y2="692.4" stroke="#394647" stroke-width="5"/>
+<line x1="325.9" y1="584.3" x2="325.9" y2="626.5999999999999" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="325.9" y1="570.2" x2="405.8" y2="570.2" stroke="#394647" stroke-width="5"/>
+<line x1="325.9" y1="570.2" x2="405.8" y2="570.2" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="325.9" y1="781.6999999999999" x2="405.8" y2="781.6999999999999" stroke="#394647" stroke-width="5"/>
+<line x1="342.35" y1="781.6999999999999" x2="384.65000000000003" y2="781.6999999999999" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="325.9" y1="570.2" x2="325.9" y2="781.6999999999999" stroke="#394647" stroke-width="5"/>
+<line x1="325.9" y1="584.3" x2="325.9" y2="626.5999999999999" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="325.9" y1="708.85" x2="325.9" y2="746.45" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="405.8" y1="570.2" x2="405.8" y2="781.6999999999999" stroke="#394647" stroke-width="5"/>
+<line x1="405.8" y1="586.6500000000001" x2="405.8" y2="659.5" stroke="#91adb4" stroke-width="6"/>
+<line x1="405.8" y1="586.6500000000001" x2="405.8" y2="659.5" stroke="#52767e" stroke-width="1.5"/>
+<line x1="405.8" y1="711.2" x2="405.8" y2="758.2" stroke="#91adb4" stroke-width="6"/>
+<line x1="405.8" y1="711.2" x2="405.8" y2="758.2" stroke="#52767e" stroke-width="1.5"/>
+<line x1="105" y1="692.4" x2="208.4" y2="692.4" stroke="#394647" stroke-width="5"/>
+<line x1="105" y1="781.6999999999999" x2="208.4" y2="781.6999999999999" stroke="#394647" stroke-width="5"/>
+<line x1="137.9" y1="781.6999999999999" x2="175.5" y2="781.6999999999999" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="105" y1="692.4" x2="105" y2="781.6999999999999" stroke="#394647" stroke-width="5"/>
+<line x1="105" y1="715.9" x2="105" y2="746.45" stroke="#91adb4" stroke-width="6"/>
+<line x1="105" y1="715.9" x2="105" y2="746.45" stroke="#52767e" stroke-width="1.5"/>
+<line x1="208.4" y1="692.4" x2="208.4" y2="781.6999999999999" stroke="#394647" stroke-width="5"/>
+<line x1="208.4" y1="692.4" x2="325.9" y2="692.4" stroke="#394647" stroke-width="5"/>
+<line x1="208.4" y1="781.6999999999999" x2="325.9" y2="781.6999999999999" stroke="#394647" stroke-width="5"/>
+<line x1="325.9" y1="692.4" x2="325.9" y2="781.6999999999999" stroke="#394647" stroke-width="5"/>
+<line x1="325.9" y1="708.85" x2="325.9" y2="746.45" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="105" y1="781.6999999999999" x2="405.8" y2="781.6999999999999" stroke="#394647" stroke-width="5"/>
+<line x1="342.35" y1="781.6999999999999" x2="384.65000000000003" y2="781.6999999999999" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="137.9" y1="781.6999999999999" x2="175.5" y2="781.6999999999999" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="105" y1="908.6" x2="405.8" y2="908.6" stroke="#394647" stroke-width="5"/>
+<line x1="208.4" y1="908.6" x2="297.7" y2="908.6" stroke="#91adb4" stroke-width="6"/>
+<line x1="208.4" y1="908.6" x2="297.7" y2="908.6" stroke="#52767e" stroke-width="1.5"/>
+<line x1="105" y1="781.6999999999999" x2="105" y2="908.6" stroke="#394647" stroke-width="5"/>
+<line x1="105" y1="809.9" x2="105" y2="878.0500000000001" stroke="#91adb4" stroke-width="6"/>
+<line x1="105" y1="809.9" x2="105" y2="878.0500000000001" stroke="#52767e" stroke-width="1.5"/>
+<line x1="405.8" y1="781.6999999999999" x2="405.8" y2="908.6" stroke="#394647" stroke-width="5"/>
+<line x1="405.8" y1="809.9" x2="405.8" y2="878.0500000000001" stroke="#91adb4" stroke-width="6"/>
+<line x1="405.8" y1="809.9" x2="405.8" y2="878.0500000000001" stroke="#52767e" stroke-width="1.5"/>
+<line x1="43.9" y1="198.9" x2="137.9" y2="198.9" stroke="#394647" stroke-width="5"/>
+<line x1="43.9" y1="260.0" x2="137.9" y2="260.0" stroke="#394647" stroke-width="5"/>
+<line x1="53.3" y1="260.0" x2="93.25" y2="260.0" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="43.9" y1="198.9" x2="43.9" y2="260.0" stroke="#394647" stroke-width="5"/>
+<line x1="137.9" y1="198.9" x2="137.9" y2="260.0" stroke="#394647" stroke-width="5"/>
+<line x1="137.9" y1="210.65" x2="137.9" y2="243.55" stroke="#91adb4" stroke-width="6"/>
+<line x1="137.9" y1="210.65" x2="137.9" y2="243.55" stroke="#52767e" stroke-width="1.5"/>
+<text x="255.4" y="314.05" text-anchor="middle" class="small">Kitchen</text>
+<text x="255.4" y="469.15" text-anchor="middle" class="small">Living / dining</text>
+<text x="215.45" y="631.3" text-anchor="middle" class="small">Bedroom 1</text>
+<text x="365.84999999999997" y="675.95" text-anchor="middle" class="small">Corridor</text>
+<text x="156.7" y="737.05" text-anchor="middle" class="small">En-suite</text>
+<text x="267.15" y="727.55" text-anchor="middle" class="small">Shared</text>
+<text x="267.15" y="746.55" text-anchor="middle" class="small">WC</text>
+<text x="255.4" y="835.65" text-anchor="middle" class="small">Bedroom 2</text>
+<text x="255.4" y="854.65" text-anchor="middle" class="small">en-suite room</text>
+<text x="89.725" y="469.15" text-anchor="middle" class="small">Porch</text>
+<text x="90.9" y="219.95" text-anchor="middle" class="small">External</text>
+<text x="90.9" y="238.95" text-anchor="middle" class="small">WC</text>
+<text x="690" y="275" class="label">How to read this draft</text>
+<text x="690" y="310" class="small">2 bedrooms identified in the photos</text>
+<text x="690" y="340" class="small">1 en-suite + 1 shared WC/shower</text>
+<text x="690" y="370" class="small">1 external service WC</text>
+<text x="690" y="420" class="small muted">External WC is attached to kitchen.</text>
+<text x="690" y="445" class="small muted">Porch/gate LEFT; corridor RIGHT.</text>
+<text x="690" y="495" class="small muted">Full-width kitchen follows owner sketch.</text>
+<text x="690" y="520" class="small muted">Main house has a continuous footprint.</text>
+<text x="690" y="570" class="small muted">No scale bar or north arrow:</text>
+<text x="690" y="595" class="small muted">neither has been established.</text>
+<text x="70" y="1110" class="small">Next: add room and site measurements for renovation and furnishing planning.</text>
+<text x="70" y="1140" class="small muted">Source: 68 supplied photographs, IMG_3443–IMG_3510 · Roof omitted · Not a measured survey</text>
+</svg>

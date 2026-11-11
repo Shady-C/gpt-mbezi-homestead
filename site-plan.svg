@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1450" viewBox="0 0 1200 1450">
+<rect width="1200" height="1450" fill="#f7f6f1"/>
+<style>text{font-family:Arial,sans-serif;fill:#263738}.small{font-size:14px}.note{font-size:16px;fill:#647474}</style>
+<text x="70" y="65" font-size="32">House Mbezi · Site plan</text>
+<text x="70" y="102" font-size="21">Owner sketch orientation · draft 03</text>
+<text x="70" y="135" class="note">Unmeasured layout hypothesis · single storey · no stairs</text>
+<rect x="86.3" y="926.2" width="431.20000000000005" height="205.8" fill="#ded6c2"/>
+<rect x="86.3" y="250" width="63.7" height="676.2" fill="#ded6c2"/>
+<rect x="184.3" y="186.3" width="333.2" height="63.7" fill="#ded6c2"/>
+<rect x="463.6" y="250" width="53.900000000000006" height="676.2" fill="#ded6c2"/>
+<rect x="150" y="250" width="313.6" height="112.69999999999999" fill="#e9eee8" stroke="#405b53" stroke-width="3"/>
+<text x="306.8" y="306.35" text-anchor="middle" class="small">Kitchen</text>
+<rect x="150" y="362.7" width="313.6" height="210.7" fill="#e9eee8" stroke="#405b53" stroke-width="3"/>
+<text x="306.8" y="468.04999999999995" text-anchor="middle" class="small">Living / dining</text>
+<rect x="150" y="573.4" width="230.3" height="127.4" fill="#e9eee8" stroke="#405b53" stroke-width="3"/>
+<text x="265.15" y="637.0999999999999" text-anchor="middle" class="small">Bedroom 1</text>
+<rect x="380.3" y="573.4" width="83.3" height="220.5" fill="#e9eee8" stroke="#405b53" stroke-width="3"/>
+<text x="421.95" y="683.65" text-anchor="middle" class="small">Corridor</text>
+<rect x="150" y="700.8" width="107.80000000000001" height="93.1" fill="#c8bdab" stroke="#405b53" stroke-width="3"/>
+<text x="203.9" y="747.3499999999999" text-anchor="middle" class="small">En-suite</text>
+<rect x="257.8" y="700.8" width="122.5" height="93.1" fill="#c8bdab" stroke="#405b53" stroke-width="3"/>
+<text x="319.05" y="738.3499999999999" text-anchor="middle" class="small">Shared</text>
+<text x="319.05" y="756.3499999999999" text-anchor="middle" class="small">WC</text>
+<rect x="150" y="793.9" width="313.6" height="132.3" fill="#e9eee8" stroke="#405b53" stroke-width="3"/>
+<text x="306.8" y="851.05" text-anchor="middle" class="small">Bedroom 2</text>
+<text x="306.8" y="869.05" text-anchor="middle" class="small">en-suite room</text>
+<rect x="118.15" y="362.7" width="31.85" height="210.7" fill="#e9eee8" stroke="#405b53" stroke-width="3"/>
+<text x="134.075" y="468.04999999999995" text-anchor="middle" class="small">Porch</text>
+<rect x="86.3" y="186.3" width="98.0" height="63.7" fill="#c8bdab" stroke="#405b53" stroke-width="3"/>
+<text x="135.3" y="209.15" text-anchor="middle" class="small">Outside</text>
+<text x="135.3" y="227.15" text-anchor="middle" class="small">WC</text>
+<line x1="86.3" y1="186.3" x2="86.3" y2="940.9" stroke="#939d83" stroke-width="5"/>
+<line x1="86.3" y1="940.9" x2="86.3" y2="1083.0" stroke="#597983" stroke-width="11"/>
+<line x1="86.3" y1="1083.0" x2="86.3" y2="1132.0" stroke="#939d83" stroke-width="5"/>
+<line x1="86.3" y1="1132.0" x2="517.5" y2="1132.0" stroke="#939d83" stroke-width="5"/>
+<line x1="517.5" y1="1132.0" x2="517.5" y2="186.3" stroke="#939d83" stroke-width="5"/>
+<line x1="517.5" y1="186.3" x2="86.3" y2="186.3" stroke="#939d83" stroke-width="5"/>
+<line x1="252.9" y1="362.7" x2="385.2" y2="362.7" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="150" y1="372.5" x2="150" y2="421.5" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="380.3" y1="573.4" x2="463.6" y2="573.4" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="380.3" y1="588.1" x2="380.3" y2="632.2" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="380.3" y1="717.95" x2="380.3" y2="757.15" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="397.45" y1="793.9" x2="441.55" y2="793.9" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="184.3" y1="793.9" x2="223.5" y2="793.9" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="150" y1="284.3" x2="150" y2="338.2" stroke="#547e88" stroke-width="6"/>
+<line x1="463.6" y1="276.95" x2="463.6" y2="345.55" stroke="#547e88" stroke-width="6"/>
+<line x1="96.1" y1="250" x2="137.75" y2="250" stroke="#f7f6f1" stroke-width="6"/>
+<line x1="184.3" y1="198.55" x2="184.3" y2="232.85" stroke="#547e88" stroke-width="6"/>
+<line x1="257.8" y1="926.2" x2="350.9" y2="926.2" stroke="#547e88" stroke-width="6"/>
+<text x="301.9" y="1024.2" text-anchor="middle" font-size="18">PARKING COURT</text>
+<text x="47.099999999999994" y="1009.5" font-size="16">GATE</text>
+<text x="103.45" y="593" text-anchor="middle" class="small" transform="rotate(-90 103.45 593)">PORCH-SIDE PASSAGE</text>
+<text x="346" y="220.6" text-anchor="middle" class="small">Rear strip</text>
+<text x="710" y="260" class="small">Layout follows owner sketch</text>
+<text x="710" y="295" class="note">Full-width kitchen at top</text>
+<text x="710" y="330" class="note">Living / dining below kitchen</text>
+<text x="710" y="365" class="note">Bedroom 1 LEFT; corridor RIGHT</text>
+<text x="710" y="400" class="note">En-suite LEFT; shared WC RIGHT</text>
+<text x="710" y="435" class="note">Full-width Bedroom 2 at bottom</text>
+<text x="710" y="470" class="note">Porch and gate on LEFT</text>
+<text x="710" y="505" class="note">Outside WC attached upper-left</text>
+<text x="710" y="540" class="note"></text>
+<text x="710" y="575" class="note">Sizes are rough estimates.</text>
+<text x="710" y="610" class="note">No numeric measurements supplied.</text>
+<text x="710" y="645" class="note">No scale, area or north established.</text>
+<text x="710" y="680" class="note"></text>
+<text x="710" y="715" class="note">Measure before furniture-fit</text>
+<text x="710" y="750" class="note">or renovation decisions.</text>
+<text x="70" y="1325" class="note">Photo matches: IMG_3443 ↔ 3458 · IMG_3505 opposing kitchen window · IMG_3450 ↔ 3466</text>
+<text x="70" y="1360" class="note">Reference: owner sketch IMG_3511 and 68 supplied photographs · Roof omitted · Not a measured survey</text>
+</svg>
