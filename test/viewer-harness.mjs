@@ -7,11 +7,15 @@ const file = fileURLToPath(new URL('../house-viewer.html', import.meta.url));
 
 export function loadViewer({ width = 339, height = 470, coarse = true } = {}) {
   const s = readFileSync(file, 'utf8');
-  const script = s.slice(s.lastIndexOf('<script>') + 8, s.lastIndexOf('</script>'));
+  // Expose the label list handed to placeLabels so tests can see priorities.
+  const script = s.slice(s.lastIndexOf('<script>') + 8, s.lastIndexOf('</script>'))
+    .replace('placeLabels(labels,', '(globalThis.__labels = labels, placeLabels)(labels,');
   let font = '12px x';
+  const texts = [];
   const ctx = new Proxy({}, {
     get(t, k) {
       if (k === 'measureText') return (str) => ({ width: str.length * parseFloat(font) * 0.56 });
+      if (k === 'fillText') return (str) => texts.push(str);
       if (k in t) return t[k];
       return () => {};
     },
@@ -34,8 +38,13 @@ export function loadViewer({ width = 339, height = 470, coarse = true } = {}) {
   const api = new Function(script + `;return {
     state: () => ({ mode, selected, zoom, yaw }),
     setMode: (m) => { mode = m; draw(); },
+    select: (id) => choose(id),
+    setYaw: (y) => { yaw = y; draw(); },
+    redraw: () => draw(),
     resize, hits: () => hit };`)();
   api.resize();
+  api.labels = () => { api.redraw(); return globalThis.__labels; };
+  api.drawnTexts = () => { texts.length = 0; api.redraw(); return [...texts]; };
   // Centre of a room's clickable floor in the current view.
   api.spot = (id) => {
     const h = api.hits().find((x) => x.id === id);

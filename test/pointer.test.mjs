@@ -30,8 +30,26 @@ test('pinch on the 3D view zooms and does not select', () => {
   const v = loadViewer();
   const before = v.state().selected;
   v.down(1, [150, 200]); v.down(2, [190, 200], false);
-  v.move(1, [110, 200]); v.move(2, [230, 200]);
-  v.up(2, [230, 200]); v.up(1, [110, 200]);
-  assert.equal(v.state().zoom, 2.5); // fingers 40px → 120px apart is 3×, capped at 2.5
+  v.move(1, [140, 200]); v.move(2, [200, 200]);
+  v.up(2, [200, 200]); v.up(1, [140, 200]);
+  assert.equal(v.state().zoom, 1.5); // fingers 40px → 60px apart
   assert.equal(v.state().selected, before);
+});
+
+test('a lost pinch does not swallow the next tap', () => {
+  const v = loadViewer();
+  v.down(1, [150, 200]); v.down(2, [190, 200], false); // both pointerups never arrive
+  const at = v.spot('bedroom-suite');
+  v.down(9, at, true); v.up(9, at);
+  assert.equal(v.state().selected, 'bedroom-suite');
+});
+
+test('GATE label is ranked with the small rooms, and first when the court is selected', () => {
+  const v = loadViewer({ width: 339, height: 470 });
+  const gate = () => v.labels().find((l) => l.text === 'GATE');
+  const wc = () => v.labels().find((l) => l.text === 'Shared WC');
+  assert.ok(gate().priority > 0);
+  assert.equal(gate().priority, wc().priority);
+  v.select('court');
+  assert.equal(gate().priority, 3);
 });

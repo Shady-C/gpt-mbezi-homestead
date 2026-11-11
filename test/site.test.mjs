@@ -113,7 +113,8 @@ for (const page of ['house-viewer.html', 'index.html']) test(`${page} has a desc
   const img = s.match(/<meta property="og:image" content="([^"]+)">/);
   assert.ok(img, 'og:image present');
   assert.ok(img[1].startsWith(LIVE), 'og:image is an absolute live URL');
-  assert.ok(existsSync(join(root, img[1].slice(LIVE.length))), 'og:image file exists');
+  assert.match(img[1], /\?v=\d+$/, 'og:image URL is versioned so chat apps refetch a changed card');
+  assert.ok(existsSync(join(root, img[1].slice(LIVE.length).replace(/\?.*$/, ''))), 'og:image file exists');
 });
 test('page has a favicon', () => {
   assert.match(html(), /<link rel="icon" [^>]*href="[^"]+"/);
