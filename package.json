@@ -1,0 +1,13 @@
+{
+  "name": "house-mbezi",
+  "private": true,
+  "type": "module",
+  "description": "House Mbezi viewer: tools that regenerate the geometry, plans and model in estimated metres.",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "geometry": "node tools/metres.mjs && node tools/plans.mjs && node tools/glb.mjs"
+  },
+  "devDependencies": {
+    "three": "^0.187.0"
+  }
+}

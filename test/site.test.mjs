@@ -186,3 +186,10 @@ test('no published image carries GPS location', () => {
   const offline = existsSync(join(root, 'house-viewer-offline.html')) ? read('house-viewer-offline.html') : html();
   for (const m of offline.matchAll(/data:image\/jpeg;base64,([A-Za-z0-9+/=]+)/g)) assert.equal(hasGps(Buffer.from(m[1], 'base64')), false);
 });
+test('README states sizes as estimates', async () => {
+  const { TABLE } = await import('../tools/metres.mjs');
+  const r = read('README.md');
+  for (const t of Object.values(TABLE)) assert.ok(r.includes(t.text), t.text);
+  assert.ok(r.includes('Not a survey'));
+  assert.equal(r.includes('arbitrary drawing units'), false);
+});
