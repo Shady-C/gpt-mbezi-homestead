@@ -51,6 +51,14 @@ test('an overlapping lower-priority label is dropped', () => {
   ], 375, 400, 4);
   assert.deepEqual(out.map((l) => l.text).sort(), ['Bedroom 1', 'Kitchen']);
 });
+test('on wide screens overlapping labels are all kept (only clamped)', () => {
+  const { placeLabels } = helpers();
+  const out = placeLabels([
+    { text: 'Bedroom 1', x: 150, y: 200, w: 70, h: 18, priority: 2 },
+    { text: 'Shared WC', x: 160, y: 205, w: 70, h: 18, priority: 1 },
+  ], 900, 600, 4, false);
+  assert.equal(out.length, 2);
+});
 test('touch screens get a pinch hint, mice get a scroll hint', () => {
   const { hintText } = helpers();
   assert.match(hintText('model', true), /Pinch to zoom/);
