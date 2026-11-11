@@ -1,10 +1,10 @@
 {
-  "title": "House Mbezi \u2014 owner sketch aligned schematic v3",
+  "title": "House Mbezi — owner sketch aligned schematic v3",
   "source_directory": "PNG_Converted (owner's local photo folder, IMG_3443–IMG_3510)",
   "photo_count": 68,
-  "units": "arbitrary schematic units; NOT metres",
+  "units": "metres (estimated)",
   "north_known": false,
-  "status": "Owner sketch IMG_3511 is authoritative for room/site arrangement and relative proportions. Dimensions remain rough estimates with no numeric measurements. Single storey, no stairs.",
+  "status": "Owner sketch IMG_3511 is authoritative for room/site arrangement. Sizes are the owner's estimates in metres from 68 photos and the sketch (±10–15 %), each with a confidence and basis. Not a survey. Single storey, no stairs.",
   "observed_spaces": [
     {
       "id": "living",
@@ -399,110 +399,114 @@
     }
   ],
   "coordinate_hypothesis": {
-    "confidence": "Room arrangement and handedness owner-confirmed by sketch. Numeric drawing coordinates and exact openings are illustrative estimates.",
+    "confidence": "Room arrangement and handedness owner-confirmed by sketch. Sizes are estimates in metres (±10–15 %); opening positions remain illustrative.",
     "axes": "Match upright owner sketch: x increases LEFT to RIGHT; y increases TOP kitchen end to BOTTOM parking end. No geographic north inferred.",
     "wall_height": 2.8,
-    "wall_thickness": 0.14,
+    "wall_thickness": {
+      "exterior": 0.2,
+      "interior": 0.1,
+      "outside_wc": 0.1
+    },
     "all_dimensions_assumed": true,
     "rectangles": [
       {
         "id": "kitchen",
-        "x": 0,
-        "y": 0,
-        "w": 6.4,
-        "d": 2.3
+        "x": 0.2,
+        "y": 0.2,
+        "w": 5,
+        "d": 3
       },
       {
         "id": "living",
-        "x": 0,
-        "y": 2.3,
-        "w": 6.4,
-        "d": 4.3
+        "x": 0.2,
+        "y": 3.3,
+        "w": 5,
+        "d": 4.8
       },
       {
         "id": "bedroom-small",
-        "x": 0,
-        "y": 6.6,
-        "w": 4.7,
-        "d": 2.6
+        "x": 0.2,
+        "y": 8.2,
+        "w": 3.6,
+        "d": 3.6
       },
       {
         "id": "hall",
-        "x": 4.7,
-        "y": 6.6,
-        "w": 1.7,
-        "d": 4.5
+        "x": 3.9,
+        "y": 8.2,
+        "w": 1.3,
+        "d": 5.7
       },
       {
         "id": "wc-suite",
-        "x": 0,
-        "y": 9.2,
-        "w": 2.2,
-        "d": 1.9
+        "x": 0.2,
+        "y": 11.9,
+        "w": 2.25,
+        "d": 2
       },
       {
         "id": "wc-common",
-        "x": 2.2,
-        "y": 9.2,
-        "w": 2.5,
-        "d": 1.9
+        "x": 2.55,
+        "y": 11.9,
+        "w": 1.25,
+        "d": 2
       },
       {
         "id": "bedroom-suite",
-        "x": 0,
-        "y": 11.1,
-        "w": 6.4,
-        "d": 2.7
+        "x": 0.2,
+        "y": 14,
+        "w": 5,
+        "d": 4
       },
       {
         "id": "porch",
-        "x": -0.65,
-        "y": 2.3,
-        "w": 0.65,
-        "d": 4.3
+        "x": -1.2,
+        "y": 3.3,
+        "w": 1.2,
+        "d": 4.8
       },
       {
         "id": "wc-outside",
-        "x": -1.3,
-        "y": -1.3,
-        "w": 2.0,
-        "d": 1.3
+        "x": -1.1,
+        "y": -1.4,
+        "w": 1.6,
+        "d": 1.4
       }
     ],
-    "unregistered_voids": "No leftover interior voids: room rectangles tile a continuous rectangular main-house footprint. Exact outsideWC offset and wall widths remain illustrative.",
+    "unregistered_voids": "No leftover interior voids: clear room rectangles tile the house with one wall between neighbours.",
     "important_layout_note": "This is a new owner-sketch coordinate system, not old v2 coordinates. Kitchen spans full house width at top. Porch and exterior entry left of living near kitchen. Bedroom1 below living occupies left ~73%; corridor is right ~27%. Below bedroom1 en-suite left and commonWC right. Ensuite opens only from Bedroom2, commonWC opens into right corridor. Bedroom2 spans bottom full width and faces parking court. OutsideWC at upperleft, attached kitchen top-left corner; door faces down left-side passage. Gate in LEFT boundary beside bottom parking. Side and rear paths wrap house. Kitchen sink is left-wall window facing porch-side path; opposing large kitchen window right wall. No stairs.",
-    "recommended_rendering": "Default top-down plan orientation must exactly match owner sketch: kitchen TOP, parking BOTTOM, porch/gate LEFT, corridor RIGHT. Continuous main-house footprint tiled without leftover voids. Display rough schematic proportions, no metre labels or area. Add sketch reference thumbnail. OutsideWC attached upper-left not detached. Roof-off single storey.",
+    "recommended_rendering": "Default top-down plan orientation must exactly match owner sketch: kitchen TOP, parking BOTTOM, porch/gate LEFT, corridor RIGHT. Show each room's estimated size with its confidence and the not-a-survey note. Add sketch reference thumbnail. OutsideWC attached upper-left not detached. Roof-off single storey.",
     "site_rectangles": [
       {
         "id": "parking-court",
-        "x": -1.3,
-        "y": 13.8,
-        "w": 8.8,
-        "d": 4.2,
+        "x": -2.2,
+        "y": 18.2,
+        "w": 8.6,
+        "d": 6.9,
         "confidence": "owner sketch; dimensions assumed"
       },
       {
         "id": "porch-side-passage",
-        "x": -1.3,
+        "x": -2.2,
         "y": 0,
-        "w": 1.3,
-        "d": 13.8,
+        "w": 2.2,
+        "d": 18.2,
         "confidence": "owner sketch; dimensions assumed"
       },
       {
         "id": "rear-service-strip",
-        "x": 0.7,
-        "y": -1.3,
-        "w": 6.8,
-        "d": 1.3,
+        "x": 0.6,
+        "y": -1.5,
+        "w": 5.8,
+        "d": 1.5,
         "confidence": "owner sketch plus3508; dimensions assumed"
       },
       {
         "id": "opposite-side-passage",
-        "x": 6.4,
+        "x": 5.4,
         "y": 0,
-        "w": 1.1,
-        "d": 13.8,
+        "w": 1,
+        "d": 18.2,
         "confidence": "owner sketch; dimensions assumed"
       }
     ],
@@ -510,68 +514,68 @@
       {
         "id": "left-boundary-house",
         "a": [
-          -1.3,
-          -1.3
+          -2.2,
+          -1.5
         ],
         "b": [
-          -1.3,
-          14.1
+          -2.2,
+          19.625
         ]
       },
       {
         "id": "gate",
         "a": [
-          -1.3,
-          14.1
+          -2.2,
+          19.625
         ],
         "b": [
-          -1.3,
-          17.0
+          -2.2,
+          22.525
         ],
         "confidence": "Owner sketch left parking boundary; size estimated"
       },
       {
         "id": "left-boundary-parking",
         "a": [
-          -1.3,
-          17.0
+          -2.2,
+          22.525
         ],
         "b": [
-          -1.3,
-          18.0
+          -2.2,
+          25.1
         ]
       },
       {
         "id": "bottom-boundary",
         "a": [
-          -1.3,
-          18.0
+          -2.2,
+          25.1
         ],
         "b": [
-          7.5,
-          18.0
+          6.4,
+          25.1
         ]
       },
       {
         "id": "right-boundary",
         "a": [
-          7.5,
-          18.0
+          6.4,
+          25.1
         ],
         "b": [
-          7.5,
-          -1.3
+          6.4,
+          -1.5
         ]
       },
       {
         "id": "top-boundary",
         "a": [
-          7.5,
-          -1.3
+          6.4,
+          -1.5
         ],
         "b": [
-          -1.3,
-          -1.3
+          -2.2,
+          -1.5
         ]
       }
     ],
@@ -581,9 +585,9 @@
         "room": "kitchen",
         "wall": "y-high",
         "axis": "x",
-        "start": 2.1,
-        "end": 4.8,
-        "y": 2.3,
+        "start": 1.825,
+        "end": 4.525,
+        "y": 3.25,
         "type": "open portal",
         "evidence": [
           "owner sketch",
@@ -596,9 +600,9 @@
         "room": "living",
         "wall": "x-low",
         "axis": "y",
-        "start": 2.5,
-        "end": 3.5,
-        "x": 0,
+        "start": 3.5477,
+        "end": 4.5477,
+        "x": 0.1,
         "type": "door",
         "evidence": [
           "owner sketch",
@@ -612,9 +616,9 @@
         "room": "living",
         "wall": "y-high",
         "axis": "x",
-        "start": 4.7,
-        "end": 6.4,
-        "y": 6.6,
+        "start": 3.9,
+        "end": 5.2,
+        "y": 8.15,
         "type": "open portal",
         "evidence": [
           "owner sketch",
@@ -626,9 +630,9 @@
         "room": "bedroom-small",
         "wall": "x-high",
         "axis": "y",
-        "start": 6.9,
-        "end": 7.8,
-        "x": 4.7,
+        "start": 8.7673,
+        "end": 9.6673,
+        "x": 3.85,
         "type": "door",
         "evidence": [
           "owner sketch",
@@ -641,9 +645,9 @@
         "room": "wc-common",
         "wall": "x-high",
         "axis": "y",
-        "start": 9.55,
-        "end": 10.35,
-        "x": 4.7,
+        "start": 12.2789,
+        "end": 13.0789,
+        "x": 3.85,
         "type": "door",
         "evidence": [
           "owner sketch",
@@ -656,9 +660,9 @@
         "room": "bedroom-suite",
         "wall": "y-low",
         "axis": "x",
-        "start": 5.05,
-        "end": 5.95,
-        "y": 11.1,
+        "start": 4.0824,
+        "end": 4.9824,
+        "y": 13.95,
         "type": "door",
         "evidence": [
           "owner sketch",
@@ -670,9 +674,9 @@
         "room": "wc-suite",
         "wall": "y-high",
         "axis": "x",
-        "start": 0.7,
-        "end": 1.5,
-        "y": 11.1,
+        "start": 0.9,
+        "end": 1.7,
+        "y": 13.95,
         "type": "door",
         "evidence": [
           "owner sketch",
@@ -685,9 +689,9 @@
         "room": "kitchen",
         "wall": "x-low",
         "axis": "y",
-        "start": 0.7,
-        "end": 1.8,
-        "x": 0,
+        "start": 1.262,
+        "end": 2.362,
+        "x": 0.1,
         "type": "window",
         "evidence": [
           "3443",
@@ -701,9 +705,9 @@
         "room": "kitchen",
         "wall": "x-high",
         "axis": "y",
-        "start": 0.55,
-        "end": 1.95,
-        "x": 6.4,
+        "start": 1.112,
+        "end": 2.512,
+        "x": 5.3,
         "type": "window",
         "evidence": [
           "3505",
@@ -716,9 +720,9 @@
         "room": "wc-outside",
         "wall": "y-high",
         "axis": "x",
-        "start": -1.1,
-        "end": -0.25,
-        "y": 0,
+        "start": -1.0625,
+        "end": -0.2125,
+        "y": 0.05,
         "type": "door",
         "evidence": [
           "3443",
@@ -731,9 +735,9 @@
         "room": "wc-outside",
         "wall": "x-high",
         "axis": "y",
-        "start": -1.05,
-        "end": -0.35,
-        "x": 0.7,
+        "start": -1.1577,
+        "end": -0.4577,
+        "x": 0.55,
         "type": "window",
         "evidence": [
           "3508",
@@ -746,9 +750,9 @@
         "room": "bedroom-suite",
         "wall": "y-high",
         "axis": "x",
-        "start": 2.2,
-        "end": 4.1,
-        "y": 13.8,
+        "start": 2.063,
+        "end": 3.963,
+        "y": 18.1,
         "type": "window",
         "evidence": [
           "3466",
@@ -759,8 +763,8 @@
     ]
   },
   "unknowns": [
-    "All real dimensions and scale",
-    "Wall thicknesses",
+    "Measured dimensions (current sizes are estimates, ±10–15 %)",
+    "Real wall thicknesses (0.2 m exterior, 0.1 m interior assumed)",
     "Absolute cardinal direction",
     "Roof ridges, pitch, valleys, and full form",
     "Structural wall status",
@@ -858,88 +862,152 @@
   "render_rectangles": [
     {
       "id": "kitchen",
-      "x": 0,
-      "y": 0,
-      "w": 6.4,
-      "d": 2.3,
-      "label": "Kitchen"
+      "x": 0.2,
+      "y": 0.2,
+      "w": 5,
+      "d": 3,
+      "label": "Kitchen",
+      "estimate": {
+        "w": 5,
+        "d": 3,
+        "text": "5.0 × 3.0 m",
+        "area": 15,
+        "confidence": "low",
+        "basis": "Full house width per sketch; depth from counter + walkway (3491–3494)"
+      }
     },
     {
       "id": "living",
-      "x": 0,
-      "y": 2.3,
-      "w": 6.4,
-      "d": 4.3,
-      "label": "Living / dining"
+      "x": 0.2,
+      "y": 3.3,
+      "w": 5,
+      "d": 4.8,
+      "label": "Living / dining",
+      "estimate": {
+        "w": 5,
+        "d": 4.8,
+        "text": "5.0 × 4.8 m",
+        "area": 24,
+        "confidence": "medium",
+        "basis": "~4 wood-look 600×1200 tiles across, tray ceiling (3456, 3486–3489)"
+      }
     },
     {
       "id": "bedroom-small",
-      "x": 0,
-      "y": 6.6,
-      "w": 4.7,
-      "d": 2.6,
-      "label": "Bedroom 1"
+      "x": 0.2,
+      "y": 8.2,
+      "w": 3.6,
+      "d": 3.6,
+      "label": "Bedroom 1",
+      "estimate": {
+        "w": 3.6,
+        "d": 3.6,
+        "text": "3.6 × 3.6 m",
+        "area": 13,
+        "confidence": "medium",
+        "basis": "~4–5 tile diagonals along window wall (3482); near-square room"
+      }
     },
     {
       "id": "hall",
-      "x": 4.7,
-      "y": 6.6,
-      "w": 1.7,
-      "d": 4.5,
-      "label": "Windowed corridor"
+      "x": 3.9,
+      "y": 8.2,
+      "w": 1.3,
+      "d": 5.7,
+      "label": "Windowed corridor",
+      "estimate": {
+        "w": 1.3,
+        "d": 5.7,
+        "text": "1.3 × 5.7 m",
+        "area": 7.4,
+        "confidence": "medium",
+        "basis": "Clear width ≈ 1.3 doors (3476–3477); length = Bedroom 1 + baths"
+      }
     },
     {
       "id": "wc-suite",
-      "x": 0,
-      "y": 9.2,
-      "w": 2.2,
-      "d": 1.9,
-      "label": "En-suite bathroom"
+      "x": 0.2,
+      "y": 11.9,
+      "w": 2.25,
+      "d": 2,
+      "label": "En-suite bathroom",
+      "estimate": {
+        "w": 2.2,
+        "d": 2,
+        "text": "2.2 × 2.0 m",
+        "area": 4.4,
+        "confidence": "low",
+        "basis": "Fits WC + shower + basin with 0.75 m door (3470–3472); width set so en-suite + shared WC = Bedroom 1 width"
+      }
     },
     {
       "id": "wc-common",
-      "x": 2.2,
-      "y": 9.2,
-      "w": 2.5,
-      "d": 1.9,
-      "label": "Shared WC / shower"
+      "x": 2.55,
+      "y": 11.9,
+      "w": 1.25,
+      "d": 2,
+      "label": "Shared WC / shower",
+      "estimate": {
+        "w": 1.2,
+        "d": 2,
+        "text": "1.2 × 2.0 m",
+        "area": 2.4,
+        "confidence": "low",
+        "basis": "Narrow: door + squat pan + shower in one line (3478–3479)"
+      }
     },
     {
       "id": "bedroom-suite",
-      "x": 0,
-      "y": 11.1,
-      "w": 6.4,
-      "d": 2.7,
-      "label": "Bedroom 2 / en-suite room"
+      "x": 0.2,
+      "y": 14,
+      "w": 5,
+      "d": 4,
+      "label": "Bedroom 2 / en-suite room",
+      "estimate": {
+        "w": 5,
+        "d": 4,
+        "text": "5.0 × 4.0 m",
+        "area": 20,
+        "confidence": "medium",
+        "basis": "Front wall ≈ 3× window width; ~5 diagonal 600 mm tile diagonals along the front wall (3474, 3467)"
+      }
     },
     {
       "id": "porch",
-      "x": -0.65,
-      "y": 2.3,
-      "w": 0.65,
-      "d": 4.3,
+      "x": -1.2,
+      "y": 3.3,
+      "w": 1.2,
+      "d": 4.8,
       "label": "Covered side porch"
     },
     {
       "id": "wc-outside",
-      "x": -1.3,
-      "y": -1.3,
-      "w": 2.0,
-      "d": 1.3,
-      "label": "Exterior service WC / washroom"
+      "x": -1.1,
+      "y": -1.4,
+      "w": 1.6,
+      "d": 1.4,
+      "label": "Exterior service WC / washroom",
+      "estimate": {
+        "w": 1.6,
+        "d": 1.4,
+        "text": "1.6 × 1.4 m",
+        "area": 2.2,
+        "confidence": "low",
+        "basis": "Against compound wall, back corner; walkway door only (3443, 3451–3453)"
+      }
     }
   ],
   "model_boxes": [
     {
       "room": "kitchen",
       "p": [
-        0,
-        0,
+        0.2,
+        0.2,
         -0.16
       ],
       "s": [
-        6.4,
-        2.3,
+        5,
+        3,
         0.16
       ],
       "mat": "floor",
@@ -948,13 +1016,13 @@
     {
       "room": "kitchen",
       "p": [
-        0.65,
-        0,
+        0.8,
+        0.2,
         0.002
       ],
       "s": [
         0.009,
-        2.3,
+        3,
         0.005
       ],
       "mat": "stone",
@@ -963,13 +1031,13 @@
     {
       "room": "kitchen",
       "p": [
-        1.3,
-        0,
+        1.4,
+        0.2,
         0.002
       ],
       "s": [
         0.009,
-        2.3,
+        3,
         0.005
       ],
       "mat": "stone",
@@ -978,13 +1046,13 @@
     {
       "room": "kitchen",
       "p": [
-        1.95,
-        0,
+        2,
+        0.2,
         0.002
       ],
       "s": [
         0.009,
-        2.3,
+        3,
         0.005
       ],
       "mat": "stone",
@@ -994,12 +1062,12 @@
       "room": "kitchen",
       "p": [
         2.6,
-        0,
+        0.2,
         0.002
       ],
       "s": [
         0.009,
-        2.3,
+        3,
         0.005
       ],
       "mat": "stone",
@@ -1008,13 +1076,13 @@
     {
       "room": "kitchen",
       "p": [
-        3.25,
-        0,
+        3.2,
+        0.2,
         0.002
       ],
       "s": [
         0.009,
-        2.3,
+        3,
         0.005
       ],
       "mat": "stone",
@@ -1023,13 +1091,13 @@
     {
       "room": "kitchen",
       "p": [
-        3.9,
-        0,
+        3.8,
+        0.2,
         0.002
       ],
       "s": [
         0.009,
-        2.3,
+        3,
         0.005
       ],
       "mat": "stone",
@@ -1038,13 +1106,13 @@
     {
       "room": "kitchen",
       "p": [
-        4.55,
-        0,
+        4.4,
+        0.2,
         0.002
       ],
       "s": [
         0.009,
-        2.3,
+        3,
         0.005
       ],
       "mat": "stone",
@@ -1053,13 +1121,13 @@
     {
       "room": "kitchen",
       "p": [
-        5.2,
-        0,
+        5,
+        0.2,
         0.002
       ],
       "s": [
         0.009,
-        2.3,
+        3,
         0.005
       ],
       "mat": "stone",
@@ -1068,27 +1136,12 @@
     {
       "room": "kitchen",
       "p": [
-        5.85,
-        0,
+        0.2,
+        0.8,
         0.002
       ],
       "s": [
-        0.009,
-        2.3,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "kitchen",
-      "p": [
-        0,
-        0.65,
-        0.002
-      ],
-      "s": [
-        6.4,
+        5,
         0.009,
         0.005
       ],
@@ -1098,12 +1151,12 @@
     {
       "room": "kitchen",
       "p": [
-        0,
-        1.3,
+        0.2,
+        1.4,
         0.002
       ],
       "s": [
-        6.4,
+        5,
         0.009,
         0.005
       ],
@@ -1113,12 +1166,27 @@
     {
       "room": "kitchen",
       "p": [
-        0,
-        1.95,
+        0.2,
+        2,
         0.002
       ],
       "s": [
-        6.4,
+        5,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "kitchen",
+      "p": [
+        0.2,
+        2.6,
+        0.002
+      ],
+      "s": [
+        5,
         0.009,
         0.005
       ],
@@ -1128,13 +1196,13 @@
     {
       "room": "living",
       "p": [
-        0,
-        2.3,
+        0.2,
+        3.3,
         -0.16
       ],
       "s": [
-        6.4,
-        4.3,
+        5,
+        4.8,
         0.16
       ],
       "mat": "floor",
@@ -1143,13 +1211,13 @@
     {
       "room": "living",
       "p": [
-        0.65,
-        2.3,
+        0.8,
+        3.3,
         0.002
       ],
       "s": [
         0.009,
-        4.3,
+        4.8,
         0.005
       ],
       "mat": "stone",
@@ -1158,13 +1226,13 @@
     {
       "room": "living",
       "p": [
-        1.3,
-        2.3,
+        1.4,
+        3.3,
         0.002
       ],
       "s": [
         0.009,
-        4.3,
+        4.8,
         0.005
       ],
       "mat": "stone",
@@ -1173,13 +1241,13 @@
     {
       "room": "living",
       "p": [
-        1.95,
-        2.3,
+        2,
+        3.3,
         0.002
       ],
       "s": [
         0.009,
-        4.3,
+        4.8,
         0.005
       ],
       "mat": "stone",
@@ -1189,12 +1257,12 @@
       "room": "living",
       "p": [
         2.6,
-        2.3,
+        3.3,
         0.002
       ],
       "s": [
         0.009,
-        4.3,
+        4.8,
         0.005
       ],
       "mat": "stone",
@@ -1203,13 +1271,13 @@
     {
       "room": "living",
       "p": [
-        3.25,
-        2.3,
+        3.2,
+        3.3,
         0.002
       ],
       "s": [
         0.009,
-        4.3,
+        4.8,
         0.005
       ],
       "mat": "stone",
@@ -1218,72 +1286,57 @@
     {
       "room": "living",
       "p": [
+        3.8,
+        3.3,
+        0.002
+      ],
+      "s": [
+        0.009,
+        4.8,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "living",
+      "p": [
+        4.4,
+        3.3,
+        0.002
+      ],
+      "s": [
+        0.009,
+        4.8,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "living",
+      "p": [
+        5,
+        3.3,
+        0.002
+      ],
+      "s": [
+        0.009,
+        4.8,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "living",
+      "p": [
+        0.2,
         3.9,
-        2.3,
         0.002
       ],
       "s": [
-        0.009,
-        4.3,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "living",
-      "p": [
-        4.55,
-        2.3,
-        0.002
-      ],
-      "s": [
-        0.009,
-        4.3,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "living",
-      "p": [
-        5.2,
-        2.3,
-        0.002
-      ],
-      "s": [
-        0.009,
-        4.3,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "living",
-      "p": [
-        5.85,
-        2.3,
-        0.002
-      ],
-      "s": [
-        0.009,
-        4.3,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "living",
-      "p": [
-        0,
-        2.95,
-        0.002
-      ],
-      "s": [
-        6.4,
+        5,
         0.009,
         0.005
       ],
@@ -1293,88 +1346,103 @@
     {
       "room": "living",
       "p": [
-        0,
+        0.2,
+        4.5,
+        0.002
+      ],
+      "s": [
+        5,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "living",
+      "p": [
+        0.2,
+        5.1,
+        0.002
+      ],
+      "s": [
+        5,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "living",
+      "p": [
+        0.2,
+        5.7,
+        0.002
+      ],
+      "s": [
+        5,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "living",
+      "p": [
+        0.2,
+        6.3,
+        0.002
+      ],
+      "s": [
+        5,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "living",
+      "p": [
+        0.2,
+        6.9,
+        0.002
+      ],
+      "s": [
+        5,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "living",
+      "p": [
+        0.2,
+        7.5,
+        0.002
+      ],
+      "s": [
+        5,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-small",
+      "p": [
+        0.2,
+        8.2,
+        -0.16
+      ],
+      "s": [
         3.6,
-        0.002
-      ],
-      "s": [
-        6.4,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "living",
-      "p": [
-        0,
-        4.25,
-        0.002
-      ],
-      "s": [
-        6.4,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "living",
-      "p": [
-        0,
-        4.9,
-        0.002
-      ],
-      "s": [
-        6.4,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "living",
-      "p": [
-        0,
-        5.55,
-        0.002
-      ],
-      "s": [
-        6.4,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "living",
-      "p": [
-        0,
-        6.2,
-        0.002
-      ],
-      "s": [
-        6.4,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-small",
-      "p": [
-        0,
-        6.6,
-        -0.16
-      ],
-      "s": [
-        4.7,
-        2.6,
+        3.6,
         0.16
       ],
       "mat": "floor",
@@ -1383,13 +1451,13 @@
     {
       "room": "bedroom-small",
       "p": [
-        0.65,
-        6.6,
+        0.8,
+        8.2,
         0.002
       ],
       "s": [
         0.009,
-        2.6,
+        3.6,
         0.005
       ],
       "mat": "stone",
@@ -1398,13 +1466,13 @@
     {
       "room": "bedroom-small",
       "p": [
-        1.3,
-        6.6,
+        1.4,
+        8.2,
         0.002
       ],
       "s": [
         0.009,
-        2.6,
+        3.6,
         0.005
       ],
       "mat": "stone",
@@ -1413,13 +1481,13 @@
     {
       "room": "bedroom-small",
       "p": [
-        1.95,
-        6.6,
+        2,
+        8.2,
         0.002
       ],
       "s": [
         0.009,
-        2.6,
+        3.6,
         0.005
       ],
       "mat": "stone",
@@ -1429,12 +1497,12 @@
       "room": "bedroom-small",
       "p": [
         2.6,
-        6.6,
+        8.2,
         0.002
       ],
       "s": [
         0.009,
-        2.6,
+        3.6,
         0.005
       ],
       "mat": "stone",
@@ -1443,13 +1511,13 @@
     {
       "room": "bedroom-small",
       "p": [
-        3.25,
-        6.6,
+        3.2,
+        8.2,
         0.002
       ],
       "s": [
         0.009,
-        2.6,
+        3.6,
         0.005
       ],
       "mat": "stone",
@@ -1457,104 +1525,89 @@
     },
     {
       "room": "bedroom-small",
+      "p": [
+        0.2,
+        8.8,
+        0.002
+      ],
+      "s": [
+        3.6,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-small",
+      "p": [
+        0.2,
+        9.4,
+        0.002
+      ],
+      "s": [
+        3.6,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-small",
+      "p": [
+        0.2,
+        10,
+        0.002
+      ],
+      "s": [
+        3.6,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-small",
+      "p": [
+        0.2,
+        10.6,
+        0.002
+      ],
+      "s": [
+        3.6,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-small",
+      "p": [
+        0.2,
+        11.2,
+        0.002
+      ],
+      "s": [
+        3.6,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "hall",
       "p": [
         3.9,
-        6.6,
-        0.002
-      ],
-      "s": [
-        0.009,
-        2.6,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-small",
-      "p": [
-        4.55,
-        6.6,
-        0.002
-      ],
-      "s": [
-        0.009,
-        2.6,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-small",
-      "p": [
-        0,
-        7.25,
-        0.002
-      ],
-      "s": [
-        4.7,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-small",
-      "p": [
-        0,
-        7.9,
-        0.002
-      ],
-      "s": [
-        4.7,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-small",
-      "p": [
-        0,
-        8.55,
-        0.002
-      ],
-      "s": [
-        4.7,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-small",
-      "p": [
-        0,
-        9.2,
-        0.002
-      ],
-      "s": [
-        4.7,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "hall",
-      "p": [
-        4.7,
-        6.6,
+        8.2,
         -0.16
       ],
       "s": [
-        1.7,
-        4.5,
+        1.3,
+        5.7,
         0.16
       ],
       "mat": "floor",
@@ -1563,13 +1616,13 @@
     {
       "room": "hall",
       "p": [
-        5.35,
-        6.6,
-        0.002
-      ],
-      "s": [
-        0.009,
         4.5,
+        8.2,
+        0.002
+      ],
+      "s": [
+        0.009,
+        5.7,
         0.005
       ],
       "mat": "stone",
@@ -1578,13 +1631,13 @@
     {
       "room": "hall",
       "p": [
-        6.0,
-        6.6,
+        5.1,
+        8.2,
         0.002
       ],
       "s": [
         0.009,
-        4.5,
+        5.7,
         0.005
       ],
       "mat": "stone",
@@ -1592,433 +1645,13 @@
     },
     {
       "room": "hall",
-      "p": [
-        4.7,
-        7.25,
-        0.002
-      ],
-      "s": [
-        1.7,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "hall",
-      "p": [
-        4.7,
-        7.9,
-        0.002
-      ],
-      "s": [
-        1.7,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "hall",
-      "p": [
-        4.7,
-        8.55,
-        0.002
-      ],
-      "s": [
-        1.7,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "hall",
-      "p": [
-        4.7,
-        9.2,
-        0.002
-      ],
-      "s": [
-        1.7,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "hall",
-      "p": [
-        4.7,
-        9.85,
-        0.002
-      ],
-      "s": [
-        1.7,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "hall",
-      "p": [
-        4.7,
-        10.5,
-        0.002
-      ],
-      "s": [
-        1.7,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "wc-suite",
-      "p": [
-        0,
-        9.2,
-        -0.16
-      ],
-      "s": [
-        2.2,
-        1.9,
-        0.16
-      ],
-      "mat": "wet",
-      "kind": "floor"
-    },
-    {
-      "room": "wc-suite",
-      "p": [
-        0.65,
-        9.2,
-        0.002
-      ],
-      "s": [
-        0.009,
-        1.9,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "wc-suite",
-      "p": [
-        1.3,
-        9.2,
-        0.002
-      ],
-      "s": [
-        0.009,
-        1.9,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "wc-suite",
-      "p": [
-        1.95,
-        9.2,
-        0.002
-      ],
-      "s": [
-        0.009,
-        1.9,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "wc-suite",
-      "p": [
-        0,
-        9.85,
-        0.002
-      ],
-      "s": [
-        2.2,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "wc-suite",
-      "p": [
-        0,
-        10.5,
-        0.002
-      ],
-      "s": [
-        2.2,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "wc-common",
-      "p": [
-        2.2,
-        9.2,
-        -0.16
-      ],
-      "s": [
-        2.5,
-        1.9,
-        0.16
-      ],
-      "mat": "wet",
-      "kind": "floor"
-    },
-    {
-      "room": "wc-common",
-      "p": [
-        2.85,
-        9.2,
-        0.002
-      ],
-      "s": [
-        0.009,
-        1.9,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "wc-common",
-      "p": [
-        3.5,
-        9.2,
-        0.002
-      ],
-      "s": [
-        0.009,
-        1.9,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "wc-common",
-      "p": [
-        4.15,
-        9.2,
-        0.002
-      ],
-      "s": [
-        0.009,
-        1.9,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "wc-common",
-      "p": [
-        2.2,
-        9.85,
-        0.002
-      ],
-      "s": [
-        2.5,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "wc-common",
-      "p": [
-        2.2,
-        10.5,
-        0.002
-      ],
-      "s": [
-        2.5,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        0,
-        11.1,
-        -0.16
-      ],
-      "s": [
-        6.4,
-        2.7,
-        0.16
-      ],
-      "mat": "floor",
-      "kind": "floor"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        0.65,
-        11.1,
-        0.002
-      ],
-      "s": [
-        0.009,
-        2.7,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        1.3,
-        11.1,
-        0.002
-      ],
-      "s": [
-        0.009,
-        2.7,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        1.95,
-        11.1,
-        0.002
-      ],
-      "s": [
-        0.009,
-        2.7,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        2.6,
-        11.1,
-        0.002
-      ],
-      "s": [
-        0.009,
-        2.7,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        3.25,
-        11.1,
-        0.002
-      ],
-      "s": [
-        0.009,
-        2.7,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-suite",
       "p": [
         3.9,
-        11.1,
+        8.8,
         0.002
       ],
       "s": [
-        0.009,
-        2.7,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        4.55,
-        11.1,
-        0.002
-      ],
-      "s": [
-        0.009,
-        2.7,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        5.2,
-        11.1,
-        0.002
-      ],
-      "s": [
-        0.009,
-        2.7,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        5.85,
-        11.1,
-        0.002
-      ],
-      "s": [
-        0.009,
-        2.7,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        0,
-        11.75,
-        0.002
-      ],
-      "s": [
-        6.4,
+        1.3,
         0.009,
         0.005
       ],
@@ -2026,14 +1659,89 @@
       "kind": "tile"
     },
     {
-      "room": "bedroom-suite",
+      "room": "hall",
       "p": [
-        0,
+        3.9,
+        9.4,
+        0.002
+      ],
+      "s": [
+        1.3,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "hall",
+      "p": [
+        3.9,
+        10,
+        0.002
+      ],
+      "s": [
+        1.3,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "hall",
+      "p": [
+        3.9,
+        10.6,
+        0.002
+      ],
+      "s": [
+        1.3,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "hall",
+      "p": [
+        3.9,
+        11.2,
+        0.002
+      ],
+      "s": [
+        1.3,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "hall",
+      "p": [
+        3.9,
+        11.8,
+        0.002
+      ],
+      "s": [
+        1.3,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "hall",
+      "p": [
+        3.9,
         12.4,
         0.002
       ],
       "s": [
-        6.4,
+        1.3,
         0.009,
         0.005
       ],
@@ -2041,14 +1749,14 @@
       "kind": "tile"
     },
     {
-      "room": "bedroom-suite",
+      "room": "hall",
       "p": [
-        0,
-        13.05,
+        3.9,
+        13,
         0.002
       ],
       "s": [
-        6.4,
+        1.3,
         0.009,
         0.005
       ],
@@ -2056,14 +1764,419 @@
       "kind": "tile"
     },
     {
-      "room": "bedroom-suite",
+      "room": "hall",
       "p": [
-        0,
+        3.9,
+        13.6,
+        0.002
+      ],
+      "s": [
+        1.3,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "wc-suite",
+      "p": [
+        0.2,
+        11.9,
+        -0.16
+      ],
+      "s": [
+        2.25,
+        2,
+        0.16
+      ],
+      "mat": "wet",
+      "kind": "floor"
+    },
+    {
+      "room": "wc-suite",
+      "p": [
+        0.8,
+        11.9,
+        0.002
+      ],
+      "s": [
+        0.009,
+        2,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "wc-suite",
+      "p": [
+        1.4,
+        11.9,
+        0.002
+      ],
+      "s": [
+        0.009,
+        2,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "wc-suite",
+      "p": [
+        2,
+        11.9,
+        0.002
+      ],
+      "s": [
+        0.009,
+        2,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "wc-suite",
+      "p": [
+        0.2,
+        12.5,
+        0.002
+      ],
+      "s": [
+        2.25,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "wc-suite",
+      "p": [
+        0.2,
+        13.1,
+        0.002
+      ],
+      "s": [
+        2.25,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "wc-suite",
+      "p": [
+        0.2,
         13.7,
         0.002
       ],
       "s": [
-        6.4,
+        2.25,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "wc-common",
+      "p": [
+        2.55,
+        11.9,
+        -0.16
+      ],
+      "s": [
+        1.25,
+        2,
+        0.16
+      ],
+      "mat": "wet",
+      "kind": "floor"
+    },
+    {
+      "room": "wc-common",
+      "p": [
+        3.15,
+        11.9,
+        0.002
+      ],
+      "s": [
+        0.009,
+        2,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "wc-common",
+      "p": [
+        2.55,
+        12.5,
+        0.002
+      ],
+      "s": [
+        1.25,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "wc-common",
+      "p": [
+        2.55,
+        13.1,
+        0.002
+      ],
+      "s": [
+        1.25,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "wc-common",
+      "p": [
+        2.55,
+        13.7,
+        0.002
+      ],
+      "s": [
+        1.25,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.2,
+        14,
+        -0.16
+      ],
+      "s": [
+        5,
+        4,
+        0.16
+      ],
+      "mat": "floor",
+      "kind": "floor"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.8,
+        14,
+        0.002
+      ],
+      "s": [
+        0.009,
+        4,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        1.4,
+        14,
+        0.002
+      ],
+      "s": [
+        0.009,
+        4,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        2,
+        14,
+        0.002
+      ],
+      "s": [
+        0.009,
+        4,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        2.6,
+        14,
+        0.002
+      ],
+      "s": [
+        0.009,
+        4,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        3.2,
+        14,
+        0.002
+      ],
+      "s": [
+        0.009,
+        4,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        3.8,
+        14,
+        0.002
+      ],
+      "s": [
+        0.009,
+        4,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        4.4,
+        14,
+        0.002
+      ],
+      "s": [
+        0.009,
+        4,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5,
+        14,
+        0.002
+      ],
+      "s": [
+        0.009,
+        4,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.2,
+        14.6,
+        0.002
+      ],
+      "s": [
+        5,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.2,
+        15.2,
+        0.002
+      ],
+      "s": [
+        5,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.2,
+        15.8,
+        0.002
+      ],
+      "s": [
+        5,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.2,
+        16.4,
+        0.002
+      ],
+      "s": [
+        5,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.2,
+        17,
+        0.002
+      ],
+      "s": [
+        5,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.2,
+        17.6,
+        0.002
+      ],
+      "s": [
+        5,
         0.009,
         0.005
       ],
@@ -2073,13 +2186,13 @@
     {
       "room": "porch",
       "p": [
-        -0.65,
-        2.3,
+        -1.2,
+        3.3,
         -0.16
       ],
       "s": [
-        0.65,
-        4.3,
+        1.2,
+        4.8,
         0.16
       ],
       "mat": "porch",
@@ -2088,13 +2201,13 @@
     {
       "room": "porch",
       "p": [
-        0.0,
-        2.3,
+        -0.6,
+        3.3,
         0.002
       ],
       "s": [
         0.009,
-        4.3,
+        4.8,
         0.005
       ],
       "mat": "stone",
@@ -2103,27 +2216,12 @@
     {
       "room": "porch",
       "p": [
-        -0.65,
-        2.95,
+        -1.2,
+        3.9,
         0.002
       ],
       "s": [
-        0.65,
-        0.009,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "porch",
-      "p": [
-        -0.65,
-        3.6,
-        0.002
-      ],
-      "s": [
-        0.65,
+        1.2,
         0.009,
         0.005
       ],
@@ -2133,12 +2231,12 @@
     {
       "room": "porch",
       "p": [
-        -0.65,
-        4.25,
+        -1.2,
+        4.5,
         0.002
       ],
       "s": [
-        0.65,
+        1.2,
         0.009,
         0.005
       ],
@@ -2148,12 +2246,12 @@
     {
       "room": "porch",
       "p": [
-        -0.65,
-        4.9,
+        -1.2,
+        5.1,
         0.002
       ],
       "s": [
-        0.65,
+        1.2,
         0.009,
         0.005
       ],
@@ -2163,12 +2261,12 @@
     {
       "room": "porch",
       "p": [
-        -0.65,
-        5.55,
+        -1.2,
+        5.7,
         0.002
       ],
       "s": [
-        0.65,
+        1.2,
         0.009,
         0.005
       ],
@@ -2178,12 +2276,12 @@
     {
       "room": "porch",
       "p": [
-        -0.65,
-        6.2,
+        -1.2,
+        6.3,
         0.002
       ],
       "s": [
-        0.65,
+        1.2,
         0.009,
         0.005
       ],
@@ -2193,8 +2291,38 @@
     {
       "room": "porch",
       "p": [
-        -0.23,
-        2.5,
+        -1.2,
+        6.9,
+        0.002
+      ],
+      "s": [
+        1.2,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "porch",
+      "p": [
+        -1.2,
+        7.5,
+        0.002
+      ],
+      "s": [
+        1.2,
+        0.009,
+        0.005
+      ],
+      "mat": "stone",
+      "kind": "tile"
+    },
+    {
+      "room": "porch",
+      "p": [
+        -0.18,
+        3.43,
         0
       ],
       "s": [
@@ -2208,8 +2336,8 @@
     {
       "room": "porch",
       "p": [
-        -0.23,
-        6.4,
+        -0.18,
+        7.92,
         0
       ],
       "s": [
@@ -2223,13 +2351,13 @@
     {
       "room": "wc-outside",
       "p": [
-        -1.3,
-        -1.3,
+        -1.1,
+        -1.4,
         -0.16
       ],
       "s": [
-        2.0,
-        1.3,
+        1.6,
+        1.4,
         0.16
       ],
       "mat": "wet",
@@ -2238,13 +2366,13 @@
     {
       "room": "wc-outside",
       "p": [
-        -0.65,
-        -1.3,
+        -0.5,
+        -1.4,
         0.002
       ],
       "s": [
         0.009,
-        1.3,
+        1.4,
         0.005
       ],
       "mat": "stone",
@@ -2253,13 +2381,13 @@
     {
       "room": "wc-outside",
       "p": [
-        0.0,
-        -1.3,
+        0.1,
+        -1.4,
         0.002
       ],
       "s": [
         0.009,
-        1.3,
+        1.4,
         0.005
       ],
       "mat": "stone",
@@ -2268,27 +2396,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.65,
-        -1.3,
+        -1.1,
+        -0.8,
         0.002
       ],
       "s": [
-        0.009,
-        1.3,
-        0.005
-      ],
-      "mat": "stone",
-      "kind": "tile"
-    },
-    {
-      "room": "wc-outside",
-      "p": [
-        -1.3,
-        -0.65,
-        0.002
-      ],
-      "s": [
-        2.0,
+        1.6,
         0.009,
         0.005
       ],
@@ -2298,12 +2411,12 @@
     {
       "room": "wc-outside",
       "p": [
-        -1.3,
-        0.0,
+        -1.1,
+        -0.2,
         0.002
       ],
       "s": [
-        2.0,
+        1.6,
         0.009,
         0.005
       ],
@@ -2314,12 +2427,12 @@
       "room": "kitchen",
       "p": [
         0,
-        -0.07,
+        0,
         0
       ],
       "s": [
-        6.4,
-        0.14,
+        5.4,
+        0.2,
         2.8
       ],
       "mat": "wall",
@@ -2329,12 +2442,12 @@
       "room": "kitchen",
       "p": [
         0,
-        -0.07,
+        0,
         0
       ],
       "s": [
-        6.4,
-        0.14,
+        5.4,
+        0.2,
         0.1
       ],
       "mat": "trim",
@@ -2344,12 +2457,12 @@
       "room": "kitchen",
       "p": [
         0,
-        2.23,
+        3.2,
         0
       ],
       "s": [
-        2.1,
-        0.14,
+        1.825,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -2358,13 +2471,13 @@
     {
       "room": "kitchen",
       "p": [
-        2.1,
-        2.23,
+        1.825,
+        3.2,
         2.3
       ],
       "s": [
         2.7,
-        0.14,
+        0.1,
         0.5
       ],
       "mat": "wall",
@@ -2373,13 +2486,13 @@
     {
       "room": "kitchen",
       "p": [
-        4.8,
-        2.23,
+        4.525,
+        3.2,
         0
       ],
       "s": [
-        1.6,
-        0.14,
+        0.875,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -2389,12 +2502,12 @@
       "room": "kitchen",
       "p": [
         0,
-        2.23,
+        3.2,
         0
       ],
       "s": [
-        2.1,
-        0.14,
+        1.825,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -2403,13 +2516,13 @@
     {
       "room": "kitchen",
       "p": [
-        4.8,
-        2.23,
+        4.525,
+        3.2,
         0
       ],
       "s": [
-        1.6,
-        0.14,
+        0.875,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -2418,13 +2531,13 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
+        0,
         0,
         0
       ],
       "s": [
-        0.14,
-        0.7,
+        0.2,
+        1.262,
         2.8
       ],
       "mat": "wall",
@@ -2433,12 +2546,12 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        0.7,
+        0,
+        1.262,
         0
       ],
       "s": [
-        0.14,
+        0.2,
         1.1,
         1.2
       ],
@@ -2448,12 +2561,12 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        0.7,
+        0,
+        1.262,
         2.3
       ],
       "s": [
-        0.14,
+        0.2,
         1.1,
         0.5
       ],
@@ -2463,12 +2576,12 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        0.7,
+        0,
+        1.262,
         0
       ],
       "s": [
-        0.14,
+        0.2,
         1.1,
         0.1
       ],
@@ -2478,8 +2591,8 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        0.7,
+        0.03,
+        1.262,
         1.2
       ],
       "s": [
@@ -2493,8 +2606,8 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        0.7,
+        0.03,
+        1.262,
         2.255
       ],
       "s": [
@@ -2508,8 +2621,8 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        0.7,
+        0.03,
+        1.262,
         1.2
       ],
       "s": [
@@ -2523,8 +2636,8 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        1.76,
+        0.03,
+        2.322,
         1.2
       ],
       "s": [
@@ -2538,8 +2651,8 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        0.745,
+        0.03,
+        1.307,
         1.245
       ],
       "s": [
@@ -2553,8 +2666,8 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        0.8833,
+        0.03,
+        1.4453,
         1.2
       ],
       "s": [
@@ -2568,8 +2681,8 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        1.0667,
+        0.03,
+        1.6287,
         1.2
       ],
       "s": [
@@ -2583,8 +2696,8 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        1.25,
+        0.03,
+        1.812,
         1.2
       ],
       "s": [
@@ -2598,8 +2711,8 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        1.4333,
+        0.03,
+        1.9953,
         1.2
       ],
       "s": [
@@ -2613,8 +2726,8 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        1.6167,
+        0.03,
+        2.1787,
         1.2
       ],
       "s": [
@@ -2628,8 +2741,8 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        0.7,
+        0.03,
+        1.262,
         1.772
       ],
       "s": [
@@ -2643,13 +2756,13 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        1.8,
+        0,
+        2.362,
         0
       ],
       "s": [
-        0.14,
-        0.5,
+        0.2,
+        0.938,
         2.8
       ],
       "mat": "wall",
@@ -2658,13 +2771,13 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
+        0,
         0,
         0
       ],
       "s": [
-        0.14,
-        0.7,
+        0.2,
+        1.262,
         0.1
       ],
       "mat": "trim",
@@ -2673,13 +2786,13 @@
     {
       "room": "kitchen",
       "p": [
-        -0.07,
-        1.8,
+        0,
+        2.362,
         0
       ],
       "s": [
-        0.14,
-        0.5,
+        0.2,
+        0.938,
         0.1
       ],
       "mat": "trim",
@@ -2688,13 +2801,13 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
+        5.2,
         0,
         0
       ],
       "s": [
-        0.14,
-        0.55,
+        0.2,
+        1.112,
         2.8
       ],
       "mat": "wall",
@@ -2703,14 +2816,14 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        0.55,
+        5.2,
+        1.112,
         0
       ],
       "s": [
-        0.14,
+        0.2,
         1.4,
-        1.0
+        1
       ],
       "mat": "wall",
       "kind": "wall"
@@ -2718,12 +2831,12 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        0.55,
+        5.2,
+        1.112,
         2.3
       ],
       "s": [
-        0.14,
+        0.2,
         1.4,
         0.5
       ],
@@ -2733,12 +2846,12 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        0.55,
+        5.2,
+        1.112,
         0
       ],
       "s": [
-        0.14,
+        0.2,
         1.4,
         0.1
       ],
@@ -2748,9 +2861,9 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        0.55,
-        1.0
+        5.23,
+        1.112,
+        1
       ],
       "s": [
         0.14,
@@ -2763,8 +2876,8 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        0.55,
+        5.23,
+        1.112,
         2.255
       ],
       "s": [
@@ -2778,9 +2891,9 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        0.55,
-        1.0
+        5.23,
+        1.112,
+        1
       ],
       "s": [
         0.14,
@@ -2793,9 +2906,9 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        1.91,
-        1.0
+        5.23,
+        2.472,
+        1
       ],
       "s": [
         0.14,
@@ -2808,8 +2921,8 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        0.595,
+        5.23,
+        1.157,
         1.045
       ],
       "s": [
@@ -2823,9 +2936,9 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        0.7833,
-        1.0
+        5.23,
+        1.3453,
+        1
       ],
       "s": [
         0.14,
@@ -2838,9 +2951,9 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        1.0167,
-        1.0
+        5.23,
+        1.5787,
+        1
       ],
       "s": [
         0.14,
@@ -2853,9 +2966,9 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        1.25,
-        1.0
+        5.23,
+        1.812,
+        1
       ],
       "s": [
         0.14,
@@ -2868,9 +2981,9 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        1.4833,
-        1.0
+        5.23,
+        2.0453,
+        1
       ],
       "s": [
         0.14,
@@ -2883,9 +2996,9 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        1.7167,
-        1.0
+        5.23,
+        2.2787,
+        1
       ],
       "s": [
         0.14,
@@ -2898,8 +3011,8 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        0.55,
+        5.23,
+        1.112,
         1.676
       ],
       "s": [
@@ -2913,13 +3026,13 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        1.95,
+        5.2,
+        2.512,
         0
       ],
       "s": [
-        0.14,
-        0.35,
+        0.2,
+        0.788,
         2.8
       ],
       "mat": "wall",
@@ -2928,13 +3041,13 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
+        5.2,
         0,
         0
       ],
       "s": [
-        0.14,
-        0.55,
+        0.2,
+        1.112,
         0.1
       ],
       "mat": "trim",
@@ -2943,13 +3056,13 @@
     {
       "room": "kitchen",
       "p": [
-        6.33,
-        1.95,
+        5.2,
+        2.512,
         0
       ],
       "s": [
-        0.14,
-        0.35,
+        0.2,
+        0.788,
         0.1
       ],
       "mat": "trim",
@@ -2959,12 +3072,12 @@
       "room": "living",
       "p": [
         0,
-        6.53,
+        8.1,
         0
       ],
       "s": [
-        4.7,
-        0.14,
+        3.9,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -2973,13 +3086,13 @@
     {
       "room": "living",
       "p": [
-        4.7,
-        6.53,
+        3.8,
+        8.1,
         2.3
       ],
       "s": [
-        1.7,
-        0.14,
+        1.6,
+        0.1,
         0.5
       ],
       "mat": "wall",
@@ -2989,12 +3102,12 @@
       "room": "living",
       "p": [
         0,
-        6.53,
+        8.1,
         0
       ],
       "s": [
-        4.7,
-        0.14,
+        3.9,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -3003,13 +3116,13 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        2.3,
+        0,
+        3.2,
         0
       ],
       "s": [
-        0.14,
         0.2,
+        0.3477,
         2.8
       ],
       "mat": "wall",
@@ -3018,13 +3131,13 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        2.5,
+        0,
+        3.5477,
         2.2
       ],
       "s": [
-        0.14,
-        1.0,
+        0.2,
+        1,
         0.6
       ],
       "mat": "wall",
@@ -3033,8 +3146,8 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        2.475,
+        0.03,
+        3.5227,
         0
       ],
       "s": [
@@ -3048,8 +3161,8 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        3.475,
+        0.03,
+        4.5227,
         0
       ],
       "s": [
@@ -3063,13 +3176,13 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        2.5,
+        0.03,
+        3.5477,
         2.16
       ],
       "s": [
         0.14,
-        1.0,
+        1,
         0.04
       ],
       "mat": "wood",
@@ -3078,8 +3191,8 @@
     {
       "room": "living",
       "p": [
-        0,
-        2.5,
+        0.1,
+        3.5477,
         0.02
       ],
       "s": [
@@ -3093,13 +3206,13 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        3.5,
+        0,
+        4.5477,
         0
       ],
       "s": [
-        0.14,
-        0.7,
+        0.2,
+        0.986,
         2.8
       ],
       "mat": "wall",
@@ -3108,12 +3221,12 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        4.2,
+        0,
+        5.5337,
         0
       ],
       "s": [
-        0.14,
+        0.2,
         1.7,
         1
       ],
@@ -3123,12 +3236,12 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        4.2,
+        0,
+        5.5337,
         2.3
       ],
       "s": [
-        0.14,
+        0.2,
         1.7,
         0.5
       ],
@@ -3138,12 +3251,12 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        4.2,
+        0,
+        5.5337,
         0
       ],
       "s": [
-        0.14,
+        0.2,
         1.7,
         0.1
       ],
@@ -3153,8 +3266,8 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        4.2,
+        0.03,
+        5.5337,
         1
       ],
       "s": [
@@ -3168,8 +3281,8 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        4.2,
+        0.03,
+        5.5337,
         2.255
       ],
       "s": [
@@ -3183,8 +3296,8 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        4.2,
+        0.03,
+        5.5337,
         1
       ],
       "s": [
@@ -3198,8 +3311,8 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        5.86,
+        0.03,
+        7.1937,
         1
       ],
       "s": [
@@ -3213,8 +3326,8 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        4.245,
+        0.03,
+        5.5787,
         1.045
       ],
       "s": [
@@ -3228,8 +3341,8 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        4.4833,
+        0.03,
+        5.817,
         1
       ],
       "s": [
@@ -3243,8 +3356,8 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        4.7667,
+        0.03,
+        6.1004,
         1
       ],
       "s": [
@@ -3258,8 +3371,8 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        5.05,
+        0.03,
+        6.3837,
         1
       ],
       "s": [
@@ -3273,8 +3386,8 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        5.3333,
+        0.03,
+        6.667,
         1
       ],
       "s": [
@@ -3288,8 +3401,8 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        5.6167,
+        0.03,
+        6.9504,
         1
       ],
       "s": [
@@ -3303,8 +3416,8 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        4.2,
+        0.03,
+        5.5337,
         1.676
       ],
       "s": [
@@ -3318,73 +3431,13 @@
     {
       "room": "living",
       "p": [
-        -0.07,
-        5.9,
+        0,
+        7.2337,
         0
       ],
       "s": [
-        0.14,
-        0.7,
-        2.8
-      ],
-      "mat": "wall",
-      "kind": "wall"
-    },
-    {
-      "room": "living",
-      "p": [
-        -0.07,
-        2.3,
-        0
-      ],
-      "s": [
-        0.14,
         0.2,
-        0.1
-      ],
-      "mat": "trim",
-      "kind": "skirting"
-    },
-    {
-      "room": "living",
-      "p": [
-        -0.07,
-        3.5,
-        0
-      ],
-      "s": [
-        0.14,
-        0.7,
-        0.1
-      ],
-      "mat": "trim",
-      "kind": "skirting"
-    },
-    {
-      "room": "living",
-      "p": [
-        -0.07,
-        5.9,
-        0
-      ],
-      "s": [
-        0.14,
-        0.7,
-        0.1
-      ],
-      "mat": "trim",
-      "kind": "skirting"
-    },
-    {
-      "room": "living",
-      "p": [
-        6.33,
-        2.3,
-        0
-      ],
-      "s": [
-        0.14,
-        1.0,
+        0.9663,
         2.8
       ],
       "mat": "wall",
@@ -3393,12 +3446,72 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        3.3,
+        0,
+        3.2,
         0
       ],
       "s": [
-        0.14,
+        0.2,
+        0.3477,
+        0.1
+      ],
+      "mat": "trim",
+      "kind": "skirting"
+    },
+    {
+      "room": "living",
+      "p": [
+        0,
+        4.5477,
+        0
+      ],
+      "s": [
+        0.2,
+        0.986,
+        0.1
+      ],
+      "mat": "trim",
+      "kind": "skirting"
+    },
+    {
+      "room": "living",
+      "p": [
+        0,
+        7.2337,
+        0
+      ],
+      "s": [
+        0.2,
+        0.9663,
+        0.1
+      ],
+      "mat": "trim",
+      "kind": "skirting"
+    },
+    {
+      "room": "living",
+      "p": [
+        5.2,
+        3.2,
+        0
+      ],
+      "s": [
+        0.2,
+        1.343,
+        2.8
+      ],
+      "mat": "wall",
+      "kind": "wall"
+    },
+    {
+      "room": "living",
+      "p": [
+        5.2,
+        4.543,
+        0
+      ],
+      "s": [
+        0.2,
         2.2,
         1
       ],
@@ -3408,12 +3521,12 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        3.3,
+        5.2,
+        4.543,
         2.3
       ],
       "s": [
-        0.14,
+        0.2,
         2.2,
         0.5
       ],
@@ -3423,12 +3536,12 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        3.3,
+        5.2,
+        4.543,
         0
       ],
       "s": [
-        0.14,
+        0.2,
         2.2,
         0.1
       ],
@@ -3438,8 +3551,8 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        3.3,
+        5.23,
+        4.543,
         1
       ],
       "s": [
@@ -3453,8 +3566,8 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        3.3,
+        5.23,
+        4.543,
         2.255
       ],
       "s": [
@@ -3468,8 +3581,8 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        3.3,
+        5.23,
+        4.543,
         1
       ],
       "s": [
@@ -3483,8 +3596,8 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        5.46,
+        5.23,
+        6.703,
         1
       ],
       "s": [
@@ -3498,8 +3611,8 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        3.345,
+        5.23,
+        4.588,
         1.045
       ],
       "s": [
@@ -3513,8 +3626,8 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        3.6667,
+        5.23,
+        4.9097,
         1
       ],
       "s": [
@@ -3528,8 +3641,8 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        4.0333,
+        5.23,
+        5.2763,
         1
       ],
       "s": [
@@ -3543,8 +3656,8 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        4.4,
+        5.23,
+        5.643,
         1
       ],
       "s": [
@@ -3558,8 +3671,8 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        4.7667,
+        5.23,
+        6.0097,
         1
       ],
       "s": [
@@ -3573,8 +3686,8 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        5.1333,
+        5.23,
+        6.3763,
         1
       ],
       "s": [
@@ -3588,8 +3701,8 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        3.3,
+        5.23,
+        4.543,
         1.676
       ],
       "s": [
@@ -3603,13 +3716,13 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        5.5,
+        5.2,
+        6.743,
         0
       ],
       "s": [
-        0.14,
-        1.1,
+        0.2,
+        1.457,
         2.8
       ],
       "mat": "wall",
@@ -3618,13 +3731,13 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        2.3,
+        5.2,
+        3.2,
         0
       ],
       "s": [
-        0.14,
-        1.0,
+        0.2,
+        1.343,
         0.1
       ],
       "mat": "trim",
@@ -3633,13 +3746,13 @@
     {
       "room": "living",
       "p": [
-        6.33,
-        5.5,
+        5.2,
+        6.743,
         0
       ],
       "s": [
-        0.14,
-        1.1,
+        0.2,
+        1.457,
         0.1
       ],
       "mat": "trim",
@@ -3649,12 +3762,12 @@
       "room": "bedroom-small",
       "p": [
         0,
-        6.53,
+        8.1,
         0
       ],
       "s": [
-        4.7,
-        0.14,
+        3.9,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -3664,12 +3777,12 @@
       "room": "bedroom-small",
       "p": [
         0,
-        6.53,
+        8.1,
         0
       ],
       "s": [
-        4.7,
-        0.14,
+        3.9,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -3679,12 +3792,12 @@
       "room": "bedroom-small",
       "p": [
         0,
-        9.13,
+        11.8,
         0
       ],
       "s": [
-        4.7,
-        0.14,
+        3.9,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -3694,12 +3807,12 @@
       "room": "bedroom-small",
       "p": [
         0,
-        9.13,
+        11.8,
         0
       ],
       "s": [
-        4.7,
-        0.14,
+        3.9,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -3708,13 +3821,13 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        6.6,
+        0,
+        8.1,
         0
       ],
       "s": [
-        0.14,
-        0.5,
+        0.2,
+        1.0788,
         2.8
       ],
       "mat": "wall",
@@ -3723,12 +3836,12 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        7.1,
+        0,
+        9.1788,
         0
       ],
       "s": [
-        0.14,
+        0.2,
         1.5,
         1
       ],
@@ -3738,12 +3851,12 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        7.1,
+        0,
+        9.1788,
         2.3
       ],
       "s": [
-        0.14,
+        0.2,
         1.5,
         0.5
       ],
@@ -3753,12 +3866,12 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        7.1,
+        0,
+        9.1788,
         0
       ],
       "s": [
-        0.14,
+        0.2,
         1.5,
         0.1
       ],
@@ -3768,8 +3881,8 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        7.1,
+        0.03,
+        9.1788,
         1
       ],
       "s": [
@@ -3783,8 +3896,8 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        7.1,
+        0.03,
+        9.1788,
         2.255
       ],
       "s": [
@@ -3798,8 +3911,8 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        7.1,
+        0.03,
+        9.1788,
         1
       ],
       "s": [
@@ -3813,8 +3926,8 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        8.56,
+        0.03,
+        10.6388,
         1
       ],
       "s": [
@@ -3828,8 +3941,8 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        7.145,
+        0.03,
+        9.2238,
         1.045
       ],
       "s": [
@@ -3843,8 +3956,8 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        7.35,
+        0.03,
+        9.4288,
         1
       ],
       "s": [
@@ -3858,8 +3971,8 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        7.6,
+        0.03,
+        9.6788,
         1
       ],
       "s": [
@@ -3873,8 +3986,8 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        7.85,
+        0.03,
+        9.9288,
         1
       ],
       "s": [
@@ -3888,8 +4001,8 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        8.1,
+        0.03,
+        10.1788,
         1
       ],
       "s": [
@@ -3903,8 +4016,8 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        8.35,
+        0.03,
+        10.4288,
         1
       ],
       "s": [
@@ -3918,8 +4031,8 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        7.1,
+        0.03,
+        9.1788,
         1.676
       ],
       "s": [
@@ -3933,13 +4046,13 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        8.6,
+        0,
+        10.6788,
         0
       ],
       "s": [
-        0.14,
-        0.6,
+        0.2,
+        1.2212,
         2.8
       ],
       "mat": "wall",
@@ -3948,13 +4061,13 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        6.6,
+        0,
+        8.1,
         0
       ],
       "s": [
-        0.14,
-        0.5,
+        0.2,
+        1.0788,
         0.1
       ],
       "mat": "trim",
@@ -3963,13 +4076,13 @@
     {
       "room": "bedroom-small",
       "p": [
-        -0.07,
-        8.6,
+        0,
+        10.6788,
         0
       ],
       "s": [
-        0.14,
-        0.6,
+        0.2,
+        1.2212,
         0.1
       ],
       "mat": "trim",
@@ -3978,13 +4091,13 @@
     {
       "room": "bedroom-small",
       "p": [
-        4.63,
-        6.6,
+        3.8,
+        8.1,
         0
       ],
       "s": [
-        0.14,
-        0.3,
+        0.1,
+        0.6673,
         2.8
       ],
       "mat": "wall",
@@ -3993,12 +4106,12 @@
     {
       "room": "bedroom-small",
       "p": [
-        4.63,
-        6.9,
+        3.8,
+        8.7673,
         2.2
       ],
       "s": [
-        0.14,
+        0.1,
         0.9,
         0.6
       ],
@@ -4008,12 +4121,12 @@
     {
       "room": "bedroom-small",
       "p": [
-        4.63,
-        6.875,
+        3.8,
+        8.7423,
         0
       ],
       "s": [
-        0.14,
+        0.1,
         0.05,
         2.2
       ],
@@ -4023,12 +4136,12 @@
     {
       "room": "bedroom-small",
       "p": [
-        4.63,
-        7.775,
+        3.8,
+        9.6423,
         0
       ],
       "s": [
-        0.14,
+        0.1,
         0.05,
         2.2
       ],
@@ -4038,12 +4151,12 @@
     {
       "room": "bedroom-small",
       "p": [
-        4.63,
-        6.9,
+        3.8,
+        8.7673,
         2.16
       ],
       "s": [
-        0.14,
+        0.1,
         0.9,
         0.04
       ],
@@ -4053,8 +4166,8 @@
     {
       "room": "bedroom-small",
       "p": [
-        4.7,
-        6.9,
+        3.85,
+        8.7673,
         0.02
       ],
       "s": [
@@ -4068,13 +4181,13 @@
     {
       "room": "bedroom-small",
       "p": [
-        4.63,
-        7.8,
+        3.8,
+        9.6673,
         0
       ],
       "s": [
-        0.14,
-        1.4,
+        0.1,
+        2.2327,
         2.8
       ],
       "mat": "wall",
@@ -4083,13 +4196,13 @@
     {
       "room": "bedroom-small",
       "p": [
-        4.63,
-        6.6,
+        3.8,
+        8.1,
         0
       ],
       "s": [
-        0.14,
-        0.3,
+        0.1,
+        0.6673,
         0.1
       ],
       "mat": "trim",
@@ -4098,13 +4211,13 @@
     {
       "room": "bedroom-small",
       "p": [
-        4.63,
-        7.8,
+        3.8,
+        9.6673,
         0
       ],
       "s": [
-        0.14,
-        1.4,
+        0.1,
+        2.2327,
         0.1
       ],
       "mat": "trim",
@@ -4113,13 +4226,13 @@
     {
       "room": "hall",
       "p": [
-        4.7,
-        6.53,
+        3.8,
+        8.1,
         2.3
       ],
       "s": [
-        1.7,
-        0.14,
+        1.6,
+        0.1,
         0.5
       ],
       "mat": "wall",
@@ -4128,13 +4241,13 @@
     {
       "room": "hall",
       "p": [
-        4.7,
-        11.03,
+        3.8,
+        13.9,
         0
       ],
       "s": [
-        0.35,
-        0.14,
+        0.2824,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -4143,13 +4256,13 @@
     {
       "room": "hall",
       "p": [
-        5.05,
-        11.03,
+        4.0824,
+        13.9,
         2.2
       ],
       "s": [
         0.9,
-        0.14,
+        0.1,
         0.6
       ],
       "mat": "wall",
@@ -4158,13 +4271,13 @@
     {
       "room": "hall",
       "p": [
-        5.025,
-        11.03,
+        4.0574,
+        13.9,
         0
       ],
       "s": [
         0.05,
-        0.14,
+        0.1,
         2.2
       ],
       "mat": "wood",
@@ -4173,13 +4286,13 @@
     {
       "room": "hall",
       "p": [
-        5.925,
-        11.03,
+        4.9574,
+        13.9,
         0
       ],
       "s": [
         0.05,
-        0.14,
+        0.1,
         2.2
       ],
       "mat": "wood",
@@ -4188,13 +4301,13 @@
     {
       "room": "hall",
       "p": [
-        5.05,
-        11.03,
+        4.0824,
+        13.9,
         2.16
       ],
       "s": [
         0.9,
-        0.14,
+        0.1,
         0.04
       ],
       "mat": "wood",
@@ -4203,8 +4316,8 @@
     {
       "room": "hall",
       "p": [
-        5.05,
-        11.1,
+        4.0824,
+        13.95,
         0.02
       ],
       "s": [
@@ -4218,13 +4331,13 @@
     {
       "room": "hall",
       "p": [
-        5.95,
-        11.03,
+        4.9824,
+        13.9,
         0
       ],
       "s": [
-        0.45,
-        0.14,
+        0.4176,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -4233,13 +4346,13 @@
     {
       "room": "hall",
       "p": [
-        4.7,
-        11.03,
+        3.8,
+        13.9,
         0
       ],
       "s": [
-        0.35,
-        0.14,
+        0.2824,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -4248,13 +4361,13 @@
     {
       "room": "hall",
       "p": [
-        5.95,
-        11.03,
+        4.9824,
+        13.9,
         0
       ],
       "s": [
-        0.45,
-        0.14,
+        0.4176,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -4263,13 +4376,13 @@
     {
       "room": "hall",
       "p": [
-        4.63,
-        6.6,
+        3.8,
+        8.1,
         0
       ],
       "s": [
-        0.14,
-        0.3,
+        0.1,
+        0.6673,
         2.8
       ],
       "mat": "wall",
@@ -4278,12 +4391,12 @@
     {
       "room": "hall",
       "p": [
-        4.63,
-        6.9,
+        3.8,
+        8.7673,
         2.2
       ],
       "s": [
-        0.14,
+        0.1,
         0.9,
         0.6
       ],
@@ -4293,12 +4406,12 @@
     {
       "room": "hall",
       "p": [
-        4.63,
-        6.875,
+        3.8,
+        8.7423,
         0
       ],
       "s": [
-        0.14,
+        0.1,
         0.05,
         2.2
       ],
@@ -4308,12 +4421,12 @@
     {
       "room": "hall",
       "p": [
-        4.63,
-        7.775,
+        3.8,
+        9.6423,
         0
       ],
       "s": [
-        0.14,
+        0.1,
         0.05,
         2.2
       ],
@@ -4323,12 +4436,12 @@
     {
       "room": "hall",
       "p": [
-        4.63,
-        6.9,
+        3.8,
+        8.7673,
         2.16
       ],
       "s": [
-        0.14,
+        0.1,
         0.9,
         0.04
       ],
@@ -4338,8 +4451,8 @@
     {
       "room": "hall",
       "p": [
-        4.7,
-        6.9,
+        3.85,
+        8.7673,
         0.02
       ],
       "s": [
@@ -4353,13 +4466,13 @@
     {
       "room": "hall",
       "p": [
-        4.63,
-        7.8,
+        3.8,
+        9.6673,
         0
       ],
       "s": [
-        0.14,
-        1.75,
+        0.1,
+        2.6116,
         2.8
       ],
       "mat": "wall",
@@ -4368,12 +4481,12 @@
     {
       "room": "hall",
       "p": [
-        4.63,
-        9.55,
+        3.8,
+        12.2789,
         2.2
       ],
       "s": [
-        0.14,
+        0.1,
         0.8,
         0.6
       ],
@@ -4383,12 +4496,12 @@
     {
       "room": "hall",
       "p": [
-        4.63,
-        9.525,
+        3.8,
+        12.2539,
         0
       ],
       "s": [
-        0.14,
+        0.1,
         0.05,
         2.2
       ],
@@ -4398,12 +4511,12 @@
     {
       "room": "hall",
       "p": [
-        4.63,
-        10.325,
+        3.8,
+        13.0539,
         0
       ],
       "s": [
-        0.14,
+        0.1,
         0.05,
         2.2
       ],
@@ -4413,12 +4526,12 @@
     {
       "room": "hall",
       "p": [
-        4.63,
-        9.55,
+        3.8,
+        12.2789,
         2.16
       ],
       "s": [
-        0.14,
+        0.1,
         0.8,
         0.04
       ],
@@ -4428,8 +4541,8 @@
     {
       "room": "hall",
       "p": [
-        4.7,
-        9.55,
+        3.85,
+        12.2789,
         0.02
       ],
       "s": [
@@ -4443,13 +4556,13 @@
     {
       "room": "hall",
       "p": [
-        4.63,
-        10.35,
+        3.8,
+        13.0789,
         0
       ],
       "s": [
-        0.14,
-        0.75,
+        0.1,
+        0.9211,
         2.8
       ],
       "mat": "wall",
@@ -4458,13 +4571,13 @@
     {
       "room": "hall",
       "p": [
-        4.63,
-        6.6,
+        3.8,
+        8.1,
         0
       ],
       "s": [
-        0.14,
-        0.3,
+        0.1,
+        0.6673,
         0.1
       ],
       "mat": "trim",
@@ -4473,13 +4586,13 @@
     {
       "room": "hall",
       "p": [
-        4.63,
-        7.8,
+        3.8,
+        9.6673,
         0
       ],
       "s": [
-        0.14,
-        1.75,
+        0.1,
+        2.6116,
         0.1
       ],
       "mat": "trim",
@@ -4488,13 +4601,13 @@
     {
       "room": "hall",
       "p": [
-        4.63,
-        10.35,
+        3.8,
+        13.0789,
         0
       ],
       "s": [
-        0.14,
-        0.75,
+        0.1,
+        0.9211,
         0.1
       ],
       "mat": "trim",
@@ -4503,13 +4616,13 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        6.6,
+        5.2,
+        8.1,
         0
       ],
       "s": [
-        0.14,
-        0.35,
+        0.2,
+        0.876,
         2.8
       ],
       "mat": "wall",
@@ -4518,12 +4631,12 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        6.95,
+        5.2,
+        8.976,
         0
       ],
       "s": [
-        0.14,
+        0.2,
         1.55,
         1
       ],
@@ -4533,12 +4646,12 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        6.95,
+        5.2,
+        8.976,
         2.3
       ],
       "s": [
-        0.14,
+        0.2,
         1.55,
         0.5
       ],
@@ -4548,12 +4661,12 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        6.95,
+        5.2,
+        8.976,
         0
       ],
       "s": [
-        0.14,
+        0.2,
         1.55,
         0.1
       ],
@@ -4563,8 +4676,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        6.95,
+        5.23,
+        8.976,
         1
       ],
       "s": [
@@ -4578,8 +4691,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        6.95,
+        5.23,
+        8.976,
         2.255
       ],
       "s": [
@@ -4593,8 +4706,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        6.95,
+        5.23,
+        8.976,
         1
       ],
       "s": [
@@ -4608,8 +4721,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        8.46,
+        5.23,
+        10.486,
         1
       ],
       "s": [
@@ -4623,8 +4736,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        6.995,
+        5.23,
+        9.021,
         1.045
       ],
       "s": [
@@ -4638,8 +4751,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        7.2083,
+        5.23,
+        9.2343,
         1
       ],
       "s": [
@@ -4653,8 +4766,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        7.4667,
+        5.23,
+        9.4927,
         1
       ],
       "s": [
@@ -4668,8 +4781,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        7.725,
+        5.23,
+        9.751,
         1
       ],
       "s": [
@@ -4683,8 +4796,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        7.9833,
+        5.23,
+        10.0093,
         1
       ],
       "s": [
@@ -4698,8 +4811,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        8.2417,
+        5.23,
+        10.2677,
         1
       ],
       "s": [
@@ -4713,8 +4826,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        6.95,
+        5.23,
+        8.976,
         1.676
       ],
       "s": [
@@ -4728,13 +4841,13 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        8.5,
+        5.2,
+        10.526,
         0
       ],
       "s": [
-        0.14,
-        1.1,
+        0.2,
+        1.8188,
         2.8
       ],
       "mat": "wall",
@@ -4743,13 +4856,13 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        9.6,
+        5.2,
+        12.3447,
         0
       ],
       "s": [
-        0.14,
-        1.0,
+        0.2,
+        1,
         1
       ],
       "mat": "wall",
@@ -4758,13 +4871,13 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        9.6,
+        5.2,
+        12.3447,
         2.3
       ],
       "s": [
-        0.14,
-        1.0,
+        0.2,
+        1,
         0.5
       ],
       "mat": "wall",
@@ -4773,13 +4886,13 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        9.6,
+        5.2,
+        12.3447,
         0
       ],
       "s": [
-        0.14,
-        1.0,
+        0.2,
+        1,
         0.1
       ],
       "mat": "trim",
@@ -4788,13 +4901,13 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        9.6,
+        5.23,
+        12.3447,
         1
       ],
       "s": [
         0.14,
-        1.0,
+        1,
         0.045
       ],
       "mat": "white",
@@ -4803,13 +4916,13 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        9.6,
+        5.23,
+        12.3447,
         2.255
       ],
       "s": [
         0.14,
-        1.0,
+        1,
         0.045
       ],
       "mat": "white",
@@ -4818,8 +4931,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        9.6,
+        5.23,
+        12.3447,
         1
       ],
       "s": [
@@ -4833,8 +4946,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        10.56,
+        5.23,
+        13.3047,
         1
       ],
       "s": [
@@ -4848,8 +4961,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        9.645,
+        5.23,
+        12.3897,
         1.045
       ],
       "s": [
@@ -4863,8 +4976,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        9.7667,
+        5.23,
+        12.5114,
         1
       ],
       "s": [
@@ -4878,8 +4991,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        9.9333,
+        5.23,
+        12.678,
         1
       ],
       "s": [
@@ -4893,8 +5006,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        10.1,
+        5.23,
+        12.8447,
         1
       ],
       "s": [
@@ -4908,8 +5021,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        10.2667,
+        5.23,
+        13.0114,
         1
       ],
       "s": [
@@ -4923,8 +5036,8 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        10.4333,
+        5.23,
+        13.178,
         1
       ],
       "s": [
@@ -4938,13 +5051,13 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        9.6,
+        5.23,
+        12.3447,
         1.676
       ],
       "s": [
         0.14,
-        1.0,
+        1,
         0.018
       ],
       "mat": "metal",
@@ -4953,13 +5066,13 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        10.6,
+        5.2,
+        13.3447,
         0
       ],
       "s": [
-        0.14,
-        0.5,
+        0.2,
+        0.6553,
         2.8
       ],
       "mat": "wall",
@@ -4968,13 +5081,13 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        6.6,
+        5.2,
+        8.1,
         0
       ],
       "s": [
-        0.14,
-        0.35,
+        0.2,
+        0.876,
         0.1
       ],
       "mat": "trim",
@@ -4983,13 +5096,13 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        8.5,
+        5.2,
+        10.526,
         0
       ],
       "s": [
-        0.14,
-        1.1,
+        0.2,
+        1.8188,
         0.1
       ],
       "mat": "trim",
@@ -4998,13 +5111,13 @@
     {
       "room": "hall",
       "p": [
-        6.33,
-        10.6,
+        5.2,
+        13.3447,
         0
       ],
       "s": [
-        0.14,
-        0.5,
+        0.2,
+        0.6553,
         0.1
       ],
       "mat": "trim",
@@ -5014,12 +5127,12 @@
       "room": "wc-suite",
       "p": [
         0,
-        9.13,
+        11.8,
         0
       ],
       "s": [
-        2.2,
-        0.14,
+        2.55,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -5029,12 +5142,12 @@
       "room": "wc-suite",
       "p": [
         0,
-        9.13,
+        11.8,
         0
       ],
       "s": [
-        2.2,
-        0.14,
+        2.55,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -5044,12 +5157,12 @@
       "room": "wc-suite",
       "p": [
         0,
-        11.03,
+        13.9,
         0
       ],
       "s": [
-        0.7,
-        0.14,
+        0.9,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -5058,13 +5171,13 @@
     {
       "room": "wc-suite",
       "p": [
-        0.7,
-        11.03,
+        0.9,
+        13.9,
         2.2
       ],
       "s": [
         0.8,
-        0.14,
+        0.1,
         0.6
       ],
       "mat": "wall",
@@ -5073,13 +5186,13 @@
     {
       "room": "wc-suite",
       "p": [
-        0.675,
-        11.03,
+        0.875,
+        13.9,
         0
       ],
       "s": [
         0.05,
-        0.14,
+        0.1,
         2.2
       ],
       "mat": "wood",
@@ -5088,13 +5201,13 @@
     {
       "room": "wc-suite",
       "p": [
-        1.475,
-        11.03,
+        1.675,
+        13.9,
         0
       ],
       "s": [
         0.05,
-        0.14,
+        0.1,
         2.2
       ],
       "mat": "wood",
@@ -5103,13 +5216,13 @@
     {
       "room": "wc-suite",
       "p": [
-        0.7,
-        11.03,
+        0.9,
+        13.9,
         2.16
       ],
       "s": [
         0.8,
-        0.14,
+        0.1,
         0.04
       ],
       "mat": "wood",
@@ -5118,8 +5231,8 @@
     {
       "room": "wc-suite",
       "p": [
-        0.7,
-        11.1,
+        0.9,
+        13.95,
         0.02
       ],
       "s": [
@@ -5133,13 +5246,13 @@
     {
       "room": "wc-suite",
       "p": [
-        1.5,
-        11.03,
+        1.7,
+        13.9,
         0
       ],
       "s": [
-        0.7,
-        0.14,
+        0.85,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -5149,12 +5262,12 @@
       "room": "wc-suite",
       "p": [
         0,
-        11.03,
+        13.9,
         0
       ],
       "s": [
-        0.7,
-        0.14,
+        0.9,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -5163,13 +5276,13 @@
     {
       "room": "wc-suite",
       "p": [
-        1.5,
-        11.03,
+        1.7,
+        13.9,
         0
       ],
       "s": [
-        0.7,
-        0.14,
+        0.85,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -5178,13 +5291,13 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        9.2,
+        0,
+        11.8,
         0
       ],
       "s": [
-        0.14,
-        0.5,
+        0.2,
+        0.6368,
         2.8
       ],
       "mat": "wall",
@@ -5193,12 +5306,12 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        9.7,
+        0,
+        12.4368,
         0
       ],
       "s": [
-        0.14,
+        0.2,
         0.65,
         1.8
       ],
@@ -5208,12 +5321,12 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        9.7,
+        0,
+        12.4368,
         2.4
       ],
       "s": [
-        0.14,
+        0.2,
         0.65,
         0.4
       ],
@@ -5223,12 +5336,12 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        9.7,
+        0,
+        12.4368,
         0
       ],
       "s": [
-        0.14,
+        0.2,
         0.65,
         0.1
       ],
@@ -5238,8 +5351,8 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        9.7,
+        0.03,
+        12.4368,
         1.8
       ],
       "s": [
@@ -5253,8 +5366,8 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        9.7,
+        0.03,
+        12.4368,
         2.355
       ],
       "s": [
@@ -5268,8 +5381,8 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        9.7,
+        0.03,
+        12.4368,
         1.8
       ],
       "s": [
@@ -5283,8 +5396,8 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        10.31,
+        0.03,
+        13.0468,
         1.8
       ],
       "s": [
@@ -5298,8 +5411,8 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        9.745,
+        0.03,
+        12.4818,
         1.845
       ],
       "s": [
@@ -5313,8 +5426,8 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        9.8083,
+        0.03,
+        12.5451,
         1.8
       ],
       "s": [
@@ -5328,8 +5441,8 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        9.9167,
+        0.03,
+        12.6535,
         1.8
       ],
       "s": [
@@ -5343,8 +5456,8 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        10.025,
+        0.03,
+        12.7618,
         1.8
       ],
       "s": [
@@ -5358,8 +5471,8 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        10.1333,
+        0.03,
+        12.8701,
         1.8
       ],
       "s": [
@@ -5373,8 +5486,8 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        10.2417,
+        0.03,
+        12.9785,
         1.8
       ],
       "s": [
@@ -5388,8 +5501,8 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        9.7,
+        0.03,
+        12.4368,
         2.112
       ],
       "s": [
@@ -5403,13 +5516,13 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        10.35,
+        0,
+        13.0868,
         0
       ],
       "s": [
-        0.14,
-        0.75,
+        0.2,
+        0.9132,
         2.8
       ],
       "mat": "wall",
@@ -5418,13 +5531,13 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        9.2,
+        0,
+        11.8,
         0
       ],
       "s": [
-        0.14,
-        0.5,
+        0.2,
+        0.6368,
         0.1
       ],
       "mat": "trim",
@@ -5433,13 +5546,13 @@
     {
       "room": "wc-suite",
       "p": [
-        -0.07,
-        10.35,
+        0,
+        13.0868,
         0
       ],
       "s": [
-        0.14,
-        0.75,
+        0.2,
+        0.9132,
         0.1
       ],
       "mat": "trim",
@@ -5448,13 +5561,13 @@
     {
       "room": "wc-suite",
       "p": [
-        2.13,
-        9.2,
+        2.45,
+        11.8,
         0
       ],
       "s": [
-        0.14,
-        1.9,
+        0.1,
+        2.2,
         2.8
       ],
       "mat": "wall",
@@ -5463,13 +5576,13 @@
     {
       "room": "wc-suite",
       "p": [
-        2.13,
-        9.2,
+        2.45,
+        11.8,
         0
       ],
       "s": [
-        0.14,
-        1.9,
+        0.1,
+        2.2,
         0.1
       ],
       "mat": "trim",
@@ -5478,13 +5591,13 @@
     {
       "room": "wc-common",
       "p": [
-        2.2,
-        9.13,
+        2.45,
+        11.8,
         0
       ],
       "s": [
-        2.5,
-        0.14,
+        1.45,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -5493,13 +5606,13 @@
     {
       "room": "wc-common",
       "p": [
-        2.2,
-        9.13,
+        2.45,
+        11.8,
         0
       ],
       "s": [
-        2.5,
-        0.14,
+        1.45,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -5508,13 +5621,13 @@
     {
       "room": "wc-common",
       "p": [
-        2.2,
-        11.03,
+        2.45,
+        13.9,
         0
       ],
       "s": [
-        2.5,
-        0.14,
+        1.45,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -5523,13 +5636,13 @@
     {
       "room": "wc-common",
       "p": [
-        2.2,
-        11.03,
+        2.45,
+        13.9,
         0
       ],
       "s": [
-        2.5,
-        0.14,
+        1.45,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -5538,13 +5651,13 @@
     {
       "room": "wc-common",
       "p": [
-        4.63,
-        9.2,
+        3.8,
+        11.8,
         0
       ],
       "s": [
-        0.14,
-        0.35,
+        0.1,
+        0.4789,
         2.8
       ],
       "mat": "wall",
@@ -5553,12 +5666,12 @@
     {
       "room": "wc-common",
       "p": [
-        4.63,
-        9.55,
+        3.8,
+        12.2789,
         2.2
       ],
       "s": [
-        0.14,
+        0.1,
         0.8,
         0.6
       ],
@@ -5568,12 +5681,12 @@
     {
       "room": "wc-common",
       "p": [
-        4.63,
-        9.525,
+        3.8,
+        12.2539,
         0
       ],
       "s": [
-        0.14,
+        0.1,
         0.05,
         2.2
       ],
@@ -5583,12 +5696,12 @@
     {
       "room": "wc-common",
       "p": [
-        4.63,
-        10.325,
+        3.8,
+        13.0539,
         0
       ],
       "s": [
-        0.14,
+        0.1,
         0.05,
         2.2
       ],
@@ -5598,12 +5711,12 @@
     {
       "room": "wc-common",
       "p": [
-        4.63,
-        9.55,
+        3.8,
+        12.2789,
         2.16
       ],
       "s": [
-        0.14,
+        0.1,
         0.8,
         0.04
       ],
@@ -5613,8 +5726,8 @@
     {
       "room": "wc-common",
       "p": [
-        4.7,
-        9.55,
+        3.85,
+        12.2789,
         0.02
       ],
       "s": [
@@ -5628,13 +5741,13 @@
     {
       "room": "wc-common",
       "p": [
-        4.63,
-        10.35,
+        3.8,
+        13.0789,
         0
       ],
       "s": [
-        0.14,
-        0.75,
+        0.1,
+        0.9211,
         2.8
       ],
       "mat": "wall",
@@ -5643,13 +5756,13 @@
     {
       "room": "wc-common",
       "p": [
-        4.63,
-        9.2,
+        3.8,
+        11.8,
         0
       ],
       "s": [
-        0.14,
-        0.35,
+        0.1,
+        0.4789,
         0.1
       ],
       "mat": "trim",
@@ -5658,13 +5771,13 @@
     {
       "room": "wc-common",
       "p": [
-        4.63,
-        10.35,
+        3.8,
+        13.0789,
         0
       ],
       "s": [
-        0.14,
-        0.75,
+        0.1,
+        0.9211,
         0.1
       ],
       "mat": "trim",
@@ -5674,12 +5787,12 @@
       "room": "bedroom-suite",
       "p": [
         0,
-        11.03,
+        13.9,
         0
       ],
       "s": [
-        0.7,
-        0.14,
+        0.9,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -5688,13 +5801,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        0.7,
-        11.03,
+        0.9,
+        13.9,
         2.2
       ],
       "s": [
         0.8,
-        0.14,
+        0.1,
         0.6
       ],
       "mat": "wall",
@@ -5703,13 +5816,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        0.675,
-        11.03,
+        0.875,
+        13.9,
         0
       ],
       "s": [
         0.05,
-        0.14,
+        0.1,
         2.2
       ],
       "mat": "wood",
@@ -5718,13 +5831,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        1.475,
-        11.03,
+        1.675,
+        13.9,
         0
       ],
       "s": [
         0.05,
-        0.14,
+        0.1,
         2.2
       ],
       "mat": "wood",
@@ -5733,13 +5846,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        0.7,
-        11.03,
+        0.9,
+        13.9,
         2.16
       ],
       "s": [
         0.8,
-        0.14,
+        0.1,
         0.04
       ],
       "mat": "wood",
@@ -5748,8 +5861,8 @@
     {
       "room": "bedroom-suite",
       "p": [
-        0.7,
-        11.1,
+        0.9,
+        13.95,
         0.02
       ],
       "s": [
@@ -5763,13 +5876,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        1.5,
-        11.03,
+        1.7,
+        13.9,
         0
       ],
       "s": [
-        3.55,
-        0.14,
+        2.3824,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -5778,13 +5891,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        5.05,
-        11.03,
+        4.0824,
+        13.9,
         2.2
       ],
       "s": [
         0.9,
-        0.14,
+        0.1,
         0.6
       ],
       "mat": "wall",
@@ -5793,13 +5906,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        5.025,
-        11.03,
+        4.0574,
+        13.9,
         0
       ],
       "s": [
         0.05,
-        0.14,
+        0.1,
         2.2
       ],
       "mat": "wood",
@@ -5808,13 +5921,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        5.925,
-        11.03,
+        4.9574,
+        13.9,
         0
       ],
       "s": [
         0.05,
-        0.14,
+        0.1,
         2.2
       ],
       "mat": "wood",
@@ -5823,13 +5936,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        5.05,
-        11.03,
+        4.0824,
+        13.9,
         2.16
       ],
       "s": [
         0.9,
-        0.14,
+        0.1,
         0.04
       ],
       "mat": "wood",
@@ -5838,8 +5951,8 @@
     {
       "room": "bedroom-suite",
       "p": [
-        5.05,
-        11.1,
+        4.0824,
+        13.95,
         0.02
       ],
       "s": [
@@ -5853,13 +5966,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        5.95,
-        11.03,
+        4.9824,
+        13.9,
         0
       ],
       "s": [
-        0.45,
-        0.14,
+        0.4176,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -5869,12 +5982,12 @@
       "room": "bedroom-suite",
       "p": [
         0,
-        11.03,
+        13.9,
         0
       ],
       "s": [
-        0.7,
-        0.14,
+        0.9,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -5883,13 +5996,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        1.5,
-        11.03,
+        1.7,
+        13.9,
         0
       ],
       "s": [
-        3.55,
-        0.14,
+        2.3824,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -5898,13 +6011,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        5.95,
-        11.03,
+        4.9824,
+        13.9,
         0
       ],
       "s": [
-        0.45,
-        0.14,
+        0.4176,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -5914,12 +6027,12 @@
       "room": "bedroom-suite",
       "p": [
         0,
-        13.73,
+        18,
         0
       ],
       "s": [
-        2.2,
-        0.14,
+        2.063,
+        0.2,
         2.8
       ],
       "mat": "wall",
@@ -5928,14 +6041,14 @@
     {
       "room": "bedroom-suite",
       "p": [
-        2.2,
-        13.73,
+        2.063,
+        18,
         0
       ],
       "s": [
         1.9,
-        0.14,
-        1.0
+        0.2,
+        1
       ],
       "mat": "wall",
       "kind": "wall"
@@ -5943,13 +6056,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        2.2,
-        13.73,
+        2.063,
+        18,
         2.3
       ],
       "s": [
         1.9,
-        0.14,
+        0.2,
         0.5
       ],
       "mat": "wall",
@@ -5958,13 +6071,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        2.2,
-        13.73,
+        2.063,
+        18,
         0
       ],
       "s": [
         1.9,
-        0.14,
+        0.2,
         0.1
       ],
       "mat": "trim",
@@ -5973,9 +6086,9 @@
     {
       "room": "bedroom-suite",
       "p": [
-        2.2,
-        13.73,
-        1.0
+        2.063,
+        18.03,
+        1
       ],
       "s": [
         1.9,
@@ -5988,8 +6101,8 @@
     {
       "room": "bedroom-suite",
       "p": [
-        2.2,
-        13.73,
+        2.063,
+        18.03,
         2.255
       ],
       "s": [
@@ -6003,9 +6116,9 @@
     {
       "room": "bedroom-suite",
       "p": [
-        2.2,
-        13.73,
-        1.0
+        2.063,
+        18.03,
+        1
       ],
       "s": [
         0.04,
@@ -6018,9 +6131,9 @@
     {
       "room": "bedroom-suite",
       "p": [
-        4.06,
-        13.73,
-        1.0
+        3.923,
+        18.03,
+        1
       ],
       "s": [
         0.04,
@@ -6033,8 +6146,8 @@
     {
       "room": "bedroom-suite",
       "p": [
-        2.245,
-        13.73,
+        2.108,
+        18.03,
         1.045
       ],
       "s": [
@@ -6048,9 +6161,9 @@
     {
       "room": "bedroom-suite",
       "p": [
-        2.5167,
-        13.73,
-        1.0
+        2.3797,
+        18.03,
+        1
       ],
       "s": [
         0.018,
@@ -6063,9 +6176,9 @@
     {
       "room": "bedroom-suite",
       "p": [
-        2.8333,
-        13.73,
-        1.0
+        2.6963,
+        18.03,
+        1
       ],
       "s": [
         0.018,
@@ -6078,9 +6191,9 @@
     {
       "room": "bedroom-suite",
       "p": [
-        3.15,
-        13.73,
-        1.0
+        3.013,
+        18.03,
+        1
       ],
       "s": [
         0.018,
@@ -6093,9 +6206,9 @@
     {
       "room": "bedroom-suite",
       "p": [
-        3.4667,
-        13.73,
-        1.0
+        3.3297,
+        18.03,
+        1
       ],
       "s": [
         0.018,
@@ -6108,9 +6221,9 @@
     {
       "room": "bedroom-suite",
       "p": [
-        3.7833,
-        13.73,
-        1.0
+        3.6463,
+        18.03,
+        1
       ],
       "s": [
         0.018,
@@ -6123,8 +6236,8 @@
     {
       "room": "bedroom-suite",
       "p": [
-        2.2,
-        13.73,
+        2.063,
+        18.03,
         1.676
       ],
       "s": [
@@ -6138,13 +6251,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        4.1,
-        13.73,
+        3.963,
+        18,
         0
       ],
       "s": [
-        2.3,
-        0.14,
+        1.437,
+        0.2,
         2.8
       ],
       "mat": "wall",
@@ -6154,12 +6267,12 @@
       "room": "bedroom-suite",
       "p": [
         0,
-        13.73,
+        18,
         0
       ],
       "s": [
-        2.2,
-        0.14,
+        2.063,
+        0.2,
         0.1
       ],
       "mat": "trim",
@@ -6168,13 +6281,13 @@
     {
       "room": "bedroom-suite",
       "p": [
-        4.1,
-        13.73,
+        3.963,
+        18,
         0
       ],
       "s": [
-        2.3,
-        0.14,
+        1.437,
+        0.2,
         0.1
       ],
       "mat": "trim",
@@ -6183,583 +6296,553 @@
     {
       "room": "bedroom-suite",
       "p": [
-        -0.07,
-        11.1,
-        0
-      ],
-      "s": [
-        0.14,
-        0.6,
-        2.8
-      ],
-      "mat": "wall",
-      "kind": "wall"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        11.7,
-        0
-      ],
-      "s": [
-        0.14,
-        1.45,
-        1
-      ],
-      "mat": "wall",
-      "kind": "wall"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        11.7,
-        2.3
-      ],
-      "s": [
-        0.14,
-        1.45,
-        0.5
-      ],
-      "mat": "wall",
-      "kind": "wall"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        11.7,
-        0
-      ],
-      "s": [
-        0.14,
-        1.45,
-        0.1
-      ],
-      "mat": "trim",
-      "kind": "skirting"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        11.7,
-        1
-      ],
-      "s": [
-        0.14,
-        1.45,
-        0.045
-      ],
-      "mat": "white",
-      "kind": "frame"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        11.7,
-        2.255
-      ],
-      "s": [
-        0.14,
-        1.45,
-        0.045
-      ],
-      "mat": "white",
-      "kind": "frame"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        11.7,
-        1
-      ],
-      "s": [
-        0.14,
-        0.04,
-        1.3
-      ],
-      "mat": "white",
-      "kind": "frame"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        13.11,
-        1
-      ],
-      "s": [
-        0.14,
-        0.04,
-        1.3
-      ],
-      "mat": "white",
-      "kind": "frame"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        11.745,
-        1.045
-      ],
-      "s": [
-        0.14,
-        1.36,
-        1.21
-      ],
-      "mat": "glass",
-      "kind": "glass"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        11.9417,
-        1
-      ],
-      "s": [
-        0.14,
-        0.018,
-        1.3
-      ],
-      "mat": "metal",
-      "kind": "grille"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        12.1833,
-        1
-      ],
-      "s": [
-        0.14,
-        0.018,
-        1.3
-      ],
-      "mat": "metal",
-      "kind": "grille"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        12.425,
-        1
-      ],
-      "s": [
-        0.14,
-        0.018,
-        1.3
-      ],
-      "mat": "metal",
-      "kind": "grille"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        12.6667,
-        1
-      ],
-      "s": [
-        0.14,
-        0.018,
-        1.3
-      ],
-      "mat": "metal",
-      "kind": "grille"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        12.9083,
-        1
-      ],
-      "s": [
-        0.14,
-        0.018,
-        1.3
-      ],
-      "mat": "metal",
-      "kind": "grille"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        11.7,
-        1.676
-      ],
-      "s": [
-        0.14,
-        1.45,
-        0.018
-      ],
-      "mat": "metal",
-      "kind": "grille"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        13.15,
-        0
-      ],
-      "s": [
-        0.14,
-        0.65,
-        2.8
-      ],
-      "mat": "wall",
-      "kind": "wall"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        11.1,
-        0
-      ],
-      "s": [
-        0.14,
-        0.6,
-        0.1
-      ],
-      "mat": "trim",
-      "kind": "skirting"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        -0.07,
-        13.15,
-        0
-      ],
-      "s": [
-        0.14,
-        0.65,
-        0.1
-      ],
-      "mat": "trim",
-      "kind": "skirting"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        11.1,
-        0
-      ],
-      "s": [
-        0.14,
-        0.6,
-        2.8
-      ],
-      "mat": "wall",
-      "kind": "wall"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        11.7,
-        0
-      ],
-      "s": [
-        0.14,
-        1.45,
-        1
-      ],
-      "mat": "wall",
-      "kind": "wall"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        11.7,
-        2.3
-      ],
-      "s": [
-        0.14,
-        1.45,
-        0.5
-      ],
-      "mat": "wall",
-      "kind": "wall"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        11.7,
-        0
-      ],
-      "s": [
-        0.14,
-        1.45,
-        0.1
-      ],
-      "mat": "trim",
-      "kind": "skirting"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        11.7,
-        1
-      ],
-      "s": [
-        0.14,
-        1.45,
-        0.045
-      ],
-      "mat": "white",
-      "kind": "frame"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        11.7,
-        2.255
-      ],
-      "s": [
-        0.14,
-        1.45,
-        0.045
-      ],
-      "mat": "white",
-      "kind": "frame"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        11.7,
-        1
-      ],
-      "s": [
-        0.14,
-        0.04,
-        1.3
-      ],
-      "mat": "white",
-      "kind": "frame"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        13.11,
-        1
-      ],
-      "s": [
-        0.14,
-        0.04,
-        1.3
-      ],
-      "mat": "white",
-      "kind": "frame"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        11.745,
-        1.045
-      ],
-      "s": [
-        0.14,
-        1.36,
-        1.21
-      ],
-      "mat": "glass",
-      "kind": "glass"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        11.9417,
-        1
-      ],
-      "s": [
-        0.14,
-        0.018,
-        1.3
-      ],
-      "mat": "metal",
-      "kind": "grille"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        12.1833,
-        1
-      ],
-      "s": [
-        0.14,
-        0.018,
-        1.3
-      ],
-      "mat": "metal",
-      "kind": "grille"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        12.425,
-        1
-      ],
-      "s": [
-        0.14,
-        0.018,
-        1.3
-      ],
-      "mat": "metal",
-      "kind": "grille"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        12.6667,
-        1
-      ],
-      "s": [
-        0.14,
-        0.018,
-        1.3
-      ],
-      "mat": "metal",
-      "kind": "grille"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        12.9083,
-        1
-      ],
-      "s": [
-        0.14,
-        0.018,
-        1.3
-      ],
-      "mat": "metal",
-      "kind": "grille"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        11.7,
-        1.676
-      ],
-      "s": [
-        0.14,
-        1.45,
-        0.018
-      ],
-      "mat": "metal",
-      "kind": "grille"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        13.15,
-        0
-      ],
-      "s": [
-        0.14,
-        0.65,
-        2.8
-      ],
-      "mat": "wall",
-      "kind": "wall"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        11.1,
-        0
-      ],
-      "s": [
-        0.14,
-        0.6,
-        0.1
-      ],
-      "mat": "trim",
-      "kind": "skirting"
-    },
-    {
-      "room": "bedroom-suite",
-      "p": [
-        6.33,
-        13.15,
-        0
-      ],
-      "s": [
-        0.14,
-        0.65,
-        0.1
-      ],
-      "mat": "trim",
-      "kind": "skirting"
-    },
-    {
-      "room": "wc-outside",
-      "p": [
-        -1.3,
-        -1.37,
-        0
-      ],
-      "s": [
-        2.0,
-        0.14,
-        2.8
-      ],
-      "mat": "wall",
-      "kind": "wall"
-    },
-    {
-      "room": "wc-outside",
-      "p": [
-        -1.3,
-        -1.37,
-        0
-      ],
-      "s": [
-        2.0,
-        0.14,
-        0.1
-      ],
-      "mat": "trim",
-      "kind": "skirting"
-    },
-    {
-      "room": "wc-outside",
-      "p": [
-        -1.3,
-        -0.07,
+        0,
+        13.9,
         0
       ],
       "s": [
         0.2,
+        1.3616,
+        2.8
+      ],
+      "mat": "wall",
+      "kind": "wall"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0,
+        15.2616,
+        0
+      ],
+      "s": [
+        0.2,
+        1.45,
+        1
+      ],
+      "mat": "wall",
+      "kind": "wall"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0,
+        15.2616,
+        2.3
+      ],
+      "s": [
+        0.2,
+        1.45,
+        0.5
+      ],
+      "mat": "wall",
+      "kind": "wall"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0,
+        15.2616,
+        0
+      ],
+      "s": [
+        0.2,
+        1.45,
+        0.1
+      ],
+      "mat": "trim",
+      "kind": "skirting"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.03,
+        15.2616,
+        1
+      ],
+      "s": [
         0.14,
+        1.45,
+        0.045
+      ],
+      "mat": "white",
+      "kind": "frame"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.03,
+        15.2616,
+        2.255
+      ],
+      "s": [
+        0.14,
+        1.45,
+        0.045
+      ],
+      "mat": "white",
+      "kind": "frame"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.03,
+        15.2616,
+        1
+      ],
+      "s": [
+        0.14,
+        0.04,
+        1.3
+      ],
+      "mat": "white",
+      "kind": "frame"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.03,
+        16.6716,
+        1
+      ],
+      "s": [
+        0.14,
+        0.04,
+        1.3
+      ],
+      "mat": "white",
+      "kind": "frame"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.03,
+        15.3066,
+        1.045
+      ],
+      "s": [
+        0.14,
+        1.36,
+        1.21
+      ],
+      "mat": "glass",
+      "kind": "glass"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.03,
+        15.5033,
+        1
+      ],
+      "s": [
+        0.14,
+        0.018,
+        1.3
+      ],
+      "mat": "metal",
+      "kind": "grille"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.03,
+        15.7449,
+        1
+      ],
+      "s": [
+        0.14,
+        0.018,
+        1.3
+      ],
+      "mat": "metal",
+      "kind": "grille"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.03,
+        15.9866,
+        1
+      ],
+      "s": [
+        0.14,
+        0.018,
+        1.3
+      ],
+      "mat": "metal",
+      "kind": "grille"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.03,
+        16.2283,
+        1
+      ],
+      "s": [
+        0.14,
+        0.018,
+        1.3
+      ],
+      "mat": "metal",
+      "kind": "grille"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.03,
+        16.4699,
+        1
+      ],
+      "s": [
+        0.14,
+        0.018,
+        1.3
+      ],
+      "mat": "metal",
+      "kind": "grille"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0.03,
+        15.2616,
+        1.676
+      ],
+      "s": [
+        0.14,
+        1.45,
+        0.018
+      ],
+      "mat": "metal",
+      "kind": "grille"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0,
+        16.7116,
+        0
+      ],
+      "s": [
+        0.2,
+        1.4884,
+        2.8
+      ],
+      "mat": "wall",
+      "kind": "wall"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0,
+        13.9,
+        0
+      ],
+      "s": [
+        0.2,
+        1.3616,
+        0.1
+      ],
+      "mat": "trim",
+      "kind": "skirting"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        0,
+        16.7116,
+        0
+      ],
+      "s": [
+        0.2,
+        1.4884,
+        0.1
+      ],
+      "mat": "trim",
+      "kind": "skirting"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.2,
+        13.9,
+        0
+      ],
+      "s": [
+        0.2,
+        1.3616,
+        2.8
+      ],
+      "mat": "wall",
+      "kind": "wall"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.2,
+        15.2616,
+        0
+      ],
+      "s": [
+        0.2,
+        1.45,
+        1
+      ],
+      "mat": "wall",
+      "kind": "wall"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.2,
+        15.2616,
+        2.3
+      ],
+      "s": [
+        0.2,
+        1.45,
+        0.5
+      ],
+      "mat": "wall",
+      "kind": "wall"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.2,
+        15.2616,
+        0
+      ],
+      "s": [
+        0.2,
+        1.45,
+        0.1
+      ],
+      "mat": "trim",
+      "kind": "skirting"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.23,
+        15.2616,
+        1
+      ],
+      "s": [
+        0.14,
+        1.45,
+        0.045
+      ],
+      "mat": "white",
+      "kind": "frame"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.23,
+        15.2616,
+        2.255
+      ],
+      "s": [
+        0.14,
+        1.45,
+        0.045
+      ],
+      "mat": "white",
+      "kind": "frame"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.23,
+        15.2616,
+        1
+      ],
+      "s": [
+        0.14,
+        0.04,
+        1.3
+      ],
+      "mat": "white",
+      "kind": "frame"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.23,
+        16.6716,
+        1
+      ],
+      "s": [
+        0.14,
+        0.04,
+        1.3
+      ],
+      "mat": "white",
+      "kind": "frame"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.23,
+        15.3066,
+        1.045
+      ],
+      "s": [
+        0.14,
+        1.36,
+        1.21
+      ],
+      "mat": "glass",
+      "kind": "glass"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.23,
+        15.5033,
+        1
+      ],
+      "s": [
+        0.14,
+        0.018,
+        1.3
+      ],
+      "mat": "metal",
+      "kind": "grille"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.23,
+        15.7449,
+        1
+      ],
+      "s": [
+        0.14,
+        0.018,
+        1.3
+      ],
+      "mat": "metal",
+      "kind": "grille"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.23,
+        15.9866,
+        1
+      ],
+      "s": [
+        0.14,
+        0.018,
+        1.3
+      ],
+      "mat": "metal",
+      "kind": "grille"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.23,
+        16.2283,
+        1
+      ],
+      "s": [
+        0.14,
+        0.018,
+        1.3
+      ],
+      "mat": "metal",
+      "kind": "grille"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.23,
+        16.4699,
+        1
+      ],
+      "s": [
+        0.14,
+        0.018,
+        1.3
+      ],
+      "mat": "metal",
+      "kind": "grille"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.23,
+        15.2616,
+        1.676
+      ],
+      "s": [
+        0.14,
+        1.45,
+        0.018
+      ],
+      "mat": "metal",
+      "kind": "grille"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.2,
+        16.7116,
+        0
+      ],
+      "s": [
+        0.2,
+        1.4884,
+        2.8
+      ],
+      "mat": "wall",
+      "kind": "wall"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.2,
+        13.9,
+        0
+      ],
+      "s": [
+        0.2,
+        1.3616,
+        0.1
+      ],
+      "mat": "trim",
+      "kind": "skirting"
+    },
+    {
+      "room": "bedroom-suite",
+      "p": [
+        5.2,
+        16.7116,
+        0
+      ],
+      "s": [
+        0.2,
+        1.4884,
+        0.1
+      ],
+      "mat": "trim",
+      "kind": "skirting"
+    },
+    {
+      "room": "wc-outside",
+      "p": [
+        -1.2,
+        -1.5,
+        0
+      ],
+      "s": [
+        1.8,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -6768,13 +6851,43 @@
     {
       "room": "wc-outside",
       "p": [
-        -1.1,
-        -0.07,
+        -1.2,
+        -1.5,
+        0
+      ],
+      "s": [
+        1.8,
+        0.1,
+        0.1
+      ],
+      "mat": "trim",
+      "kind": "skirting"
+    },
+    {
+      "room": "wc-outside",
+      "p": [
+        -1.2,
+        0,
+        0
+      ],
+      "s": [
+        0.1375,
+        0.1,
+        2.8
+      ],
+      "mat": "wall",
+      "kind": "wall"
+    },
+    {
+      "room": "wc-outside",
+      "p": [
+        -1.0625,
+        0,
         2.2
       ],
       "s": [
         0.85,
-        0.14,
+        0.1,
         0.6
       ],
       "mat": "wall",
@@ -6783,13 +6896,13 @@
     {
       "room": "wc-outside",
       "p": [
-        -1.125,
-        -0.07,
+        -1.0875,
+        0,
         0
       ],
       "s": [
         0.05,
-        0.14,
+        0.1,
         2.2
       ],
       "mat": "wood",
@@ -6798,13 +6911,13 @@
     {
       "room": "wc-outside",
       "p": [
-        -0.275,
-        -0.07,
+        -0.2375,
+        0,
         0
       ],
       "s": [
         0.05,
-        0.14,
+        0.1,
         2.2
       ],
       "mat": "wood",
@@ -6813,13 +6926,13 @@
     {
       "room": "wc-outside",
       "p": [
-        -1.1,
-        -0.07,
+        -1.0625,
+        0,
         2.16
       ],
       "s": [
         0.85,
-        0.14,
+        0.1,
         0.04
       ],
       "mat": "wood",
@@ -6828,8 +6941,8 @@
     {
       "room": "wc-outside",
       "p": [
-        -1.1,
-        0.0,
+        -1.0625,
+        0.05,
         0.02
       ],
       "s": [
@@ -6843,13 +6956,13 @@
     {
       "room": "wc-outside",
       "p": [
-        -0.25,
-        -0.07,
+        -0.2125,
+        0,
         0
       ],
       "s": [
-        0.95,
-        0.14,
+        0.8125,
+        0.1,
         2.8
       ],
       "mat": "wall",
@@ -6858,13 +6971,13 @@
     {
       "room": "wc-outside",
       "p": [
-        -1.3,
-        -0.07,
+        -1.2,
+        0,
         0
       ],
       "s": [
-        0.2,
-        0.14,
+        0.1375,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -6873,13 +6986,13 @@
     {
       "room": "wc-outside",
       "p": [
-        -0.25,
-        -0.07,
+        -0.2125,
+        0,
         0
       ],
       "s": [
-        0.95,
-        0.14,
+        0.8125,
+        0.1,
         0.1
       ],
       "mat": "trim",
@@ -6888,13 +7001,13 @@
     {
       "room": "wc-outside",
       "p": [
-        -1.37,
-        -1.3,
+        -1.2,
+        -1.5,
         0
       ],
       "s": [
-        0.14,
-        1.3,
+        0.1,
+        1.6,
         2.8
       ],
       "mat": "wall",
@@ -6903,13 +7016,13 @@
     {
       "room": "wc-outside",
       "p": [
-        -1.37,
-        -1.3,
+        -1.2,
+        -1.5,
         0
       ],
       "s": [
-        0.14,
-        1.3,
+        0.1,
+        1.6,
         0.1
       ],
       "mat": "trim",
@@ -6918,13 +7031,13 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -1.3,
+        0.5,
+        -1.5,
         0
       ],
       "s": [
-        0.14,
-        0.25,
+        0.1,
+        0.3423,
         2.8
       ],
       "mat": "wall",
@@ -6933,12 +7046,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -1.05,
+        0.5,
+        -1.1577,
         0
       ],
       "s": [
-        0.14,
+        0.1,
         0.7,
         1.8
       ],
@@ -6948,12 +7061,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -1.05,
+        0.5,
+        -1.1577,
         2.4
       ],
       "s": [
-        0.14,
+        0.1,
         0.7,
         0.4
       ],
@@ -6963,12 +7076,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -1.05,
+        0.5,
+        -1.1577,
         0
       ],
       "s": [
-        0.14,
+        0.1,
         0.7,
         0.1
       ],
@@ -6978,12 +7091,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -1.05,
+        0.5,
+        -1.1577,
         1.8
       ],
       "s": [
-        0.14,
+        0.1,
         0.7,
         0.045
       ],
@@ -6993,12 +7106,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -1.05,
+        0.5,
+        -1.1577,
         2.355
       ],
       "s": [
-        0.14,
+        0.1,
         0.7,
         0.045
       ],
@@ -7008,12 +7121,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -1.05,
+        0.5,
+        -1.1577,
         1.8
       ],
       "s": [
-        0.14,
+        0.1,
         0.04,
         0.6
       ],
@@ -7023,12 +7136,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -0.39,
+        0.5,
+        -0.4977,
         1.8
       ],
       "s": [
-        0.14,
+        0.1,
         0.04,
         0.6
       ],
@@ -7038,12 +7151,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -1.005,
+        0.5,
+        -1.1127,
         1.845
       ],
       "s": [
-        0.14,
+        0.1,
         0.61,
         0.51
       ],
@@ -7053,12 +7166,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -0.9333,
+        0.5,
+        -1.041,
         1.8
       ],
       "s": [
-        0.14,
+        0.1,
         0.018,
         0.6
       ],
@@ -7068,12 +7181,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -0.8167,
+        0.5,
+        -0.9244,
         1.8
       ],
       "s": [
-        0.14,
+        0.1,
         0.018,
         0.6
       ],
@@ -7083,12 +7196,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -0.7,
+        0.5,
+        -0.8077,
         1.8
       ],
       "s": [
-        0.14,
+        0.1,
         0.018,
         0.6
       ],
@@ -7098,12 +7211,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -0.5833,
+        0.5,
+        -0.691,
         1.8
       ],
       "s": [
-        0.14,
+        0.1,
         0.018,
         0.6
       ],
@@ -7113,12 +7226,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -0.4667,
+        0.5,
+        -0.5744,
         1.8
       ],
       "s": [
-        0.14,
+        0.1,
         0.018,
         0.6
       ],
@@ -7128,12 +7241,12 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -1.05,
+        0.5,
+        -1.1577,
         2.112
       ],
       "s": [
-        0.14,
+        0.1,
         0.7,
         0.018
       ],
@@ -7143,13 +7256,13 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -0.35,
+        0.5,
+        -0.4577,
         0
       ],
       "s": [
-        0.14,
-        0.35,
+        0.1,
+        0.5577,
         2.8
       ],
       "mat": "wall",
@@ -7158,13 +7271,13 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -1.3,
+        0.5,
+        -1.5,
         0
       ],
       "s": [
-        0.14,
-        0.25,
+        0.1,
+        0.3423,
         0.1
       ],
       "mat": "trim",
@@ -7173,13 +7286,13 @@
     {
       "room": "wc-outside",
       "p": [
-        0.63,
-        -0.35,
+        0.5,
+        -0.4577,
         0
       ],
       "s": [
-        0.14,
-        0.35,
+        0.1,
+        0.5577,
         0.1
       ],
       "mat": "trim",
@@ -7188,8 +7301,8 @@
     {
       "room": "kitchen",
       "p": [
-        0.08,
-        0.4,
+        0.21,
+        1.37,
         0
       ],
       "s": [
@@ -7203,8 +7316,8 @@
     {
       "room": "kitchen",
       "p": [
-        0.05,
-        0.37,
+        0.2,
+        1.34,
         0.84
       ],
       "s": [
@@ -7218,8 +7331,8 @@
     {
       "room": "kitchen",
       "p": [
-        0.35,
-        0.08,
+        0.5636,
+        0.21,
         1.6
       ],
       "s": [
@@ -7233,8 +7346,8 @@
     {
       "room": "kitchen",
       "p": [
-        0.14,
-        0.95,
+        0.27,
+        1.5212,
         0.91
       ],
       "s": [
@@ -7248,8 +7361,8 @@
     {
       "room": "kitchen",
       "p": [
-        0.18,
-        1,
+        0.31,
+        1.5712,
         0.94
       ],
       "s": [
@@ -7263,8 +7376,8 @@
     {
       "room": "bedroom-small",
       "p": [
-        0.05,
-        6.75,
+        0.2,
+        8.28,
         2.15
       ],
       "s": [
@@ -7278,8 +7391,8 @@
     {
       "room": "bedroom-suite",
       "p": [
-        0.05,
-        11.25,
+        0.2,
+        14.08,
         2.15
       ],
       "s": [
@@ -7293,8 +7406,8 @@
     {
       "room": "wc-common",
       "p": [
-        2.45,
-        9.45,
+        2.73,
+        12.08,
         0.02
       ],
       "s": [
@@ -7308,8 +7421,8 @@
     {
       "room": "wc-common",
       "p": [
-        2.48,
-        9.3,
+        2.76,
+        11.93,
         0.35
       ],
       "s": [
@@ -7323,8 +7436,8 @@
     {
       "room": "wc-common",
       "p": [
-        4.2,
-        9.38,
+        3.37,
+        12.01,
         0.62
       ],
       "s": [
@@ -7338,8 +7451,8 @@
     {
       "room": "wc-suite",
       "p": [
-        0.25,
-        9.45,
+        0.38,
+        12.08,
         0.02
       ],
       "s": [
@@ -7353,8 +7466,8 @@
     {
       "room": "wc-suite",
       "p": [
-        0.28,
-        9.3,
+        0.41,
+        11.93,
         0.35
       ],
       "s": [
@@ -7368,8 +7481,8 @@
     {
       "room": "wc-suite",
       "p": [
-        1.7,
-        9.38,
+        2.02,
+        12.01,
         0.62
       ],
       "s": [
@@ -7383,8 +7496,8 @@
     {
       "room": "wc-outside",
       "p": [
-        -1.05,
-        -1.05,
+        -0.92,
+        -1.22,
         0.02
       ],
       "s": [
@@ -7398,8 +7511,8 @@
     {
       "room": "wc-outside",
       "p": [
-        -1.02,
-        -1.2,
+        -0.89,
+        -1.37,
         0.35
       ],
       "s": [
@@ -7413,8 +7526,8 @@
     {
       "room": "wc-outside",
       "p": [
-        0.2,
-        -1.12,
+        0.07,
+        -1.29,
         0.62
       ],
       "s": [
@@ -7428,13 +7541,13 @@
     {
       "room": "court",
       "p": [
-        -1.3,
-        13.8,
+        -2.2,
+        18.2,
         -0.22
       ],
       "s": [
-        8.8,
-        4.2,
+        8.6,
+        6.9,
         0.12
       ],
       "mat": "paving",
@@ -7444,13 +7557,13 @@
     {
       "room": "court",
       "p": [
-        -0.9,
-        13.8,
+        -1.8,
+        18.2,
         -0.095
       ],
       "s": [
         0.009,
-        4.2,
+        6.9,
         0.006
       ],
       "mat": "stone",
@@ -7460,13 +7573,13 @@
     {
       "room": "court",
       "p": [
-        -0.5,
-        13.8,
+        -1.4,
+        18.2,
         -0.095
       ],
       "s": [
         0.009,
-        4.2,
+        6.9,
         0.006
       ],
       "mat": "stone",
@@ -7476,13 +7589,13 @@
     {
       "room": "court",
       "p": [
-        -0.1,
-        13.8,
+        -1,
+        18.2,
         -0.095
       ],
       "s": [
         0.009,
-        4.2,
+        6.9,
         0.006
       ],
       "mat": "stone",
@@ -7492,13 +7605,13 @@
     {
       "room": "court",
       "p": [
-        0.3,
-        13.8,
+        -0.6,
+        18.2,
         -0.095
       ],
       "s": [
         0.009,
-        4.2,
+        6.9,
         0.006
       ],
       "mat": "stone",
@@ -7508,1180 +7621,460 @@
     {
       "room": "court",
       "p": [
-        0.7,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        1.1,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        1.5,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        1.9,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        2.3,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        2.7,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        3.1,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        3.5,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        3.9,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        4.3,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        4.7,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        5.1,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        5.5,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        5.9,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        6.3,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        6.7,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        7.1,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        7.5,
-        13.8,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        4.2,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        -1.3,
-        14.35,
-        -0.095
-      ],
-      "s": [
-        8.8,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        -1.3,
-        14.9,
-        -0.095
-      ],
-      "s": [
-        8.8,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        -1.3,
-        15.45,
-        -0.095
-      ],
-      "s": [
-        8.8,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        -1.3,
-        16.0,
-        -0.095
-      ],
-      "s": [
-        8.8,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        -1.3,
-        16.55,
-        -0.095
-      ],
-      "s": [
-        8.8,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        -1.3,
-        17.1,
-        -0.095
-      ],
-      "s": [
-        8.8,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "court",
-      "p": [
-        -1.3,
-        17.65,
-        -0.095
-      ],
-      "s": [
-        8.8,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        0,
-        -0.22
-      ],
-      "s": [
-        1.3,
-        13.8,
-        0.12
-      ],
-      "mat": "paving",
-      "kind": "site-floor",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -0.9,
-        0,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        13.8,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -0.5,
-        0,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        13.8,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -0.1,
-        0,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        13.8,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        0.55,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        1.1,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        1.65,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        2.2,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        2.75,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        3.3,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        3.85,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        4.4,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        4.95,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        5.5,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        6.05,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        6.6,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        7.15,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        7.7,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        8.25,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        8.8,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        9.35,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        9.9,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        10.45,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        11.0,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        11.55,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        12.1,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        12.65,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        13.2,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        13.75,
-        -0.095
-      ],
-      "s": [
-        1.3,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        0.7,
-        -1.3,
-        -0.22
-      ],
-      "s": [
-        6.8,
-        1.3,
-        0.12
-      ],
-      "mat": "paving",
-      "kind": "site-floor",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        1.1,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        1.5,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        1.9,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        2.3,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        2.7,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        3.1,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        3.5,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        3.9,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        4.3,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        4.7,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        5.1,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        5.5,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        5.9,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        6.3,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        6.7,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        7.1,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        7.5,
-        -1.3,
-        -0.095
-      ],
-      "s": [
-        0.009,
-        1.3,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        0.7,
-        -0.75,
-        -0.095
-      ],
-      "s": [
-        6.8,
-        0.009,
-        0.006
-      ],
-      "mat": "stone",
-      "kind": "site-paving",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        0.7,
         -0.2,
+        18.2,
         -0.095
       ],
       "s": [
-        6.8,
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        0.2,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        0.6,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        1,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        1.4,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        1.8,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        2.2,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        2.6,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        3,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        3.4,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        3.8,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        4.2,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        4.6,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        5,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        5.4,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        5.8,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        6.2,
+        18.2,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        6.9,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        -2.2,
+        18.75,
+        -0.095
+      ],
+      "s": [
+        8.6,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        -2.2,
+        19.3,
+        -0.095
+      ],
+      "s": [
+        8.6,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        -2.2,
+        19.85,
+        -0.095
+      ],
+      "s": [
+        8.6,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        -2.2,
+        20.4,
+        -0.095
+      ],
+      "s": [
+        8.6,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        -2.2,
+        20.95,
+        -0.095
+      ],
+      "s": [
+        8.6,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        -2.2,
+        21.5,
+        -0.095
+      ],
+      "s": [
+        8.6,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        -2.2,
+        22.05,
+        -0.095
+      ],
+      "s": [
+        8.6,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        -2.2,
+        22.6,
+        -0.095
+      ],
+      "s": [
+        8.6,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        -2.2,
+        23.15,
+        -0.095
+      ],
+      "s": [
+        8.6,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        -2.2,
+        23.7,
+        -0.095
+      ],
+      "s": [
+        8.6,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        -2.2,
+        24.25,
+        -0.095
+      ],
+      "s": [
+        8.6,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "court",
+      "p": [
+        -2.2,
+        24.8,
+        -0.095
+      ],
+      "s": [
+        8.6,
         0.009,
         0.006
       ],
@@ -8692,13 +8085,13 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         0,
         -0.22
       ],
       "s": [
-        1.1,
-        13.8,
+        2.2,
+        18.2,
         0.12
       ],
       "mat": "paving",
@@ -8708,13 +8101,13 @@
     {
       "room": "side-passages",
       "p": [
-        6.8,
+        -1.8,
         0,
         -0.095
       ],
       "s": [
         0.009,
-        13.8,
+        18.2,
         0.006
       ],
       "mat": "stone",
@@ -8724,13 +8117,13 @@
     {
       "room": "side-passages",
       "p": [
-        7.2,
+        -1.4,
         0,
         -0.095
       ],
       "s": [
         0.009,
-        13.8,
+        18.2,
         0.006
       ],
       "mat": "stone",
@@ -8740,12 +8133,60 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -1,
+        0,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        18.2,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        -0.6,
+        0,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        18.2,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        -0.2,
+        0,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        18.2,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        -2.2,
         0.55,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8756,12 +8197,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         1.1,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8772,12 +8213,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         1.65,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8788,12 +8229,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         2.2,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8804,12 +8245,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         2.75,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8820,12 +8261,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         3.3,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8836,12 +8277,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         3.85,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8852,12 +8293,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         4.4,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8868,12 +8309,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         4.95,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8884,12 +8325,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         5.5,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8900,12 +8341,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         6.05,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8916,12 +8357,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         6.6,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8932,12 +8373,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         7.15,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8948,12 +8389,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         7.7,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8964,12 +8405,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         8.25,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8980,12 +8421,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         8.8,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -8996,12 +8437,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         9.35,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -9012,12 +8453,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         9.9,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -9028,12 +8469,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         10.45,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -9044,12 +8485,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
-        11.0,
+        -2.2,
+        11,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -9060,12 +8501,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         11.55,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -9076,12 +8517,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         12.1,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -9092,12 +8533,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         12.65,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -9108,12 +8549,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         13.2,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -9124,12 +8565,12 @@
     {
       "room": "side-passages",
       "p": [
-        6.4,
+        -2.2,
         13.75,
         -0.095
       ],
       "s": [
-        1.1,
+        2.2,
         0.009,
         0.006
       ],
@@ -9140,13 +8581,957 @@
     {
       "room": "side-passages",
       "p": [
-        -1.355,
-        -1.3,
+        -2.2,
+        14.3,
+        -0.095
+      ],
+      "s": [
+        2.2,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        -2.2,
+        14.85,
+        -0.095
+      ],
+      "s": [
+        2.2,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        -2.2,
+        15.4,
+        -0.095
+      ],
+      "s": [
+        2.2,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        -2.2,
+        15.95,
+        -0.095
+      ],
+      "s": [
+        2.2,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        -2.2,
+        16.5,
+        -0.095
+      ],
+      "s": [
+        2.2,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        -2.2,
+        17.05,
+        -0.095
+      ],
+      "s": [
+        2.2,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        -2.2,
+        17.6,
+        -0.095
+      ],
+      "s": [
+        2.2,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        1,
+        -1.5,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        1.5,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        1.4,
+        -1.5,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        1.5,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        1.8,
+        -1.5,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        1.5,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        2.2,
+        -1.5,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        1.5,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        2.6,
+        -1.5,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        1.5,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        3,
+        -1.5,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        1.5,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        3.4,
+        -1.5,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        1.5,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        3.8,
+        -1.5,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        1.5,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        4.2,
+        -1.5,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        1.5,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        4.6,
+        -1.5,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        1.5,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5,
+        -1.5,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        1.5,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        -1.5,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        1.5,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.8,
+        -1.5,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        1.5,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        6.2,
+        -1.5,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        1.5,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        0.6,
+        -0.95,
+        -0.095
+      ],
+      "s": [
+        5.8,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        0.6,
+        -0.4,
+        -0.095
+      ],
+      "s": [
+        5.8,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.8,
+        0,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        18.2,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        6.2,
+        0,
+        -0.095
+      ],
+      "s": [
+        0.009,
+        18.2,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        0.55,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        1.1,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        1.65,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        2.2,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        2.75,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        3.3,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        3.85,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        4.4,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        4.95,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        5.5,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        6.05,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        6.6,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        7.15,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        7.7,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        8.25,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        8.8,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        9.35,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        9.9,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        10.45,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        11,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        11.55,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        12.1,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        12.65,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        13.2,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        13.75,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        14.3,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        14.85,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        15.4,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        15.95,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        16.5,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        17.05,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        17.6,
+        -0.095
+      ],
+      "s": [
+        1,
+        0.009,
+        0.006
+      ],
+      "mat": "stone",
+      "kind": "site-paving",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        0.6,
+        -1.5,
+        -0.22
+      ],
+      "s": [
+        5.8,
+        1.5,
+        0.12
+      ],
+      "mat": "paving",
+      "kind": "site-floor",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        5.4,
+        0,
+        -0.22
+      ],
+      "s": [
+        1,
+        18.2,
+        0.12
+      ],
+      "mat": "paving",
+      "kind": "site-floor",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        -2.255,
+        -1.5,
         -0.1
       ],
       "s": [
         0.11,
-        15.4,
+        21.125,
         1.9
       ],
       "mat": "boundary",
@@ -9156,8 +9541,8 @@
     {
       "room": "side-passages",
       "p": [
-        -1.42,
-        -1.42,
+        -2.32,
+        -1.62,
         -0.1
       ],
       "s": [
@@ -9172,8 +9557,8 @@
     {
       "room": "side-passages",
       "p": [
-        -1.42,
-        13.98,
+        -2.32,
+        19.505,
         -0.1
       ],
       "s": [
@@ -9188,8 +9573,8 @@
     {
       "room": "court",
       "p": [
-        -1.355,
-        14.1,
+        -2.255,
+        19.625,
         -0.1
       ],
       "s": [
@@ -9204,8 +9589,8 @@
     {
       "room": "court",
       "p": [
-        -1.375,
-        14.5143,
+        -2.275,
+        20.0393,
         0
       ],
       "s": [
@@ -9220,8 +9605,8 @@
     {
       "room": "court",
       "p": [
-        -1.375,
-        14.9286,
+        -2.275,
+        20.4536,
         0
       ],
       "s": [
@@ -9236,8 +9621,8 @@
     {
       "room": "court",
       "p": [
-        -1.375,
-        15.3429,
+        -2.275,
+        20.8679,
         0
       ],
       "s": [
@@ -9252,8 +9637,8 @@
     {
       "room": "court",
       "p": [
-        -1.375,
-        15.7571,
+        -2.275,
+        21.2821,
         0
       ],
       "s": [
@@ -9268,8 +9653,8 @@
     {
       "room": "court",
       "p": [
-        -1.375,
-        16.1714,
+        -2.275,
+        21.6964,
         0
       ],
       "s": [
@@ -9284,8 +9669,8 @@
     {
       "room": "court",
       "p": [
-        -1.375,
-        16.5857,
+        -2.275,
+        22.1107,
         0
       ],
       "s": [
@@ -9300,8 +9685,8 @@
     {
       "room": "side-passages",
       "p": [
-        -1.42,
-        13.98,
+        -2.32,
+        19.505,
         -0.1
       ],
       "s": [
@@ -9316,8 +9701,8 @@
     {
       "room": "side-passages",
       "p": [
-        -1.42,
-        16.88,
+        -2.32,
+        22.405,
         -0.1
       ],
       "s": [
@@ -9332,13 +9717,13 @@
     {
       "room": "side-passages",
       "p": [
-        -1.355,
-        17.0,
+        -2.255,
+        22.525,
         -0.1
       ],
       "s": [
         0.11,
-        1.0,
+        2.575,
         1.9
       ],
       "mat": "boundary",
@@ -9348,8 +9733,8 @@
     {
       "room": "side-passages",
       "p": [
-        -1.42,
-        16.88,
+        -2.32,
+        22.405,
         -0.1
       ],
       "s": [
@@ -9364,8 +9749,8 @@
     {
       "room": "side-passages",
       "p": [
-        -1.42,
-        17.88,
+        -2.32,
+        24.98,
         -0.1
       ],
       "s": [
@@ -9380,108 +9765,12 @@
     {
       "room": "side-passages",
       "p": [
-        -1.3,
-        17.945,
+        -2.2,
+        25.045,
         -0.1
       ],
       "s": [
-        8.8,
-        0.11,
-        1.9
-      ],
-      "mat": "boundary",
-      "kind": "site-boundary",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.42,
-        17.88,
-        -0.1
-      ],
-      "s": [
-        0.24,
-        0.24,
-        2.05
-      ],
-      "mat": "white",
-      "kind": "site-pier",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        7.38,
-        17.88,
-        -0.1
-      ],
-      "s": [
-        0.24,
-        0.24,
-        2.05
-      ],
-      "mat": "white",
-      "kind": "site-pier",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        7.445,
-        -1.3,
-        -0.1
-      ],
-      "s": [
-        0.11,
-        19.3,
-        1.9
-      ],
-      "mat": "boundary",
-      "kind": "site-boundary",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        7.38,
-        17.88,
-        -0.1
-      ],
-      "s": [
-        0.24,
-        0.24,
-        2.05
-      ],
-      "mat": "white",
-      "kind": "site-pier",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        7.38,
-        -1.42,
-        -0.1
-      ],
-      "s": [
-        0.24,
-        0.24,
-        2.05
-      ],
-      "mat": "white",
-      "kind": "site-pier",
-      "site": true
-    },
-    {
-      "room": "side-passages",
-      "p": [
-        -1.3,
-        -1.355,
-        -0.1
-      ],
-      "s": [
-        8.8,
+        8.6,
         0.11,
         1.9
       ],
@@ -9492,8 +9781,8 @@
     {
       "room": "side-passages",
       "p": [
-        7.38,
-        -1.42,
+        -2.32,
+        24.98,
         -0.1
       ],
       "s": [
@@ -9508,8 +9797,104 @@
     {
       "room": "side-passages",
       "p": [
-        -1.42,
-        -1.42,
+        6.28,
+        24.98,
+        -0.1
+      ],
+      "s": [
+        0.24,
+        0.24,
+        2.05
+      ],
+      "mat": "white",
+      "kind": "site-pier",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        6.345,
+        -1.5,
+        -0.1
+      ],
+      "s": [
+        0.11,
+        26.6,
+        1.9
+      ],
+      "mat": "boundary",
+      "kind": "site-boundary",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        6.28,
+        24.98,
+        -0.1
+      ],
+      "s": [
+        0.24,
+        0.24,
+        2.05
+      ],
+      "mat": "white",
+      "kind": "site-pier",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        6.28,
+        -1.62,
+        -0.1
+      ],
+      "s": [
+        0.24,
+        0.24,
+        2.05
+      ],
+      "mat": "white",
+      "kind": "site-pier",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        -2.2,
+        -1.555,
+        -0.1
+      ],
+      "s": [
+        8.6,
+        0.11,
+        1.9
+      ],
+      "mat": "boundary",
+      "kind": "site-boundary",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        6.28,
+        -1.62,
+        -0.1
+      ],
+      "s": [
+        0.24,
+        0.24,
+        2.05
+      ],
+      "mat": "white",
+      "kind": "site-pier",
+      "site": true
+    },
+    {
+      "room": "side-passages",
+      "p": [
+        -2.32,
+        -1.62,
         -0.1
       ],
       "s": [
@@ -9535,5 +9920,64 @@
     "white": "#f2f1e8",
     "paving": "#a8a08b",
     "boundary": "#ded9b8"
-  }
+  },
+  "estimate_note": "Estimated from 68 photos and the owner's sketch, ±10–15 %. Not a survey.",
+  "bounds": {
+    "house": {
+      "x0": 0,
+      "y0": 0,
+      "x1": 5.4,
+      "y1": 18.2
+    },
+    "site": {
+      "x0": -2.2,
+      "y0": -1.5,
+      "x1": 6.4,
+      "y1": 25.1
+    }
+  },
+  "site_estimate": {
+    "plot": {
+      "w": 8.6,
+      "d": 26.6
+    },
+    "parts": [
+      {
+        "id": "porch-side-passage",
+        "label": "Left passage",
+        "text": "2.2 m wide",
+        "confidence": "low",
+        "basis": "Paver rows plus the porch strip; 0.1 m less than the 2.3 m estimate so the larger house fits the plot"
+      },
+      {
+        "id": "opposite-side-passage",
+        "label": "Right walkway",
+        "text": "1.0 m wide",
+        "confidence": "medium",
+        "basis": "About 5 herringbone paver widths; 0.1 m less than the 1.1 m estimate so the larger house fits the plot"
+      },
+      {
+        "id": "porch",
+        "label": "Porch",
+        "text": "1.2 m deep",
+        "confidence": "low",
+        "basis": "Covered, raised tiled strip with pillars along the living room's left wall, inside the left passage"
+      },
+      {
+        "id": "rear-service-strip",
+        "label": "Back strip",
+        "text": "1.5 m deep",
+        "confidence": "low",
+        "basis": "Paver rows and AC units behind the kitchen (3508); deep enough for the outside WC against the compound wall"
+      },
+      {
+        "id": "parking-court",
+        "label": "Parking",
+        "text": "6.9 m deep",
+        "confidence": "low",
+        "basis": "Paver count; the yard is about as deep as the plot is wide, and takes up the remainder of the plot (estimate 7.1 m)"
+      }
+    ]
+  },
+  "balanced_walls": "Exterior walls 0.2 m, interior partitions 0.1 m, outside-WC walls 0.1 m. Each room's clear size (inside its walls) matches the estimate table; the bath band shares Bedroom 1's spare 0.1 m equally (en-suite 2.25, shared WC 1.25), so the corridor wall runs straight from living to Bedroom 2. House outer 5.4 × 18.2 m; plot 8.6 × 26.6 m."
 }
