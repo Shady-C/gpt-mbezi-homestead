@@ -246,3 +246,47 @@ test('no north arrow and no location in the data', () => {
   assert.equal(/GPS|latitude|longitude/i.test(s), false);
   assert.equal(LAYOUT.north_known, false);
 });
+
+// ---- Plan drawings (floor-plan.svg, site-plan.svg) ----
+// Minimal XML check: every tag closes in order.
+function tagsBalance(svg) {
+  const stack = [];
+  for (const m of svg.replace(/<\?[^>]*\?>/g, '').matchAll(/<(\/?)([a-zA-Z][\w:-]*)[^>]*?(\/?)>/g)) {
+    const [, close, name, self] = m;
+    if (self) continue;
+    if (close) { if (stack.pop() !== name) return false; } else stack.push(name);
+  }
+  return stack.length === 0;
+}
+const svgText = (svg) => [...svg.matchAll(/<text[^>]*>([^<]*)<\/text>/g)].map((m) => m[1]);
+for (const file of ['floor-plan.svg', 'site-plan.svg']) {
+  test(`${file} carries every size and a scale bar`, () => {
+    const svg = read(file);
+    assert.ok(svg.startsWith('<svg'), 'starts with <svg');
+    assert.ok(tagsBalance(svg), 'tags balance');
+    const texts = svgText(svg);
+    for (const [id, [w, d]] of Object.entries(SPEC)) assert.ok(texts.includes(`${fmt(w)} × ${fmt(d)} m`), `${file} shows ${id}`);
+    const bar = svg.match(/<g id="scale-bar"[^>]*>([\s\S]*?)<\/g>/);
+    assert.ok(bar, 'has a scale-bar group');
+    assert.deepEqual(svgText(bar[1]).filter((t) => t === '0' || t === '2 m'), ['0', '2 m']);
+    // One drawing scale for both files: 1 m = 40 px, so the 2 m bar is 80 px long.
+    const r = bar[1].match(/<rect[^>]*\swidth="([\d.]+)"/);
+    assert.equal(Number(r[1]), 80);
+    assert.ok(svg.includes('Estimated'));
+    assert.equal(/north/i.test(svg), false, 'no north');
+    assert.equal(texts.some((t) => t.trim() === 'N'), false, 'no N arrow');
+    assert.ok(texts.some((t) => /\blow\b/.test(t)) && texts.some((t) => /\bmedium\b/.test(t)), 'confidence in words');
+  });
+}
+
+test('site plan shows the site sizes', () => {
+  const texts = svgText(read('site-plan.svg')).join('\n');
+  for (const p of DATA.siteEstimate.parts) assert.ok(texts.includes(p.text), p.text);
+  assert.ok(texts.includes('8.6 m') && texts.includes('26.6 m'));
+});
+
+test('the committed plans are what the script draws', async () => {
+  const p = await import('../tools/plans.mjs');
+  assert.equal(p.renderFloorPlan(DATA), read('floor-plan.svg'));
+  assert.equal(p.renderSitePlan(DATA), read('site-plan.svg'));
+});

@@ -1,71 +1,189 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1450" viewBox="0 0 1200 1450">
-<rect width="1200" height="1450" fill="#f7f6f1"/>
-<style>text{font-family:Arial,sans-serif;fill:#263738}.small{font-size:14px}.note{font-size:16px;fill:#647474}</style>
-<text x="70" y="65" font-size="32">House Mbezi · Site plan</text>
-<text x="70" y="102" font-size="21">Owner sketch orientation · draft 03</text>
-<text x="70" y="135" class="note">Unmeasured layout hypothesis · single storey · no stairs</text>
-<rect x="86.3" y="926.2" width="431.20000000000005" height="205.8" fill="#ded6c2"/>
-<rect x="86.3" y="250" width="63.7" height="676.2" fill="#ded6c2"/>
-<rect x="184.3" y="186.3" width="333.2" height="63.7" fill="#ded6c2"/>
-<rect x="463.6" y="250" width="53.900000000000006" height="676.2" fill="#ded6c2"/>
-<rect x="150" y="250" width="313.6" height="112.69999999999999" fill="#e9eee8" stroke="#405b53" stroke-width="3"/>
-<text x="306.8" y="306.35" text-anchor="middle" class="small">Kitchen</text>
-<rect x="150" y="362.7" width="313.6" height="210.7" fill="#e9eee8" stroke="#405b53" stroke-width="3"/>
-<text x="306.8" y="468.04999999999995" text-anchor="middle" class="small">Living / dining</text>
-<rect x="150" y="573.4" width="230.3" height="127.4" fill="#e9eee8" stroke="#405b53" stroke-width="3"/>
-<text x="265.15" y="637.0999999999999" text-anchor="middle" class="small">Bedroom 1</text>
-<rect x="380.3" y="573.4" width="83.3" height="220.5" fill="#e9eee8" stroke="#405b53" stroke-width="3"/>
-<text x="421.95" y="683.65" text-anchor="middle" class="small">Corridor</text>
-<rect x="150" y="700.8" width="107.80000000000001" height="93.1" fill="#c8bdab" stroke="#405b53" stroke-width="3"/>
-<text x="203.9" y="747.3499999999999" text-anchor="middle" class="small">En-suite</text>
-<rect x="257.8" y="700.8" width="122.5" height="93.1" fill="#c8bdab" stroke="#405b53" stroke-width="3"/>
-<text x="319.05" y="738.3499999999999" text-anchor="middle" class="small">Shared</text>
-<text x="319.05" y="756.3499999999999" text-anchor="middle" class="small">WC</text>
-<rect x="150" y="793.9" width="313.6" height="132.3" fill="#e9eee8" stroke="#405b53" stroke-width="3"/>
-<text x="306.8" y="851.05" text-anchor="middle" class="small">Bedroom 2</text>
-<text x="306.8" y="869.05" text-anchor="middle" class="small">en-suite room</text>
-<rect x="118.15" y="362.7" width="31.85" height="210.7" fill="#e9eee8" stroke="#405b53" stroke-width="3"/>
-<text x="134.075" y="468.04999999999995" text-anchor="middle" class="small">Porch</text>
-<rect x="86.3" y="186.3" width="98.0" height="63.7" fill="#c8bdab" stroke="#405b53" stroke-width="3"/>
-<text x="135.3" y="209.15" text-anchor="middle" class="small">Outside</text>
-<text x="135.3" y="227.15" text-anchor="middle" class="small">WC</text>
-<line x1="86.3" y1="186.3" x2="86.3" y2="940.9" stroke="#939d83" stroke-width="5"/>
-<line x1="86.3" y1="940.9" x2="86.3" y2="1083.0" stroke="#597983" stroke-width="11"/>
-<line x1="86.3" y1="1083.0" x2="86.3" y2="1132.0" stroke="#939d83" stroke-width="5"/>
-<line x1="86.3" y1="1132.0" x2="517.5" y2="1132.0" stroke="#939d83" stroke-width="5"/>
-<line x1="517.5" y1="1132.0" x2="517.5" y2="186.3" stroke="#939d83" stroke-width="5"/>
-<line x1="517.5" y1="186.3" x2="86.3" y2="186.3" stroke="#939d83" stroke-width="5"/>
-<line x1="252.9" y1="362.7" x2="385.2" y2="362.7" stroke="#f7f6f1" stroke-width="6"/>
-<line x1="150" y1="372.5" x2="150" y2="421.5" stroke="#f7f6f1" stroke-width="6"/>
-<line x1="380.3" y1="573.4" x2="463.6" y2="573.4" stroke="#f7f6f1" stroke-width="6"/>
-<line x1="380.3" y1="588.1" x2="380.3" y2="632.2" stroke="#f7f6f1" stroke-width="6"/>
-<line x1="380.3" y1="717.95" x2="380.3" y2="757.15" stroke="#f7f6f1" stroke-width="6"/>
-<line x1="397.45" y1="793.9" x2="441.55" y2="793.9" stroke="#f7f6f1" stroke-width="6"/>
-<line x1="184.3" y1="793.9" x2="223.5" y2="793.9" stroke="#f7f6f1" stroke-width="6"/>
-<line x1="150" y1="284.3" x2="150" y2="338.2" stroke="#547e88" stroke-width="6"/>
-<line x1="463.6" y1="276.95" x2="463.6" y2="345.55" stroke="#547e88" stroke-width="6"/>
-<line x1="96.1" y1="250" x2="137.75" y2="250" stroke="#f7f6f1" stroke-width="6"/>
-<line x1="184.3" y1="198.55" x2="184.3" y2="232.85" stroke="#547e88" stroke-width="6"/>
-<line x1="257.8" y1="926.2" x2="350.9" y2="926.2" stroke="#547e88" stroke-width="6"/>
-<text x="301.9" y="1024.2" text-anchor="middle" font-size="18">PARKING COURT</text>
-<text x="47.099999999999994" y="1009.5" font-size="16">GATE</text>
-<text x="103.45" y="593" text-anchor="middle" class="small" transform="rotate(-90 103.45 593)">PORCH-SIDE PASSAGE</text>
-<text x="346" y="220.6" text-anchor="middle" class="small">Rear strip</text>
-<text x="710" y="260" class="small">Layout follows owner sketch</text>
-<text x="710" y="295" class="note">Full-width kitchen at top</text>
-<text x="710" y="330" class="note">Living / dining below kitchen</text>
-<text x="710" y="365" class="note">Bedroom 1 LEFT; corridor RIGHT</text>
-<text x="710" y="400" class="note">En-suite LEFT; shared WC RIGHT</text>
-<text x="710" y="435" class="note">Full-width Bedroom 2 at bottom</text>
-<text x="710" y="470" class="note">Porch and gate on LEFT</text>
-<text x="710" y="505" class="note">Outside WC attached upper-left</text>
-<text x="710" y="540" class="note"></text>
-<text x="710" y="575" class="note">Sizes are rough estimates.</text>
-<text x="710" y="610" class="note">No numeric measurements supplied.</text>
-<text x="710" y="645" class="note">No scale, area or north established.</text>
-<text x="710" y="680" class="note"></text>
-<text x="710" y="715" class="note">Measure before furniture-fit</text>
-<text x="710" y="750" class="note">or renovation decisions.</text>
-<text x="70" y="1325" class="note">Photo matches: IMG_3443 ↔ 3458 · IMG_3505 opposing kitchen window · IMG_3450 ↔ 3466</text>
-<text x="70" y="1360" class="note">Reference: owner sketch IMG_3511 and 68 supplied photographs · Roof omitted · Not a measured survey</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="1462" viewBox="0 0 440 1462">
+<rect x="0" y="0" width="440" height="1462" fill="#f7f6f1"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#263738}.title{font-size:24px}.sub{font-size:15px}.note{font-size:13px;fill:#647474}.name{font-size:13px;font-weight:700}.detail{font-size:11px}.name.compact{font-size:12px}.detail.compact{font-size:10px}</style>
+<text x="24" y="40" class="title">House Mbezi · Site plan</text>
+<text x="24" y="64" class="sub">Estimated sizes in metres · draft 03</text>
+<text x="24" y="88" class="note">Estimated from 68 photos and the owner's sketch, ±10–15 %.</text>
+<text x="24" y="106" class="note">Not a survey.</text>
+<rect x="56" y="968" width="344" height="276" fill="#a8a08b" fill-opacity="0.4"/>
+<rect x="56" y="240" width="88" height="728" fill="#a8a08b" fill-opacity="0.4"/>
+<rect x="168" y="180" width="232" height="60" fill="#a8a08b" fill-opacity="0.4"/>
+<rect x="360" y="240" width="40" height="728" fill="#a8a08b" fill-opacity="0.4"/>
+<line x1="56" y1="180" x2="56" y2="1025" stroke="#939d83" stroke-width="5" stroke-linecap="square"/>
+<line x1="56" y1="1025" x2="56" y2="1141" stroke="#597983" stroke-width="9" stroke-linecap="square"/>
+<line x1="56" y1="1141" x2="56" y2="1244" stroke="#939d83" stroke-width="5" stroke-linecap="square"/>
+<line x1="56" y1="1244" x2="400" y2="1244" stroke="#939d83" stroke-width="5" stroke-linecap="square"/>
+<line x1="400" y1="1244" x2="400" y2="180" stroke="#939d83" stroke-width="5" stroke-linecap="square"/>
+<line x1="400" y1="180" x2="56" y2="180" stroke="#939d83" stroke-width="5" stroke-linecap="square"/>
+<rect x="152" y="248" width="200" height="120" fill="#ddd8c9"/>
+<rect x="152" y="372" width="200" height="192" fill="#ddd8c9"/>
+<rect x="152" y="568" width="144" height="144" fill="#ddd8c9"/>
+<rect x="300" y="568" width="52" height="228" fill="#ddd8c9"/>
+<rect x="152" y="716" width="90" height="80" fill="#b8aea0"/>
+<rect x="246" y="716" width="50" height="80" fill="#b8aea0"/>
+<rect x="152" y="800" width="200" height="160" fill="#ddd8c9"/>
+<rect x="96" y="372" width="48" height="192" fill="#cfc6b1"/>
+<rect x="100" y="184" width="64" height="56" fill="#b8aea0"/>
+<rect x="144" y="240" width="216" height="8" fill="#394647"/>
+<rect x="144" y="368" width="73" height="4" fill="#394647"/>
+<rect x="325" y="368" width="35" height="4" fill="#394647"/>
+<rect x="144" y="240" width="8" height="50.5" fill="#394647"/>
+<rect x="144" y="290.5" width="8" height="44" fill="#91adb4" stroke="#52767e" stroke-width="1"/>
+<rect x="144" y="334.5" width="8" height="37.5" fill="#394647"/>
+<rect x="352" y="240" width="8" height="44.5" fill="#394647"/>
+<rect x="352" y="284.5" width="8" height="56" fill="#91adb4" stroke="#52767e" stroke-width="1"/>
+<rect x="352" y="340.5" width="8" height="31.5" fill="#394647"/>
+<rect x="144" y="564" width="156" height="4" fill="#394647"/>
+<rect x="144" y="368" width="8" height="13.9" fill="#394647"/>
+<rect x="144" y="421.9" width="8" height="39.4" fill="#394647"/>
+<rect x="144" y="461.3" width="8" height="68" fill="#91adb4" stroke="#52767e" stroke-width="1"/>
+<rect x="144" y="529.3" width="8" height="38.7" fill="#394647"/>
+<rect x="352" y="368" width="8" height="53.7" fill="#394647"/>
+<rect x="352" y="421.7" width="8" height="88" fill="#91adb4" stroke="#52767e" stroke-width="1"/>
+<rect x="352" y="509.7" width="8" height="58.3" fill="#394647"/>
+<rect x="144" y="712" width="156" height="4" fill="#394647"/>
+<rect x="144" y="564" width="8" height="43.2" fill="#394647"/>
+<rect x="144" y="607.2" width="8" height="60" fill="#91adb4" stroke="#52767e" stroke-width="1"/>
+<rect x="144" y="667.2" width="8" height="48.8" fill="#394647"/>
+<rect x="296" y="564" width="4" height="26.7" fill="#394647"/>
+<rect x="296" y="626.7" width="4" height="89.3" fill="#394647"/>
+<rect x="296" y="796" width="11.3" height="4" fill="#394647"/>
+<rect x="343.3" y="796" width="16.7" height="4" fill="#394647"/>
+<rect x="296" y="626.7" width="4" height="104.5" fill="#394647"/>
+<rect x="296" y="763.2" width="4" height="36.8" fill="#394647"/>
+<rect x="352" y="564" width="8" height="35" fill="#394647"/>
+<rect x="352" y="599" width="8" height="62" fill="#91adb4" stroke="#52767e" stroke-width="1"/>
+<rect x="352" y="661" width="8" height="72.8" fill="#394647"/>
+<rect x="352" y="733.8" width="8" height="40" fill="#91adb4" stroke="#52767e" stroke-width="1"/>
+<rect x="352" y="773.8" width="8" height="26.2" fill="#394647"/>
+<rect x="144" y="712" width="102" height="4" fill="#394647"/>
+<rect x="144" y="796" width="36" height="4" fill="#394647"/>
+<rect x="212" y="796" width="34" height="4" fill="#394647"/>
+<rect x="144" y="712" width="8" height="25.5" fill="#394647"/>
+<rect x="144" y="737.5" width="8" height="26" fill="#91adb4" stroke="#52767e" stroke-width="1"/>
+<rect x="144" y="763.5" width="8" height="36.5" fill="#394647"/>
+<rect x="242" y="712" width="4" height="88" fill="#394647"/>
+<rect x="242" y="712" width="58" height="4" fill="#394647"/>
+<rect x="242" y="796" width="58" height="4" fill="#394647"/>
+<rect x="296" y="712" width="4" height="19.2" fill="#394647"/>
+<rect x="212" y="796" width="95.3" height="4" fill="#394647"/>
+<rect x="144" y="960" width="82.5" height="8" fill="#394647"/>
+<rect x="226.5" y="960" width="76" height="8" fill="#91adb4" stroke="#52767e" stroke-width="1"/>
+<rect x="302.5" y="960" width="57.5" height="8" fill="#394647"/>
+<rect x="144" y="796" width="8" height="54.5" fill="#394647"/>
+<rect x="144" y="850.5" width="8" height="58" fill="#91adb4" stroke="#52767e" stroke-width="1"/>
+<rect x="144" y="908.5" width="8" height="59.5" fill="#394647"/>
+<rect x="352" y="796" width="8" height="54.5" fill="#394647"/>
+<rect x="352" y="850.5" width="8" height="58" fill="#91adb4" stroke="#52767e" stroke-width="1"/>
+<rect x="352" y="908.5" width="8" height="59.5" fill="#394647"/>
+<rect x="96" y="180" width="72" height="4" fill="#394647"/>
+<rect x="96" y="240" width="5.5" height="4" fill="#394647"/>
+<rect x="135.5" y="240" width="32.5" height="4" fill="#394647"/>
+<rect x="96" y="180" width="4" height="64" fill="#394647"/>
+<rect x="164" y="180" width="4" height="13.7" fill="#394647"/>
+<rect x="164" y="193.7" width="4" height="28" fill="#91adb4" stroke="#52767e" stroke-width="1"/>
+<rect x="164" y="221.7" width="4" height="22.3" fill="#394647"/>
+<rect x="136.8" y="377.2" width="7.2" height="7.2" fill="#f2f1e8" stroke="#394647" stroke-width="1"/>
+<rect x="136.8" y="556.8" width="7.2" height="7.2" fill="#f2f1e8" stroke="#394647" stroke-width="1"/>
+<rect x="148" y="381.9" width="30" height="1.8" fill="#86523b"/>
+<path d="M178 381.9A30 30 0 0 1 148 411.9" fill="none" stroke="#86523b" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="298" y="590.7" width="30" height="1.8" fill="#86523b"/>
+<path d="M328 590.7A30 30 0 0 1 298 620.7" fill="none" stroke="#86523b" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="307.3" y="798" width="1.8" height="30" fill="#86523b"/>
+<path d="M307.3 828A30 30 0 0 0 337.3 798" fill="none" stroke="#86523b" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="298" y="731.2" width="30" height="1.8" fill="#86523b"/>
+<path d="M328 731.2A30 30 0 0 1 298 761.2" fill="none" stroke="#86523b" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="180" y="798" width="1.8" height="30" fill="#86523b"/>
+<path d="M180 828A30 30 0 0 0 210 798" fill="none" stroke="#86523b" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="101.5" y="242" width="1.8" height="30" fill="#86523b"/>
+<path d="M101.5 272A30 30 0 0 0 131.5 242" fill="none" stroke="#86523b" stroke-width="1" stroke-dasharray="3 3"/>
+<g class="room-label">
+<text x="252" y="299.5" text-anchor="middle" class="name">Kitchen</text>
+<text x="252" y="312.5" text-anchor="middle" class="detail">5.0 × 3.0 m</text>
+<text x="252" y="325.5" text-anchor="middle" class="detail">low confidence</text>
+</g>
+<g class="room-label">
+<text x="252" y="459.5" text-anchor="middle" class="name">Living / dining</text>
+<text x="252" y="472.5" text-anchor="middle" class="detail">5.0 × 4.8 m</text>
+<text x="252" y="485.5" text-anchor="middle" class="detail">medium confidence</text>
+</g>
+<g class="room-label">
+<text x="224" y="631.5" text-anchor="middle" class="name">Bedroom 1</text>
+<text x="224" y="644.5" text-anchor="middle" class="detail">3.6 × 3.6 m</text>
+<text x="224" y="657.5" text-anchor="middle" class="detail">medium confidence</text>
+</g>
+<g class="room-label" transform="rotate(-90 326 682)">
+<text x="326" y="673.5" text-anchor="middle" class="name">Corridor</text>
+<text x="326" y="686.5" text-anchor="middle" class="detail">1.3 × 5.7 m</text>
+<text x="326" y="699.5" text-anchor="middle" class="detail">medium confidence</text>
+</g>
+<g class="room-label">
+<text x="197" y="747.5" text-anchor="middle" class="name">En-suite</text>
+<text x="197" y="760.5" text-anchor="middle" class="detail">2.2 × 2.0 m</text>
+<text x="197" y="773.5" text-anchor="middle" class="detail">low confidence</text>
+</g>
+<g class="room-label" transform="rotate(-90 271 756)">
+<text x="271" y="748" text-anchor="middle" class="name compact">Shared WC</text>
+<text x="271" y="760" text-anchor="middle" class="detail compact">1.2 × 2.0 m</text>
+<text x="271" y="772" text-anchor="middle" class="detail compact">low confidence</text>
+</g>
+<g class="room-label">
+<text x="252" y="871.5" text-anchor="middle" class="name">Bedroom 2</text>
+<text x="252" y="884.5" text-anchor="middle" class="detail">5.0 × 4.0 m</text>
+<text x="252" y="897.5" text-anchor="middle" class="detail">medium confidence</text>
+</g>
+<g class="room-label" transform="rotate(-90 120 468)">
+<text x="120" y="459.5" text-anchor="middle" class="name">Porch</text>
+<text x="120" y="472.5" text-anchor="middle" class="detail">1.2 m deep</text>
+<text x="120" y="485.5" text-anchor="middle" class="detail">low confidence</text>
+</g>
+<g class="room-label">
+<text x="132" y="142" text-anchor="middle" class="name">Outside WC</text>
+<text x="132" y="155" text-anchor="middle" class="detail">1.6 × 1.4 m</text>
+<text x="132" y="168" text-anchor="middle" class="detail">low confidence</text>
+</g>
+<line x1="132" y1="173" x2="132" y2="212" stroke="#647474" stroke-width="1"/>
+<circle cx="132" cy="212" r="2" fill="#647474"/>
+<g class="room-label" transform="rotate(-90 100 766)">
+<text x="100" y="757.5" text-anchor="middle" class="name">Left passage</text>
+<text x="100" y="770.5" text-anchor="middle" class="detail">2.2 m wide</text>
+<text x="100" y="783.5" text-anchor="middle" class="detail">low confidence</text>
+</g>
+<g class="room-label" transform="rotate(-90 380 604)">
+<text x="380" y="602" text-anchor="middle" class="name">Right walkway</text>
+<text x="380" y="615" text-anchor="middle" class="detail">1.0 m wide · medium confidence</text>
+</g>
+<g class="room-label">
+<text x="284" y="201.5" text-anchor="middle" class="name">Back strip</text>
+<text x="284" y="214.5" text-anchor="middle" class="detail">1.5 m deep</text>
+<text x="284" y="227.5" text-anchor="middle" class="detail">low confidence</text>
+</g>
+<g class="room-label">
+<text x="228" y="1097.5" text-anchor="middle" class="name">Parking</text>
+<text x="228" y="1110.5" text-anchor="middle" class="detail">6.9 m deep</text>
+<text x="228" y="1123.5" text-anchor="middle" class="detail">low confidence</text>
+</g>
+<text x="46" y="1079" text-anchor="end" class="name">Gate</text>
+<text x="46" y="1095" text-anchor="end" class="detail">2.9 m</text>
+<line x1="56" y1="1262" x2="400" y2="1262" stroke="#647474" stroke-width="1"/>
+<line x1="56" y1="1257" x2="56" y2="1267" stroke="#647474" stroke-width="1"/>
+<line x1="400" y1="1257" x2="400" y2="1267" stroke="#647474" stroke-width="1"/>
+<text x="228" y="1278" text-anchor="middle" class="detail">8.6 m</text>
+<line x1="418" y1="180" x2="418" y2="1244" stroke="#647474" stroke-width="1"/>
+<line x1="413" y1="180" x2="423" y2="180" stroke="#647474" stroke-width="1"/>
+<line x1="413" y1="1244" x2="423" y2="1244" stroke="#647474" stroke-width="1"/>
+<text x="432" y="712" text-anchor="middle" class="detail" transform="rotate(-90 432 712)">26.6 m</text>
+<g id="scale-bar">
+<rect x="24" y="1292" width="80" height="6" fill="#f7f6f1" stroke="#263738" stroke-width="1"/>
+<rect x="24" y="1292" width="40" height="6" fill="#263738"/>
+<text x="24" y="1314" text-anchor="middle" class="detail">0</text>
+<text x="64" y="1314" text-anchor="middle" class="detail">1</text>
+<text x="104" y="1314" text-anchor="middle" class="detail">2 m</text>
+</g>
+<text x="24" y="1348" class="note">Plot 8.6 × 26.6 m inside the compound wall, estimated (low</text>
+<text x="24" y="1366" class="note">confidence).</text>
+<text x="24" y="1384" class="note">House 5.4 × 18.2 m outside; the passages give up 0.1 m each</text>
+<text x="24" y="1402" class="note">so it fits.</text>
+<text x="24" y="1420" class="note">Measure before furniture-fit or renovation decisions. Roof</text>
+<text x="24" y="1438" class="note">omitted.</text>
 </svg>
