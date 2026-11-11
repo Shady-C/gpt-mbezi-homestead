@@ -42,14 +42,41 @@ test('labels are kept inside the canvas', () => {
   assert.equal(out.length, 1);
   assert.ok(out[0].x - out[0].w / 2 >= 4, 'left edge inside');
 });
-test('an overlapping lower-priority label is dropped', () => {
+const overlaps = (a, b) => a.x - a.w / 2 < b.x + b.w / 2 && a.x + a.w / 2 > b.x - b.w / 2 && a.y - a.h < b.y && a.y > b.y - b.h;
+test('an overlapping lower-priority label is dropped when there is no room to move it', () => {
   const { placeLabels } = helpers();
   const out = placeLabels([
-    { text: 'Bedroom 1', x: 150, y: 200, w: 70, h: 18, priority: 2 },
-    { text: 'Shared WC', x: 160, y: 205, w: 70, h: 18, priority: 1 },
-    { text: 'Kitchen', x: 150, y: 80, w: 60, h: 18, priority: 1 },
-  ], 375, 400, 4);
-  assert.deepEqual(out.map((l) => l.text).sort(), ['Bedroom 1', 'Kitchen']);
+    { text: 'Bedroom 1', x: 60, y: 30, w: 100, h: 22, priority: 2 },
+    { text: 'Shared WC', x: 64, y: 32, w: 100, h: 22, priority: 1 },
+  ], 120, 40, 4);
+  assert.deepEqual(out.map((l) => l.text), ['Bedroom 1']);
+});
+test('overlapping signs are nudged apart, not dropped, when there is room nearby', () => {
+  const { placeLabels } = helpers();
+  const items = [
+    { text: 'En-suite', x: 150, y: 200, w: 72, h: 36, priority: 1 },
+    { text: 'Shared WC', x: 170, y: 190, w: 72, h: 36, priority: 1 },
+  ];
+  for (const drop of [true, false]) {
+    const out = placeLabels(items, 400, 400, 4, drop);
+    assert.equal(out.length, 2);
+    assert.equal(overlaps(out[0], out[1]), false, 'kept signs do not overlap');
+    for (const l of out) {
+      const a = items.find((i) => i.text === l.text);
+      assert.ok(Math.abs(l.x - a.x) <= 0.6 * a.w && Math.abs(l.y - a.y) <= 1.1 * a.h, `${l.text} stays near its room`);
+    }
+  }
+});
+test('a crowded sign falls back to its name only before it is dropped', () => {
+  const { placeLabels } = helpers();
+  const out = placeLabels([
+    { text: 'A', x: 50, y: 40, w: 90, h: 36, priority: 2 },
+    { text: 'B', x: 50, y: 60, w: 90, h: 36, priority: 1, compact: { w: 40, h: 18 } },
+  ], 100, 70, 2);
+  const b = out.find((l) => l.text === 'B');
+  assert.ok(b, 'B kept in compact form');
+  assert.equal(b.sub, '');
+  assert.equal(b.h, 18);
 });
 test('a label whose room is far off-screen is dropped, not pinned to the edge', () => {
   const { placeLabels } = helpers();
@@ -114,6 +141,7 @@ for (const page of ['house-viewer.html', 'index.html']) test(`${page} has a desc
   assert.ok(img, 'og:image present');
   assert.ok(img[1].startsWith(LIVE), 'og:image is an absolute live URL');
   assert.match(img[1], /\?v=\d+$/, 'og:image URL is versioned so chat apps refetch a changed card');
+  assert.match(img[1], /\?v=3$/, 'share card re-rendered for the signboard redesign is v=3');
   assert.ok(existsSync(join(root, img[1].slice(LIVE.length).replace(/\?.*$/, ''))), 'og:image file exists');
 });
 test('page has a favicon', () => {
@@ -133,6 +161,13 @@ test('share card is a 1200×630 JPEG', () => {
   while (i < b.length) { const m = b.readUInt16BE(i); if (m >= 0xffc0 && m <= 0xffc3) break; i += 2 + b.readUInt16BE(i + 2); }
   assert.deepEqual([b.readUInt16BE(i + 7), b.readUInt16BE(i + 5)], [1200, 630]);
 });
+for (const page of ['house-viewer.html', 'index.html']) test(`every download link in ${page} resolves`, () => {
+  const refs = [...read(page).matchAll(/\b(?:href|src)="([^"]+)"/g)].map((m) => m[1])
+    .filter((h) => !/^(https?:|#|mailto:|data:)/.test(h));
+  assert.ok(refs.length > 0);
+  for (const h of refs) assert.ok(existsSync(join(root, decodeURIComponent(h.replace(/[?#].*$/, '')))), h);
+  for (const m of read(page).matchAll(/url\(([^)]+)\)/g)) assert.ok(existsSync(join(root, m[1].replace(/["']/g, ''))), m[1]);
+});
 test('evidence link opens the README on GitHub, not raw markdown', () => {
   const s = html();
   assert.equal(s.includes('href="README.md"'), false);
@@ -147,10 +182,21 @@ test('no file contains a local /Users/ path', () => {
 test('README links to the live site', () => {
   assert.ok(read('README.md').includes(LIVE));
 });
-test('README does not claim the offline copy is the same viewer', () => {
+test('README describes the offline copy as the current viewer, not an earlier one', () => {
   const r = read('README.md');
-  assert.equal(/house-viewer-offline\.html[^\n]*same viewer/i.test(r), false);
-  assert.match(r, /house-viewer-offline\.html[^\n]*earlier/i);
+  assert.match(r, /house-viewer-offline\.html[^\n]*same viewer/i);
+  assert.equal(/house-viewer-offline\.html[^\n]*earlier/i.test(r), false);
+});
+test('the offline copy is the current viewer with everything built in', () => {
+  const off = read('house-viewer-offline.html');
+  const line = (s) => s.split('\n').find((l) => l.startsWith('const DATA='));
+  const live = JSON.parse(line(html()).slice('const DATA='.length).replace(/;\s*$/, ''));
+  const copy = JSON.parse(line(off).slice('const DATA='.length).replace(/;\s*$/, ''));
+  assert.deepEqual(copy.rooms, live.rooms, 'same rooms and sizes as the live viewer');
+  assert.equal(copy.estimateNote, live.estimateNote);
+  for (const v of Object.values(copy.photos)) assert.match(v, /^data:image\/jpeg;base64,/);
+  assert.doesNotMatch(off, /url\((['"]?)fonts\//, 'fonts embedded');
+  assert.doesNotMatch(off, /src="photos\//);
 });
 test('README says location data is removed from photos', () => {
   assert.match(read('README.md'), /## Photo privacy\n\n[^\n]*GPS location[^\n]*location and camera data removed/);
@@ -185,4 +231,11 @@ test('no published image carries GPS location', () => {
   for (const f of imgs) assert.equal(hasGps(readFileSync(join(root, f))), false, f);
   const offline = existsSync(join(root, 'house-viewer-offline.html')) ? read('house-viewer-offline.html') : html();
   for (const m of offline.matchAll(/data:image\/jpeg;base64,([A-Za-z0-9+/=]+)/g)) assert.equal(hasGps(Buffer.from(m[1], 'base64')), false);
+});
+test('README states sizes as estimates', async () => {
+  const { TABLE } = await import('../tools/metres.mjs');
+  const r = read('README.md');
+  for (const t of Object.values(TABLE)) assert.ok(r.includes(t.text), t.text);
+  assert.ok(r.includes('Not a survey'));
+  assert.equal(r.includes('arbitrary drawing units'), false);
 });
