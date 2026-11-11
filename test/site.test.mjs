@@ -15,7 +15,7 @@ function helpers() {
   const s = html();
   const a = s.indexOf('// @helpers-start'), b = s.indexOf('// @helpers-end');
   assert.ok(a >= 0 && b > a, 'viewer has a // @helpers-start … // @helpers-end block');
-  return new Function(s.slice(a, b) + '; return { placeLabels, hintText, pinchZoom };')();
+  return new Function(s.slice(a, b) + '; return { placeLabels, hintText, pinchZoom, labelPriority, labelSize };')();
 }
 
 // ---- 1. Fast load: photos live in their own files ----
@@ -71,6 +71,29 @@ test('touch screens get a pinch hint, mice get a scroll hint', () => {
   assert.match(hintText('model', true), /Pinch to zoom/);
   assert.doesNotMatch(hintText('model', true), /Scroll/);
   assert.match(hintText('model', false), /Scroll to zoom/);
+});
+test('the selected room always has top label priority, GATE included', () => {
+  const { labelPriority } = helpers();
+  assert.equal(labelPriority('bedroom-suite', 'bedroom-suite'), 3);
+  assert.equal(labelPriority('court', 'court'), 3);
+});
+test('GATE ranks with the small rooms, not below them', () => {
+  const { labelPriority } = helpers();
+  assert.equal(labelPriority('court', 'living'), labelPriority('wc-common', 'living'));
+  assert.ok(labelPriority('kitchen', 'living') > labelPriority('court', 'living'));
+});
+test('phone labels are at least 10 px', () => {
+  const { labelSize } = helpers();
+  assert.ok(labelSize(339, true) >= 10 && labelSize(339, false) >= 11);
+  assert.equal(labelSize(900, false), 12);
+});
+test('canvas screen-reader label mentions pinch', () => {
+  assert.match(html().match(/<canvas id="scene"[^>]*aria-label="([^"]+)"/)[1], /pinch/i);
+});
+test('photos set lazy loading once, before the source', () => {
+  const s = html();
+  assert.equal(s.split("loading='lazy'").length - 1, 1);
+  assert.ok(s.indexOf("im.loading='lazy'") < s.indexOf('im.src=DATA.photos[n]'));
 });
 test('pinching out zooms in, within limits', () => {
   const { pinchZoom } = helpers();
