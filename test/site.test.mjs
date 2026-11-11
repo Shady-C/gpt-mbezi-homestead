@@ -133,6 +133,13 @@ test('share card is a 1200×630 JPEG', () => {
   while (i < b.length) { const m = b.readUInt16BE(i); if (m >= 0xffc0 && m <= 0xffc3) break; i += 2 + b.readUInt16BE(i + 2); }
   assert.deepEqual([b.readUInt16BE(i + 7), b.readUInt16BE(i + 5)], [1200, 630]);
 });
+for (const page of ['house-viewer.html', 'index.html']) test(`every download link in ${page} resolves`, () => {
+  const refs = [...read(page).matchAll(/\b(?:href|src)="([^"]+)"/g)].map((m) => m[1])
+    .filter((h) => !/^(https?:|#|mailto:|data:)/.test(h));
+  assert.ok(refs.length > 0);
+  for (const h of refs) assert.ok(existsSync(join(root, decodeURIComponent(h.replace(/[?#].*$/, '')))), h);
+  for (const m of read(page).matchAll(/url\(([^)]+)\)/g)) assert.ok(existsSync(join(root, m[1].replace(/["']/g, ''))), m[1]);
+});
 test('evidence link opens the README on GitHub, not raw markdown', () => {
   const s = html();
   assert.equal(s.includes('href="README.md"'), false);
