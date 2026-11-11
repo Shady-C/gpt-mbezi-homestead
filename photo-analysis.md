@@ -1,6 +1,6 @@
 # Revision 03 — owner sketch is authoritative
 
-Inspected /Users/shadrackmsuya/Downloads/IMG_3511.png. Its layout overrides our photo-inferred footprint. Sizes are rough estimates, with no numbers supplied. No north is implied.
+Inspected the owner's sketch IMG_3511.png. Its layout overrides our photo-inferred footprint. Sizes are rough estimates, with no numbers supplied. No north is implied.
 
 Default 2D orientation MUST match the upright sketch: kitchen at TOP and parking at BOTTOM, porch/entry and gate LEFT, corridor RIGHT. Do not merely mirror revision02: kitchen now spans the entire house width. The main-house room rectangles form a continuous rectangle, without invented voids.
 

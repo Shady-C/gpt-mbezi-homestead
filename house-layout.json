@@ -1,6 +1,6 @@
 {
   "title": "House Mbezi \u2014 owner sketch aligned schematic v3",
-  "source_directory": "/Users/shadrackmsuya/Projects Random/House mbezi/PNG_Converted",
+  "source_directory": "PNG_Converted (owner's local photo folder, IMG_3443–IMG_3510)",
   "photo_count": 68,
   "units": "arbitrary schematic units; NOT metres",
   "north_known": false,
@@ -854,7 +854,7 @@
       "caption": "Gate and parking at bottom Bedroom2 end, gate on LEFT boundary."
     }
   ],
-  "source_sketch": "/Users/shadrackmsuya/Downloads/IMG_3511.png",
+  "source_sketch": "IMG_3511.png (owner sketch; reduced copy in owner-layout-sketch.jpg)",
   "render_rectangles": [
     {
       "id": "kitchen",

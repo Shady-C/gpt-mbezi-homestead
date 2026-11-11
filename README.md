@@ -1,8 +1,10 @@
 # House Mbezi · Draft 03
 
+**Live site:** https://shady-c.github.io/gpt-mbezi-homestead/
+
 The owner's hand sketch **IMG_3511** is now the layout authority. The previous photo-inferred footprint is superseded. Sizes in the sketch are rough estimates with no numeric measurements, so this remains an approximate schematic.
 
-Open **house-viewer.html** in a browser. It works offline and includes 68 reference photographs plus a link to the owner's sketch. Compare 3D cutaway, floor plan, site plan and room connections. Drag to orbit, scroll to zoom, select a space for photo evidence, and click a photograph to enlarge it. Full walls shows the roof-off shell; Hide site isolates the interior. Site walls are displayed low so the house stays inspectable; the portable GLB includes full site walls.
+Open the **live site** above, or download **house-viewer-offline.html** for a single file that works without internet. Compare 3D cutaway, floor plan, site plan and room connections. Drag to orbit, scroll (or pinch on a phone) to zoom, select a space for photo evidence, and click a photograph to enlarge it. Full walls shows the roof-off shell; Hide site isolates the interior. Site walls are displayed low so the house stays inspectable; the portable GLB includes full site walls.
 
 ## Layout matched to the upright sketch
 
@@ -27,7 +29,11 @@ The original photographs and sketch remain unchanged. Embedded photos are reduce
 
 ## Files
 
-- **house-viewer.html** — offline interactive house/site with reference photos and sketch link.
+- **house-viewer.html** — interactive house/site viewer (the live site). Loads photos from `photos/` as you open each room.
+- **house-viewer-offline.html** — the same viewer as one 5 MB file with the photos built in; works offline.
+- **photos/** — the 68 reference photographs, reduced and orientation-corrected.
+- **share-card.jpg**, **favicon.svg** — preview image for shared links and the tab icon.
+- **test/site.test.mjs** — checks for page size, phone labels, share tags, local paths and photo location data. Run `node --test test/site.test.mjs`.
 - **floor-plan.svg** and **site-plan.svg** — same upright orientation as the owner's sketch.
 - **house-model.glb** — roof-off portable model with attached WC, gate, boundaries, court and paths.
 - **house-layout.json** — owner facts, evidence, rough coordinates, openings, materials and model boxes. Plan x/y and height z map to GLB x/-z and height y.
@@ -36,6 +42,10 @@ The original photographs and sketch remain unchanged. Embedded photos are reduce
 - **exterior-photo-matches.jpg** — earlier photo correspondence sheet; its matching features remain relevant, while this sketch supplies the current layout orientation.
 - Static PNGs, if present — exports of this version's shared model.
 - Earlier draft ZIPs, if present — preserved history, superseded by Draft 03.
+
+## Photo privacy
+
+The original phone photos contain the house's GPS location. Every photo published here is a reduced copy with all location and camera data removed, and `test/site.test.mjs` fails if a published image ever carries GPS data again.
 
 ## Measurements needed next
 
