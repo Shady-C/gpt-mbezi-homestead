@@ -106,8 +106,8 @@ test('pinching out zooms in, within limits', () => {
 test('page title says Draft 03', () => {
   assert.match(html(), /<title>House Mbezi · Draft 03<\/title>/);
 });
-test('page has a description and an Open Graph share card', () => {
-  const s = html();
+for (const page of ['house-viewer.html', 'index.html']) test(`${page} has a description and an Open Graph share card`, () => {
+  const s = read(page);
   assert.match(s, /<meta name="description" content="[^"]{20,}">/);
   for (const p of ['og:title', 'og:description', 'og:url']) assert.match(s, new RegExp(`<meta property="${p}" content="[^"]+">`));
   const img = s.match(/<meta property="og:image" content="([^"]+)">/);
@@ -138,10 +138,12 @@ test('README does not claim the offline copy is the same viewer', () => {
   assert.match(r, /house-viewer-offline\.html[^\n]*earlier/i);
 });
 test('README says location data is removed from photos', () => {
-  assert.match(read('README.md'), /location/i);
+  assert.match(read('README.md'), /## Photo privacy\n\n[^\n]*GPS location[^\n]*location and camera data removed/);
 });
 
 function hasGps(buf) {
+  const x = buf.indexOf(Buffer.from('http://ns.adobe.com/xap/1.0/'));
+  if (x >= 0 && /GPS(Latitude|Longitude)/.test(buf.toString('latin1', x, x + 65536))) return true;
   const i = buf.indexOf(Buffer.from('Exif\0\0'));
   if (i < 0) return false;
   const t = buf.subarray(i + 6), le = t.toString('latin1', 0, 2) === 'II';
@@ -150,6 +152,13 @@ function hasGps(buf) {
   for (let k = 0; k < u16(off); k++) if (u16(off + 2 + 12 * k) === 0x8825) return true;
   return false;
 }
+test('gps detector finds GPS written as XMP', () => {
+  const xmp = '<x:xmpmeta xmlns:x="adobe:ns:meta/"><rdf:Description exif:GPSLatitude="6,42.2S"/></x:xmpmeta>';
+  assert.equal(hasGps(Buffer.concat([Buffer.from([0xff, 0xd8]), Buffer.from('http://ns.adobe.com/xap/1.0/\0' + xmp)])), true);
+});
+test('gps detector passes a file with no GPS', () => {
+  assert.equal(hasGps(Buffer.from([0xff, 0xd8, 0xff, 0xd9])), false);
+});
 test('gps detector finds GPS in a crafted EXIF block', () => {
   const t = Buffer.alloc(30); t.write('II', 0, 'latin1'); t.writeUInt16LE(42, 2); t.writeUInt32LE(8, 4);
   t.writeUInt16LE(1, 8); t.writeUInt16LE(0x8825, 10);
