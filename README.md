@@ -4,7 +4,7 @@
 
 The owner's hand sketch **IMG_3511** is now the layout authority. The previous photo-inferred footprint is superseded. Sizes in the sketch are rough estimates with no numeric measurements, so this remains an approximate schematic.
 
-Open the **live site** above, or download **house-viewer-offline.html** for a single file that works without internet. Compare 3D cutaway, floor plan, site plan and room connections. Drag to orbit, scroll (or pinch on a phone) to zoom, select a space for photo evidence, and click a photograph to enlarge it. Full walls shows the roof-off shell; Hide site isolates the interior. Site walls are displayed low so the house stays inspectable; the portable GLB includes full site walls.
+Open the **live site** above, or download **house-viewer-offline.html**: the earlier single-file version (5 MB, photos built in) for viewing without internet. It lacks the phone fixes, and the owner-sketch thumbnail and file links only work when it sits next to the other files. Compare 3D cutaway, floor plan, site plan and room connections. Drag to orbit, scroll (or pinch on a phone) to zoom, select a space for photo evidence, and click a photograph to enlarge it. Full walls shows the roof-off shell; Hide site isolates the interior. Site walls are displayed low so the house stays inspectable; the portable GLB includes full site walls.
 
 ## Layout matched to the upright sketch
 
@@ -30,7 +30,7 @@ The original photographs and sketch remain unchanged. Embedded photos are reduce
 ## Files
 
 - **house-viewer.html** — interactive house/site viewer (the live site). Loads photos from `photos/` as you open each room.
-- **house-viewer-offline.html** — the same viewer as one 5 MB file with the photos built in; works offline.
+- **house-viewer-offline.html** — the earlier single-file viewer (5 MB, photos built in) for offline use; lacks the phone fixes.
 - **photos/** — the 68 reference photographs, reduced and orientation-corrected.
 - **share-card.jpg**, **favicon.svg** — preview image for shared links and the tab icon.
 - **test/site.test.mjs** — checks for page size, phone labels, share tags, local paths and photo location data. Run `node --test test/site.test.mjs`.

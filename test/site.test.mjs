@@ -51,6 +51,13 @@ test('an overlapping lower-priority label is dropped', () => {
   ], 375, 400, 4);
   assert.deepEqual(out.map((l) => l.text).sort(), ['Bedroom 1', 'Kitchen']);
 });
+test('a label whose room is far off-screen is dropped, not pinned to the edge', () => {
+  const { placeLabels } = helpers();
+  const items = [{ text: 'External WC', x: -206, y: 111, w: 70, h: 16, priority: 1 },
+    { text: 'GATE', x: 100, y: 519 + 30, w: 40, h: 16, priority: 0 }];
+  assert.deepEqual(placeLabels(items, 339, 470, 4, true), []);
+  assert.deepEqual(placeLabels(items, 900, 470, 4, false), []);
+});
 test('on wide screens overlapping labels are all kept (only clamped)', () => {
   const { placeLabels } = helpers();
   const out = placeLabels([
@@ -101,6 +108,11 @@ test('no file contains a local /Users/ path', () => {
 });
 test('README links to the live site', () => {
   assert.ok(read('README.md').includes(LIVE));
+});
+test('README does not claim the offline copy is the same viewer', () => {
+  const r = read('README.md');
+  assert.equal(/house-viewer-offline\.html[^\n]*same viewer/i.test(r), false);
+  assert.match(r, /house-viewer-offline\.html[^\n]*earlier/i);
 });
 test('README says location data is removed from photos', () => {
   assert.match(read('README.md'), /location/i);
