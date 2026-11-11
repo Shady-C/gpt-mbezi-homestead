@@ -7,5 +7,7 @@
     "test": "node --test test/*.test.mjs",
     "geometry": "node tools/metres.mjs && node tools/plans.mjs && node tools/glb.mjs"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "three": "^0.187.0"
+  }
 }

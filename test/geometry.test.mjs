@@ -290,3 +290,50 @@ test('the committed plans are what the script draws', async () => {
   assert.equal(p.renderFloorPlan(DATA), read('floor-plan.svg'));
   assert.equal(p.renderSitePlan(DATA), read('site-plan.svg'));
 });
+
+// ---- Portable model (house-model.glb) ----
+function readGlb(buf) {
+  assert.equal(buf.readUInt32LE(0), 0x46546c67, 'glTF magic');
+  const len = buf.readUInt32LE(12);
+  assert.equal(buf.readUInt32LE(16), 0x4e4f534a, 'JSON chunk first');
+  return JSON.parse(buf.subarray(20, 20 + len).toString('utf8'));
+}
+// World-space bounds of every mesh node, composing translation and scale down the tree.
+// World-space bounds of the mesh nodes chosen by `keep`, composing translation and scale down the tree.
+function glbBounds(j, keep = () => true) {
+  const mn = [Infinity, Infinity, Infinity], mx = [-Infinity, -Infinity, -Infinity];
+  const walk = (i, t, s) => {
+    const node = j.nodes[i];
+    assert.ok(!node.matrix && (!node.rotation || node.rotation.slice(0, 3).every((v) => Math.abs(v) < 1e-9)), 'no rotations');
+    const ns = node.scale ?? [1, 1, 1], nt = node.translation ?? [0, 0, 0];
+    const T = [0, 1, 2].map((k) => t[k] + s[k] * nt[k]), S = [0, 1, 2].map((k) => s[k] * ns[k]);
+    if (node.mesh !== undefined && keep(node)) for (const p of j.meshes[node.mesh].primitives) {
+      const a = j.accessors[p.attributes.POSITION];
+      for (let k = 0; k < 3; k++) {
+        const v = [T[k] + S[k] * a.min[k], T[k] + S[k] * a.max[k]];
+        mn[k] = Math.min(mn[k], ...v); mx[k] = Math.max(mx[k], ...v);
+      }
+    }
+    for (const c of node.children ?? []) walk(c, T, S);
+  };
+  for (const i of j.scenes[j.scene ?? 0].nodes) walk(i, [0, 0, 0], [1, 1, 1]);
+  return { mn, mx };
+}
+
+test('glb spans the site in metres', () => {
+  const j = readGlb(readFileSync(join(root, 'house-model.glb')));
+  // The paved ground is the plot: x −2.2…6.4, z −25.1…1.5 (plan y −1.5…25.1).
+  const ground = glbBounds(j, (nd) => nd.extras?.kind === 'site-floor');
+  assert.ok(near(ground.mn[0], -2.2, 0.05) && near(ground.mx[0], 6.4, 0.05), `ground x ${ground.mn[0]}…${ground.mx[0]}`);
+  assert.ok(near(ground.mn[2], -25.1, 0.05) && near(ground.mx[2], 1.5, 0.05), `ground z ${ground.mn[2]}…${ground.mx[2]}`);
+  // Everything: the compound wall's corner piers are centred on the plot corners, so they reach 0.12 m past it.
+  const { mn, mx } = glbBounds(j);
+  assert.ok(near(mn[0], -2.2, 0.13) && near(mx[0], 6.4, 0.13), `x ${mn[0]}…${mx[0]}`);
+  assert.ok(near(mn[2], -25.1, 0.13) && near(mx[2], 1.5, 0.13), `z ${mn[2]}…${mx[2]}`);
+  // Plan heights carry over: floors sit just below 0 as in the drawing, walls reach 2.8 m.
+  assert.ok(mn[1] >= -0.25 && near(mx[1], 2.8, 0.2), `y ${mn[1]}…${mx[1]}`);
+  // One mesh per material, every box present.
+  assert.equal(j.meshes.length, Object.keys(DATA.palette).filter((m) => DATA.boxes.some((b) => b.mat === m)).length);
+  assert.equal(j.nodes.filter((nd) => nd.mesh !== undefined).length, DATA.boxes.length);
+  assert.match(JSON.stringify(j), /metres \(estimated\)/);
+});
