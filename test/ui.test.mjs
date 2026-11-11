@@ -29,7 +29,8 @@ test('view centres come from DATA.bounds', () => {
   assert.ok(Math.hypot(ha[0] - hb[0], ha[1] - hb[1]) > 20, 'the same house point moves on screen when the bounds move');
 });
 test('view frame falls back to the drawing when DATA.bounds is missing', () => {
-  const v = loadViewer();
+  const v = loadViewer({ data: { bounds: undefined } });
+  assert.equal(v.data.bounds, undefined);
   for (const m of ['model', 'plan', 'site']) {
     const b = v.viewBox(m);
     assert.ok(Number.isFinite(b.cx) && Number.isFinite(b.cy) && b.span > 0, m);
@@ -159,9 +160,10 @@ test('3D labels carry the size', () => {
   assert.equal(l.sub, '5.0 × 4.0 m');
 });
 test('3D labels without an estimate carry the name only', () => {
-  const v = loadViewer({ width: 900, height: 700, coarse: false });
+  const v = loadViewer({ width: 900, height: 700, coarse: false, data: withoutEstimates() });
   const t = v.drawnTexts();
   assert.ok(t.includes('Bedroom 2'));
+  assert.ok(!t.includes('5.0 × 4.0 m'));
   assert.ok(!t.some((x) => /undefined|NaN/.test(x)));
 });
 test('plan tab draws a scale bar', () => {
@@ -202,4 +204,45 @@ test('the board closes with its button', () => {
   v.$('#board .close').click();
   assert.ok(!v.el('board').classList.contains('open'));
   assert.equal(v.state().selected, null);
+});
+
+const ROOM_NAMES = ['Kitchen', 'Living / dining', 'Bedroom 1', 'Corridor', 'En-suite', 'Shared WC', 'Bedroom 2', 'Porch', 'Outside WC'];
+for (const [w, h, coarse] of [[339, 470, true], [1300, 860, false]]) {
+  test(`every room has its sign and no two signs overlap at ${w} px`, () => {
+    const v = loadViewer({ width: w, height: h, coarse });
+    const placed = v.placed();
+    for (const name of ROOM_NAMES) assert.ok(placed.some((l) => l.text === name), `${name} shown`);
+    for (const a of placed) for (const b of placed) {
+      if (a === b) continue;
+      const hit = a.x - a.w / 2 < b.x + b.w / 2 && a.x + a.w / 2 > b.x - b.w / 2 && a.y - a.h < b.y && a.y > b.y - b.h;
+      assert.equal(hit, false, `${a.text} overlaps ${b.text}`);
+    }
+  });
+}
+test('door names read the way a family would say them', () => {
+  const v = loadViewer();
+  for (const id of ['living', 'hall', 'porch', 'court', 'kitchen', 'bedroom-suite']) {
+    v.select(id);
+    const t = [...v.$$('#board .door')].map((b) => b.textContent).join(' | ');
+    assert.doesNotMatch(t, /portal|terminal|circulation|adjacen|NOT/i, `${id}: ${t}`);
+  }
+});
+test('photo captions name the room and the photo, never internal notes', () => {
+  const v = loadViewer();
+  v.select('bedroom-suite');
+  const count = v.$$('#board .cell').length;
+  assert.ok(count > 0);
+  Array.from({ length: count }, (_, i) => i).forEach((i) => {
+    v.photo('bedroom-suite', i);
+    const c = v.el('photo-caption').textContent;
+    assert.match(c, /^Bedroom 2/, c);
+    assert.doesNotMatch(c, /Gate|LEFT|RIGHT|upper-left|outsideWC|Bedroom2 end/, c);
+  });
+});
+test('the porch board does not say its size is unknown and then give it', () => {
+  const v = loadViewer();
+  v.select('porch');
+  const t = v.$('#board').textContent;
+  assert.match(t, /1\.2 m deep/);
+  assert.doesNotMatch(t, /not estimated/i);
 });

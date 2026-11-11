@@ -4,7 +4,7 @@
 
 The owner's hand sketch **IMG_3511** is now the layout authority. The previous photo-inferred footprint is superseded. Room sizes are the owner's estimates in metres from the photos and the sketch (±10–15 %), so this remains an approximate schematic, not a survey.
 
-Open the **live site** above, or download **house-viewer-offline.html**: the earlier single-file version (5 MB, photos built in) for viewing without internet. It lacks the phone fixes, and the owner-sketch thumbnail and file links only work when it sits next to the other files. Compare 3D cutaway, floor plan, site plan and room connections. Drag to orbit, scroll (or pinch on a phone) to zoom, select a space for photo evidence, and click a photograph to enlarge it. Full walls shows the roof-off shell; Hide site isolates the interior. Site walls are displayed low so the house stays inspectable; the portable GLB includes full site walls.
+Open the **live site** above, or download **house-viewer-offline.html**: the same viewer as one file (about 6 MB, photos, fonts and the sketch built in) for viewing without internet. Its download links only work when it sits next to the other files. Compare 3D cutaway, floor plan, site plan and room connections. Drag to orbit, scroll (or pinch on a phone) to zoom, select a space for photo evidence, and click a photograph to enlarge it. Full walls shows the roof-off shell; Hide site isolates the interior. Site walls are displayed low so the house stays inspectable; the portable GLB includes full site walls.
 
 ## Layout matched to the upright sketch
 
@@ -42,7 +42,7 @@ Width runs left–right on the sketch, depth top–bottom. The en-suite and shar
 
 **Site.** Plot 8.6 × 26.6 m inside the compound wall (low confidence). Left passage 2.2 m wide (low), right walkway 1.0 m wide (medium); each gives up 0.1 m of its first estimate so the house fits. Porch 1.2 m deep along the living room (low). Back strip 1.5 m deep, enough for the outside WC against the compound wall (low). Parking 6.9 m deep (low; it takes up the remainder). The gate keeps a 2.9 m opening on the left boundary beside parking.
 
-Window and door positions, wall heights (2.8 m) and the gate's exact place remain illustrative. No survey or photogrammetric reconstruction has been performed. North direction and roof geometry remain unknown, so the roof is omitted. The offline copy still uses the earlier drawing units.
+Window and door positions, wall heights (2.8 m) and the gate's exact place remain illustrative. No survey or photogrammetric reconstruction has been performed. North direction and roof geometry remain unknown, so the roof is omitted.
 
 The original photographs and sketch remain unchanged. Embedded photos are reduced, orientation-corrected copies. Materials follow visible light walls, black skirting, pale tiles, timber cabinetry/doors, dark grilles, paving, pale boundary walls and a grey gate. Fixtures are simplified.
 
@@ -63,7 +63,7 @@ Each step is deterministic: running it again changes nothing.
 ## Files
 
 - **house-viewer.html** — interactive house/site viewer (the live site). Loads photos from `photos/` as you open each room.
-- **house-viewer-offline.html** — the earlier single-file viewer (5 MB, photos built in) for offline use; lacks the phone fixes.
+- **house-viewer-offline.html** — the same viewer as one file for offline use (about 6 MB); rebuilt by `node tools/offline.mjs`.
 - **photos/** — the 68 reference photographs, reduced and orientation-corrected.
 - **share-card.jpg**, **favicon.svg**, **apple-touch-icon.png** — preview image for shared links, the tab icon and the iPhone home-screen icon.
 - **tools/** and **package.json** — the scripts that regenerate the geometry, plans and model (see above).

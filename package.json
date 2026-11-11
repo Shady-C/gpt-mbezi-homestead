@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node --test test/*.test.mjs",
     "geometry": "node tools/metres.mjs && node tools/plans.mjs && node tools/glb.mjs",
-    "render": "node tools/render.mjs && sips -s format jpeg -s formatOptions 84 share-card.png --out share-card.jpg && rm share-card.png"
+    "render": "node tools/render.mjs && sips -s format jpeg -s formatOptions 84 share-card.png --out share-card.jpg && rm share-card.png",
+    "offline": "node tools/offline.mjs"
   },
   "devDependencies": {
     "playwright-core": "^1.65.0",

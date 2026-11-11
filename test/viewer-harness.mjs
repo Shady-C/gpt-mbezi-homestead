@@ -94,8 +94,9 @@ export function loadViewer({ width = 339, height = 470, coarse = true, data = nu
   const s = readFileSync(file, 'utf8');
   // Expose the label list handed to placeLabels so tests can see priorities.
   const script = s.slice(s.lastIndexOf('<script>') + 8, s.lastIndexOf('</script>'))
-    .replace('placeLabels(labels,', '(globalThis.__labels = labels, placeLabels)(labels,')
-    .replace(/^(const DATA=.*)$/m, '$1\n__mergeData(DATA, __patch);');
+    .replace('placeLabels(labels,', '__place(labels,')
+    .replace(/^(const DATA=.*)$/m, '$1\n__mergeData(DATA, __patch);')
+    + '\nfunction __place(l, ...a) { globalThis.__labels = l; return (globalThis.__placed = placeLabels(l, ...a)); }';
   let font = '12px x';
   const texts = [];
   const ctx = new Proxy({}, {
@@ -135,6 +136,7 @@ export function loadViewer({ width = 339, height = 470, coarse = true, data = nu
     setMode: (m) => { mode = m; draw(); },
     select: (id) => choose(id),
     walk: (id) => walkTo(id),
+    photo: (id, i) => openPhoto(id, i),
     setYaw: (y) => { yaw = y; draw(); },
     redraw: () => draw(),
     viewBox: (m) => viewBox(m),
@@ -146,6 +148,7 @@ export function loadViewer({ width = 339, height = 470, coarse = true, data = nu
   api.$$ = (sel) => globalThis.document.querySelectorAll(sel);
   api.el = byId;
   api.labels = () => { api.redraw(); return globalThis.__labels; };
+  api.placed = () => { api.redraw(); return globalThis.__placed; };
   api.drawnTexts = () => { texts.length = 0; api.redraw(); return [...texts]; };
   // Centre of a room's clickable floor in the current view.
   api.spot = (id) => {
