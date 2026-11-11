@@ -118,6 +118,20 @@ for (const page of ['house-viewer.html', 'index.html']) test(`${page} has a desc
 test('page has a favicon', () => {
   assert.match(html(), /<link rel="icon" [^>]*href="[^"]+"/);
 });
+for (const page of ['house-viewer.html', 'index.html']) test(`${page} has a 180×180 PNG iPhone icon`, () => {
+  const m = read(page).match(/<link rel="apple-touch-icon" href="([^"]+)">/);
+  assert.ok(m, 'apple-touch-icon link');
+  const png = readFileSync(join(root, m[1]));
+  assert.equal(png.toString('latin1', 1, 4), 'PNG');
+  assert.deepEqual([png.readUInt32BE(16), png.readUInt32BE(20)], [180, 180]);
+});
+test('share card is a 1200×630 JPEG', () => {
+  const b = readFileSync(join(root, 'share-card.jpg'));
+  assert.equal(b.readUInt16BE(0), 0xffd8);
+  let i = 2;
+  while (i < b.length) { const m = b.readUInt16BE(i); if (m >= 0xffc0 && m <= 0xffc3) break; i += 2 + b.readUInt16BE(i + 2); }
+  assert.deepEqual([b.readUInt16BE(i + 7), b.readUInt16BE(i + 5)], [1200, 630]);
+});
 test('evidence link opens the README on GitHub, not raw markdown', () => {
   const s = html();
   assert.equal(s.includes('href="README.md"'), false);

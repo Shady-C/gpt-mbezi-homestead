@@ -32,8 +32,8 @@ The original photographs and sketch remain unchanged. Embedded photos are reduce
 - **house-viewer.html** — interactive house/site viewer (the live site). Loads photos from `photos/` as you open each room.
 - **house-viewer-offline.html** — the earlier single-file viewer (5 MB, photos built in) for offline use; lacks the phone fixes.
 - **photos/** — the 68 reference photographs, reduced and orientation-corrected.
-- **share-card.jpg**, **favicon.svg** — preview image for shared links and the tab icon.
-- **test/site.test.mjs** — checks for page size, phone labels, share tags, local paths and photo location data. Run `node --test test/site.test.mjs`.
+- **share-card.jpg**, **favicon.svg**, **apple-touch-icon.png** — preview image for shared links, the tab icon and the iPhone home-screen icon.
+- **test/** — checks for page size, phone labels, share tags, local paths and photo location data. Run `node --test test/*.test.mjs`.
 - **floor-plan.svg** and **site-plan.svg** — same upright orientation as the owner's sketch.
 - **house-model.glb** — roof-off portable model with attached WC, gate, boundaries, court and paths.
 - **house-layout.json** — owner facts, evidence, rough coordinates, openings, materials and model boxes. Plan x/y and height z map to GLB x/-z and height y.
